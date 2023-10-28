@@ -25,7 +25,7 @@ When Multiple files are created and modified -> git add .
 commit -> It is the change of record
 -> git commit -m "some message"
 
-PUSH Command -> Upload local Repositary content to remote Repositary
+PUSH Command -> Upload local Repositary content to remote Repositary (Uoload local files to GitHub)
 -> git push origin branchName      {{ branchName such as 'main'}}
 
 *-> When Project is available on your PC :
