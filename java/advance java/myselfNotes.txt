@@ -1,0 +1,220 @@
+--------------------------------------- Advance Java -----------------------------------------
+GUI Beased Application in Java :- GUI stands for Graphical user interface in java you can use swing to devlop graphical user interface beased applications. 
+	Java swing contain multiple controls to design and devlop GUI Beased Application. GUI beased applications are also called stand alone applications.
+	
+IDE :- IDE stands for Integrated Devlopment Environment. It is an environment where you can develop, debug,and execute program .
+
+
+Date : 02-09-2023 :
+*******************
+------------------------------ Concept of Web Application in Java ----------------------------
+
+Java is a general purpose programming language. It is specially designed to devlop web applications. For web application devlopment in java we need following technologies :-
+	1. Servlet
+	2. JSP  (Java server Page)
+	3. JDBC (Java Database Connectivity)
+
+Servlet,JSP, and JDBC are software technologies.
+
+Spftware Technologies :- Software technology are non-installable softwares. But the software devloped by using software technologies are installable. E.g. JDBC is non-installable but the Database driver devloped by using JDBC is installable.
+
+1. Servlet :
+----------->  Servlet is a Software Technology, Which is used to devlop dynamic web pages. Besically Servlets are java program which are executed on server and provide html respose.
+	In servlet we write java code, and inside java code we inject html code. If you are very good in Java then you can prefer servlet for web devlopment.
+	     E.g. 
+		     out.print("<html>");
+			 out.print("<head>");
+			 out.print("</head>");
+			 out.print("<body>");
+			 out.print("<h1>I an Servlet code.</h1>");
+			 out.print("</body>");
+			 out.print("</html>");
+			 
+2. JSP :
+------->  JSP stands for Java Server Page. JSP is an extension of Servlet. JSP is also used to devlop dynamic web pages. In JSP we write code of HTML.Inside HTML code you can inject java code. We write code of java in JSP in Scriptlet.
+syntax :
+	<% 					--> Scriptlet opening
+		out.print("Hii");
+	%>					--> Scriptlet closing
+	
+ E.g.
+	<html>
+	<head>
+	</head>
+	<body>
+	<%
+	 out.print("<h1>I am JSP .</h1>");
+	%>
+	</body>
+	</html>
+
+If you are very good in HTML and you have knoledge of java then you can use JSP.
+
+What is Difference Between JSP and Servlet :
+-------------------------------------------> 
+ 
+Servlet-->Compile-->Execute-->Output
+
+JSP-->Translate-->Servlet-->Compile-->Execute-->Output
+
+3. JDBC :
+-------->  JDBC stands for Java Database Connectivity. It is an API(Application Programming Interface) Which is used to connect java application with database and perform different database operations.
+
+Date : 03-09-2023 :
+*******************
+
+------------------------ Concept of Java Database Connectivity (JDBC)-------------------------
+
+JDBC : JDBC stands for java Database Connectivity . It is used to connect java Application with database.
+	Package to be used for java Database Connectivity :- 
+		import java.sql.*;
+
+Steps to perform java Database Connectivity ->
+	* Load Database Driver.
+	* Extablish connection between java application and database.
+	* Prepare Sql statements.
+	* Execute Sql Statements.
+	* Close the connection.
+
+** Load Database Driver :- 
+	Syntax :
+			Class.forName(driver_name);
+	E.g. If we want to load mysql server driver then...
+		Class.forName("com.mysql.jdbc.Driver");
+
+Note : In Above line of code there is a checked Exception named ClassNotFoundException will rais. So you need to handle this Exception by using try-catch block or by using throws keyword. 
+
+** Extablish connection between java application and database :-
+	Syntax :
+	  Connection con=DriverManager.getConnection(url,username,password);
+	       |	  |		|				|		  |		|		  |
+		   |      |		|				|		  |		|		Password of Database
+		   |	  |		|				|		  |	   Username of Database
+		   |	  |		|				|		Location of Database
+		   |	  |		|				method	
+		   |	  |	   Class(java.sql)
+		   |	VariableName
+		Interface(java.sql)
+		
+E.g. ->
+
+Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?characterEncoding=utf-8","root","");
+
+Note :- In above line of code there is a checked Exception named SQLException will raise which must be handle by using tyr-catch block of using throws keyword.
+
+** Prepare sql Statements :-
+Syntax :
+  PreparedStatement ps=con.prepareStatement(sql-Query);
+		|			|	|		|				|
+		|			|	|		|			Quries of SQL 
+		|			|	|	  Method
+		|			|  Connection variable
+		|		VariableName
+	Interface(java.sql)
+	
+E.g.
+	PreparedStatement ps=con.prepareStatement("Insert into Employee values(1,'Raj',50000)");
+	
+Note :- In above line of code there is an Checked Exception named SQLException will raised. So this Exception must be handled by using try-catch block or by using throws keyword.
+
+** Execute SQL statements :-
+Syntax :
+	ps.execute();
+	
+** Close the Connection :-
+Syntax :
+		con.close();
+		
+		
+WAMP --> Windows+Apache+Mysql+PHP
+
+Date : 04-09-2023 :
+*******************
+
+Use of 'create command' to create a table.
+  Query : create table <table_name>(attribute1 datatype(size),attribute2 datatype(size),...);
+E.g.
+create table employee(empid varchar(5) primary key,empname varchar(60),department varchar(60),salary int(10));
+
+INSERT COMMAND : INSERT command is used to insert record into table.
+Syntax :
+		insert into <table_name> values(value1,value2,value3,....);
+E.g.  - insert into employee values('1001','Amit Patel','Devlopment',40000);
+
+in java-->
+
+String query="insert into employee values('"+empid+"','"+empname+"','"+department+"','"+salary+"');
+
+Date : 05-09-2023 :
+*******************
+
+JavaScript code in jsp--->
+
+out.print("<script>alert('Registration is done.');window.location.href='index.jsp';</script>");
+
+Create a project studentinfo
+fields:
+RollNo , Name , Branch , Email.
+
+Use of Delete Command: Delete command is used to delete record from table.
+
+Date :07-09-2023 :
+******************
+Update : update command is used to modify record in table.
+syntax :
+		update <table_name> set column1='value', column2='value' where <condition>;
+		
+		
+Date : 08-09-2023 :
+*******************
+
+Projects : 
+			FMI (Farmer Merchant Integration) 		--> Selected(for myself);
+			Examinatio Management System for Nalanda Open University.
+
+FMI:-
+
+FMI is known as Farmer Merchant Integration. This is a web project which as interface between farmer and merchant.This is a Cold storage management project.
+
+Software requirements :- 
+IDE :- Net Beans.
+User Interface Devlopment :- HTML,CSS,JAVASCRIPT,BOOTSTRAP.		
+Programming Language :- Java with JSP.
+Database :- Mysql.
+
+Module in Project :- 
+1. Farmer Information System.
+2. Storage Management System (Availability of space).
+3. Booking Management System.
+4. Payment Module .
+5. Login Management.
+6. Closing Module.
+7. SMS API Integration.
+8. Language Translation Integration.
+9. MAP Integration.
+10. Enquary Management System.
+
+
+Menus :
+ Home , About US , Registration , Login , Contact US 
+
+Examination Management System :-
+	
+Software Requirements for Devlopment :-
+
+UI Devlopment: HTML ,CSS, javascript,Bootstrap;
+IDE :- NetBeans.
+Programming Language:- java whit JSP.
+Database :- Mysql.
+
+Module in Project :-
+1. Student Information System.
+2. Login Management System.
+3. Question Bank Module.
+4. Examination Module.
+5. Result Management System.
+6. News and Event Management System.
+7. SMS API integration.
+8. Email Integration.
+9. Enquary Management System.
+10. Credential Management System.
