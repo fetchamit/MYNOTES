@@ -1,0 +1,605 @@
+
+-------------------------------------- Core Java ---------------------------------------------
+
+Access Modifires in Java :-
+4ph2biy
+
+Package : Package is a container which consist classes or interface.
+
+----> INPUT in JAVA
+	* We can take input from the user to make our program more productive and effective.
+	* We can take input with the help of Scanner class.
+	
+* Package for Scanner class -> Utilitiy Package
+* keyword -> util
+-----Functions in Scanner class------
+
+* Int 		---> .nextInt();
+* Float 	---> .nextFloat();
+* Double 	---> .nextDouble();
+* String	---> .next();				//For one word
+				 .nextLine();			//for more than one word
+* char		---> .next().charAt(0);
+
+------- Syntax to create object of a class ----------
+
+<class_name> <object_name>=new <class_name>;
+for e.g. :
+Scanner sc = new Scanner(System.in);
+
+-- Syntax for importing  Utilitiy Package ---
+import java.util.*;
+import java.util.Scanner;
+
+Date : 14/08/2023
+------------------->
+
+Math Class : In java we don't have to create any object for Math class . The functions will be called without object but we have to mention the class name just before the function.
+	* Math.pow(2,3); 		//It means that 2 to the power of 3
+	* Math.sqrt(9);			//It means that Square root of 9
+	* Math.ceil(5.1);		//It means that it will return the upper number as 6
+	* Math.floor(5.9);		//It will return lover number here returns 5
+	* Math.max(9,5);		//It will return the highest nos among them
+
+Date : 15/08/2023
+------------------>
+
+Decision Making in Java :
+*************************
+Decision making is a concept in which a program is built on conditions when the help of decision controls.
+
+Decision Control : Decision corntol are the keywords through which we built conditions.
+
+decision Controls :
+	-if
+	-if-else
+	-if-else-ladder
+	-switch case
+
+-: if :- 'if' is a keyword which is used when you have to put a condition, if the condition under 'if' is true the statement will execute otherwise statement will not execute.
+
+		syntax : 
+		if(condition)
+		{
+		statements
+		}
+
+-: if-else :- In this control if the condition is true under 'if' then the statement under 'if' will execute and if the condition under 'if' statement is false the statement under 'else' will execute.
+		syntax :
+			if(condition)
+			{
+			statement1
+			}
+			else
+			{
+			statement2
+			}
+
+-: if-else ladder :- if-else ladder is a concept in which you have to deal with multiple(more than 2) conditions.
+		syntax :
+			if(condition1){
+			statement1;
+			}
+			else if(condition2){
+			statement2
+			}
+			else if(condition3){
+			statemtnt3;
+			}
+			.
+			.
+			.
+			.
+			.
+			.
+			.
+			else{
+			statement n;
+			}
+
+Date : 16/08/2023 :
+*******************
+Switch case : It is a conceptin which conditions are written in menu form. The program written in switch case is also known as menu-driven program . We can implement program in which we can check a variable having a particular value or not.
+
+Syntax :
+	switch(Expression/variable_name){
+		case 1:
+		{
+			statement1;
+			break;
+		}
+		case 2:
+		{
+			statement2;
+			break;
+		}
+		.
+		.
+		.
+		.
+		default:
+		{
+			default statement;
+		}
+	}
+
+DATE : 17/08/2023 :
+*******************
+
+Iteretion Statemtnts(Looping Statemtns) :-
+----------------------------------------   It is a mechanismin which one or more statements can be executed multiple times . The repitition of statemtnts is known as iteration.
+	Inorder to perform a proper loop statemtnt, we have to follow 3 principles of loop.
+	-- InitialiZation
+	-- Condition
+	-- Updation
+Types of loop
+-------------->
+		* While loop
+		* Do-while loop
+		* for loop
+
+** While loop : In while loop the condition is checked in the starting. It is also known as entry-control loop.
+Syntax :
+--------
+initialization;
+while(condition)
+{
+statement1;
+.
+.
+.
+updation;
+}
+
+
+Do-while loop : In do-while loop condition is checked at the end. It is also known as exit-control loop;
+Syntax :
+--------
+		initialization;
+		do{
+			statemtnts
+			.
+			.
+			updation;
+		}
+		while(condition);
+
+for loop :- In for loop we put all three principles in one line thai is  initialization, condition and updation . Its working is same as while loop.
+Syntax 
+------:-
+		for(initialization;condition;updation)
+		{
+		statemtnt
+		.
+		.
+		}
+
+Class task Questions :
+-*-*-*-*-*-*-*-*-*-*-*
+Q1. 5,10,15,......n;
+Q2. 7+14+21+28+......n;
+some of series.
+Q3. 1 4 9 16 25 ......n;
+Q4. 2 5 10 17 26 ......n;
+Q5. Fibonacci Series.
+
+
+Date : 18/08/2023 :
+*******************
+
+No study only solving of previous classes Questions ?
+
+
+Date : 19/08/2023 :
+*******************
+
+Concept of Array in Java :
+-------------------------:	
+
+Array : Array is the collection of similiar data types. That means an Array can store multiple values of similiar data types.
+
+Why Array ?
+- If you want to store marks of ten students,then you can perform this task in two ways. First Create ten variables and store marks.Second create an Array with size 10 and store marks in array.
+
+Syntax to declare an array :
+<data_type>[] <array_name>=new <data_type>[size];
+
+e.g. :
+int [] list=new int][17]
+Note : The above array named list can store ten numbers of int data type.
+
+Initialization of Array :- 
+
+int []x={10,20,30,40,50};
+x[0]=10;
+x[1]=20;
+x[2]=30;
+x[3]=40;
+x[4]=50;
+
+How to take input from user for an Array ?
+	- Code Segment :-
+	
+	int []x=new int[5];
+	int i;
+	Scanner s=new Scanner(System.in);
+	for(i=0;i<5;i++){
+	x[i]=s.nextInt();
+	}
+
+Date : 20/08/2023 :
+*******************
+
+String :-Technically String is a sequence of characters.In Java String is a class, object of String class stores sequence of characters.
+		String class is available in java.lang Package.
+	Methods in String class :
+	-------------------------
+	* toUpperCase() :- toUpperCase() method of String class converts String into upper case.
+	* toLowerCase() :- toLowerCase() method of String class converts String into lower case.
+	* length() 		:- length() method of String class find length of String.
+	* equals()		:- equals() method of String class is used to compare two Strings for 	equality. This method returns boolean value .
+	* equalsIgnoreCase() :- It compare two String for equality but avoid Case sensitivity.
+	* split()		:- split() method of String class is used to split String into substrings.
+	
+	
+Class task :
+* Create a program to perform Binary Search
+
+Date :- 21-08-2023 :
+********************
+	
+	* replace()		:- replace() method of String class is used to replace a String with another String in given String.
+	
+Concept of Methods in Java :
+--------------------------->
+
+Methods :- Methods are a block of codes which performs a specific task.
+	
+Why we use Method ?
+	If you have a block of code which requires at differents locations of program , then you can create a Method of that code and call it from desired locations. By using Methods you can avoid same code over and over.
+	
+How to Create Methods in Java  :
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+	Syntax:
+			<modifire><return-type><method_name>(parameters)
+			{
+			//Method body
+			}
+			
+	E.g.
+		public int sum(int a,int b){
+		return a+b;
+		}
+		
+How many types of Methods in java :
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+		In java programming language there are two types of methods :
+1. Static Methods
+2. Non-Static Methods
+
+1.Static Method :- Static methods are created by using 'static' modifire. static methods are also called class methods. There is no need of object to call static method.
+E.g.
+	* Math.pow();
+	* Arrays.sort();
+
+2. Non-Static Method :- Non-Static Methods are created without using static modifires. Non-Static Mehthods can be call with object.
+E.g.
+	* .next();
+	* .nextFloat();
+	
+Note :- You can create method inside class and outside of main method.
+
+Date : 22-08-2023 :
+*******************
+
+========================= Object Oriented Programming System (OOPS)===========================
+
+OOPS :- OOPS stands for Object Oriented Programming System. It is a mechanism of software Devlopment. OOPS has four pillars :
+	1. Abstraction 
+	2. Encapsulation
+	3. Inheritance
+	4. Polymorphism
+	
+Object:- Object is a real world entity, which has it's own functionality and properties. 
+
+									OBJECT
+								---------------
+			 ___________________________________________________
+			|													|
+			|		|-----------|			|---------------|	|			  
+			|		|Properties	|			| Functionality |	|
+			|		|-----------|			|---------------|	|
+			|___________________________________________________|
+
+1. Abstraction :- The Abstraction is a mechinism to show essential functionality and hide all other functionality of an object . 
+	
+2. Encapsulation :- Wrapping of properties and functionality in a single unit is called Encapsulation. That single unit is called object.
+
+3. Inheritance :- Inheritance is a feature of object oriented programming. In Inheritance you can create a new product by using existing product.
+
+4. Polymorphism :- Term Polymorphism means one thing many form 
+
+NOTE :- Any Programming language which follow these four pillars is known as Object Oriented Programming Language. 
+
+
+------------------------------- Concept of Class in Java -------------------------------------
+
+--> Class :- Class is a blueprint of object.Class is the collection of variables and methods.
+
+class is created by using 'class' keyword followed by class_name. The body of class is enclosed within braces.
+	Syntax :
+				class <class_name>{
+					//class body
+				}
+
+Date : 23-08-2023 :
+*******************
+
+Constructors :- Constructor is a special method which is used to initialize variables. There are following properties of Constructors :
+	* Constructor is same as class name.
+	* Constructor has no return type.
+	* Constructor call automatically as soon as object is created.
+	
+---------------------------------- Concept of Inheritance ------------------------------------
+
+Inheritance :- Inheritance is a feature of object oriented programming . In Inheritance you can create a new class by using existing class. The existing class is called Base/Parent/Super class and new created class is called derived/child/sub class.
+		The concept of Inheritance is also called 'Reuseability'.
+	
+				 ______
+				|	  |					class A{
+Parent class->	|  A  |							// Variables and Methods.
+				|_____|						  }
+				   |
+				___|___
+				|     |					class B extends A{
+Child Class->	|  B  |							//variables and methods.
+				|_____|						}
+				
+Types of Inheritance :- In java Programming Language there are three types of Inheritance are Supported :
+		* Single Inheritance
+		* Hierarchical Inheritance
+		* Multi-level Inheritance
+
+--> 1. Single Inheritance :- In Single Inheritance, there is a single base class and single derived class.
+				 ______
+				|	  |					class A{
+Parent class->	|  A  |							// Variables and Methods.
+				|_____|						  }
+				   |
+				___|___
+				|     |					class B extends A{
+Child Class->	|  B  |							//variables and methods.
+				|_____|						}
+				
+--> 2. Hierarchical Inheritance :- In Hierarchical Inheritance there is a single base class and multiple derived classes.
+									     ______________
+										|              |
+										| Parent Class |
+										|______________|
+			________________________________|_______________________________
+	  _____|_____							  _____|_____				____|______
+	 |			 |							 |			|			   |		   |   
+	 | Child 1   |							 | Child 2  |			   | Child 3   |
+	 |___________|							 |__________|			   |___________|
+	
+
+class parent{
+// variables and method
+}
+class child1 extends parent{
+// variable and method
+}
+class child2 extends parent{
+// variable and method
+}
+class child3 extends parent{
+// variable and method
+}
+
+
+--> 3. Multilavle Inheritance :-
+
+			 _______						Syntax :-
+			|      |						class A{
+			|  A   |								//variable and methods
+			|______|							}
+			 ___|___						class B extends A{
+			|      |								// variables and methods
+			|  B   |							}
+			|______|						class C extends B{
+			 ___|___								// variables and methods
+			|      |							}
+			|  C   |
+			|______|
+
+
+Date : 24-08-2023 :
+*******************
+---------------------------------- Concept of Polymorphism -----------------------------------
+Polymorphism :- The term polymorphism means one thing many forms. In java programming language there are two types of polymorphism :
+	1. Compile time Polymorphism(Method Overloading).
+	2. Run time Polymorphism(Method Overriding).
+	
+1. Method Overloading :- In java programming language you can create multiple methods with same name in same class but their parameters should be different.This is called Method Overloading.
+	E.g.
+		class Figure{
+			int area(int s){
+			return s*s;
+			}
+			int area(int l,int b){
+			return l*b;
+			}
+		}
+		
+Date : 25-08-2023 :
+*******************
+
+2. Method Overriding(Run Time Polymorphism) :- Re-writing of base class method into derived class is called method Overriding.
+
+For E.g.
+			class Connection{
+				void connect(){
+				// code to connect java application with oracel database.
+				}
+			}
+			class MyConnection extends Connection{
+				void connect(){
+				// code to connect java application with mysql database.
+				}
+			}
+			
+Rules to perform Method Overriding :-
+	* Class must be inherited.
+	* Base class method name and derived class method name must be same.
+	* Base class method parameters and derived class method parameters must be same.
+	* Base class method return type and derived class method return type must be same.
+
+					   
+					 _______
+					|  m1()	|
+A ->Base class	    |  m2()	|
+					|_______|
+					    |
+						|
+					 __\|/__
+					|       |
+B ->Derived class   | m2()  |   m2--> override method.
+					|_______|
+					
+
+---------------------------------- Exception Handling in JAVA --------------------------------
+
+Exception(Abnormal termination) :- The dictionary meaning of Exception is Abnormal termination . When Exception is Occured then program is terminated abnormaly and rest of code is not executed. In java there are three types of exception :
+	1. Checked Exception .
+	2. Unchecked Exception .
+	3. Errors .
+	
+1. Checked Exception :- Checked Exception are those Exceptions which are identified by compiler at compilation time .
+	For E.g.
+			ClassNotFoundException, FileNotFoundException,SQLException,IntruppedException, IOException etc.
+			
+2. Unchecked Exception :- Unchecked Exceptions are those Exception , which are identified at Runtime.
+For E.g.
+		ArithmaticException, InputMissmatchException, NullPointerException, ArrayIndexOfBoundsException , etc.
+		
+3. Errors :- Errors are a type of Unchecked exception which occured due to lack of System resources.
+For E.g.
+		AwtError,IOException, etc.
+
+
+Date : 26-08-2023 :
+*******************
+Exception Handling :- Exception Handling is a machanism to handle exception to achieve normal execution of programming. In Java you can handle exception in two ways :
+	1. By using try-catch blocks
+	2. By using throws keyword
+	
+1. Exception handling By using try-catch blocks : 
+try{
+// code which you want to protect
+}
+catch(ExceptionType variable){
+//Code which is used to handle exception.
+}
+finally{
+// this is optional which is execute either any exception come or not.
+}
+
+-------------------------------------- Package in Java ---------------------------------------
+Package :- Package is a collection of classes, interfaces. Package is created by using 'package' keyword followed by packagename.
+
+Syntax : 
+		package mypack;
+
+Command for create package during compilation :- 
+	->  javac -d . filename
+	E.g.- javac -d . MyUtil.java
+	
+Date : 27-08-2023 :
+*******************
+
+Abstraction :- Abstraction is a mechanism to show only essential functionalities and hide all other functionalities of an object.
+
+Interface :- Interface is a collection of Abstract methods. Abstract methods are those methods which have only declaration and no definition.
+		Interface is created by using 'interface' keyword followed by interface name.
+		
+	E.g.
+		interface <interface_name>{
+		/* Abstract methods as ->
+		void m1(); // public abstract void m1();
+		void m2(); // public abstract void m2();
+		*/
+		}
+
+** command to see structor of any class file -> javap filename.class
+
+Date : 28-08-2023 :
+*******************
+
+Interface , Abstract class and class :- 
+
+Interface :- Interface is the collection of Abstract methods. If you have requirements but you do not know about it's implementations, then you can use Interface.
+	* An Interface can extends another Interface.
+	* You can not create object of interface.
+
+Abstract Class :- Abstract class is a class which contains abstract methods and implemented methods both.If you have requirements you know implementation but not complete implementation, then you can use Abstract class.
+	* An Abstract class can implement interface.
+	* An Abstract class can extends another abstract class.
+	* You can not cteate object of Abstract class.
+
+Class :- Class is a collection of objects, implemented methods and variables. If you have requirements and you know it's full inplementation, then you can use class.
+	 * Class can implement interface.
+	 * Class can extends Abstract class.
+	 * Class can extends another class.
+	 * Class can be instanciated.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------Some Other Things------------------------------------- 
+ASCII
+------>
+A to Z -> 65 to 90
+a to z -> 97 to 122
+0 to 9 -> 48 to 57
+
+JDBC ->JAVA DATABASE CONNECTIVITY.
+
+short form of 'that is '='i.e'
+
+Short Hand operator :
+ 
+i=i+2	-> i+=2
+i=i/5	-> i/=5
+.
+.
+
+These operators are used in for loop for updation;
+
+** command to see structor of any class file -> javap filename.class

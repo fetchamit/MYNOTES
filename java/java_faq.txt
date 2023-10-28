@@ -1,0 +1,10 @@
+1.  What is language?
+2.  What is programming language?
+3.  What is a web browser?
+4.  Which part of computer interacts with hardware?
+7.  What is a software ?
+8.  What is hardware ?
+5.  Diffrentiate between System Software and Application         Software?
+6.  Which part of computer interacts with Operating System?
+9.  How many types of programming languages are there?
+10. What is IP address?

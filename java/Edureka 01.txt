@@ -1,0 +1,10 @@
+Ques:-01   Why java is popular language ?Why we should learn java .
+Ques:-02   Features And Application  of java programming ?
+Ques:-03   Why java is secure language ?
+Ques:-04    What is JDK and why it is needed?
+Ques:-05    What is the difference between C,C++ and java ?
+Ques:-06    Difference between compiler and Interpreter?
+Ques:-07    What is class and object in python?
+Ques:-08    What are the four pillars of Oops concept?
+Ques:-09    What are the meaning of void ?
+Ques:-10    Write a program in java to add two numbers by taking the input from user ?

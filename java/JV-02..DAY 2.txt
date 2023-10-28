@@ -1,0 +1,10 @@
+Q1.  What was the first name given to JAVA Language ?
+Q2.  When was java launched ?
+Q3.  Who is the founder of java ?
+Q4.  Describe about Project Green.
+Q5.  Why is Java a platform independent language?
+Q6.  What is source code?
+Q7.  What is machine code?
+Q8.  How "JAVA" name is given to java language?
+Q9.  How compiler works?
+Q10. How interpreter works?

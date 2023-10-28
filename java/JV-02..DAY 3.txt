@@ -1,0 +1,15 @@
+Q1.  What are keywords ?
+Q2.  What do you mean by packages in Java ?
+Q3.  Name the default package of Java.
+Q4.  What do you mean by Access Modifiers?
+Q5.  Differentiate between Access Specifier ad Modifier.
+Q6.  What do you mean by tokens ?
+Q7.  What are the types of tokens?
+Q8.  What is the meaning of System.out.println() line ?
+Q9.  What are the syntax for compiling and executing the java program ? 
+Q10. What is the use of void keyword ?
+Q11. What are comments in java ?
+Q12. What is the syntax for writing one line comment and multiple line comment ?
+Q13. What do you mean by Case Sensitive feature of Java?
+Q14. What is the use of semi-colon(;) in java ?
+Q15. Why we do not put semi colon(;) after class or main function ?
