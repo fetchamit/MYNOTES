@@ -1,0 +1,78 @@
+Git -> Version control System.
+Commands in Git :
+
+Setting the username 	-> git config --global user.name "username"
+Setting the email 		-> git config --global user.email "user@gmail.com"
+See the configuration list -> git config --list
+
+
+*-> When project is available on GitHub:
+Clone the project      -> git clone url_of_Repository
+
+
+
+
+Display the state of Code -> git status
+* Untracked 	-> New file that does not exist on GitHub
+* Modified		-> File is modified 
+* Staged 		-> File is ready to commit
+* Unmodified	-> File is not changed or modified
+
+ADD & COMMIT ->
+Add new or changed file in your working directory to the Git Staging Area -> git add filename
+When Multiple files are created and modified -> git add .
+
+commit -> It is the change of record
+-> git commit -m "some message"
+
+PUSH Command -> Upload local Repositary content to remote Repositary
+-> git push origin branchName      {{ branchName such as 'main'}}
+
+*-> When Project is available on your PC :
+
+init -> Convert a Repositary to git Repositary
+-> git init
+
+-> Uploading your Repositary into GitHub
+* First create a Repositary on GitHub
+Add a Remote -> git remote add origin <link of repositary>
+Verify Remote -> git remote -v
+Check the Branch -> git branch
+Rename branchName because of by default name is master -> git branch -M main
+To Upload files -> git push origin main
+{{  Note:- If we are working into a single branch then we can use 
+	-> git push -u origin main
+After this command we will only run it's short form -> git push
+}}
+
+Branches in Project ->
+See all Branches -> git branch
+To Create a Branch -> git checkout -b Branch_Name
+To Rename a Branch -> git branch -M New_Branch_Name
+To Delete a Branch -> git branch -d Branch_Name
+To change branch   -> git checkout Branch_Name
+
+Merging Code in GitHub from one Branch to main Branch
+
+Find Differences(commit,branches,files and more)  -> git diff Branch_Name
+Merging Branches  -> git merge Branch_Name
+
+Generating a Pull Requesh (PR)
+PULL Command -> It is Used to fetch and download content from a remote repositary and immediately update the local repositary to match that content.
+ -> git pull origin main
+ 
+Resolving Merge Confilicts :-> An event that takes place when Git is unable to automatically resolve differences in code between two commits.
+
+Undoing Changes :
+
+Case 1 : Stage changes (After add)
+ -> git reset File_name
+ 
+Case 2 : Commited changes (for one commit)
+ -> git reset HEAD~1
+ 
+Case 3 : Commited changes (for many commits)
+-> git reset Commit_hash
+-> git reset --hard Commit_hash    {{ Used to clearing all commit after commit_hash }}
+
+To see Commit hash -> git log
