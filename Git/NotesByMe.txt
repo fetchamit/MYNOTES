@@ -76,3 +76,7 @@ Case 3 : Commited changes (for many commits)
 -> git reset --hard Commit_hash    {{ Used to clearing all commit after commit_hash }}
 
 To see Commit hash -> git log
+
+
+
+Note :- facing error during push then run command -> git push -f origin <origin name>
