@@ -36,3 +36,25 @@ Features of C :
 * Middle-level language
 * Used in Embedded Application & IOT
 * Used to write Kernel of OS
+
+Execution Scenario :
+--------------------
+Detailed scenario :
+===================
+Source file -> | Compiler| -> object file -> | Linker |(Loaded Library functions) -> .exe file -> | Loader | -> Execution
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
