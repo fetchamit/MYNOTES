@@ -135,7 +135,7 @@ I/O Functions in C :
 => I/O functions are used to get input from user and to display output to the user.
 => Below are the main types ot input output functions in C -
   1) Formatted I/O Function.
-  1) Character I/O function.
+  2) Character I/O function.
   3) String I/O function.
 
 1) Formatted I/O Function
@@ -148,10 +148,21 @@ I/O Functions in C :
     scanf("List_of_Identifiers",List_of_address_of_variables);
   Ex : scanf("%d%d",&num1,&num2);
 
+Syntax of printf():
+    printf("String Literal",List_of_variable_names);
+
+Note : A string literal is a special string that can contains some string and identifiers both.
+  Ex : printf("Addition is : %d",result);
+
+Identifiers :
+    %d for int
+    %c for char
+    %s for string
+    %ld for long double
 
     
-
-
+2) Character I/O Function :
+----------------------------
 
 
 
