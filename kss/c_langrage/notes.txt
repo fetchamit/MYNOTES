@@ -43,7 +43,33 @@ Detailed scenario :
 ===================
 Source file -> | Compiler| -> object file -> | Linker |(Loaded Library functions) -> .exe file -> | Loader | -> Execution
 
+Structure of a c program :
+--------------------------
+* C is a structure programming language. It has a fix structure to write program.
+* A C program uses below structure -
 
+  1) Documentation Section :
+    => This section is used to write the details about our program by using comment lines.
+    => It is an optional section.
+
+  2) Link Section :
+    => Used to link header files(libraries) in our program.
+    => In this section we have to use "pre-processor" directives to link header files. It is denoted by # symbol.
+    => It is an Mandatory section.
+
+  3) Global Declaration Block :
+    => This block is used to declare global variables and global functions.
+    => It is an optional section.
+
+  4) Main function block :
+    A) Declaration Section :
+        => Used to declare variables and constants.
+        => It is optional section.
+    B) Definition section :
+        => Used to write statements inside function.
+        => It is an essential section.
+    
+    
 
 
 
