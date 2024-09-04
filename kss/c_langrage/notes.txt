@@ -68,7 +68,70 @@ Structure of a c program :
     B) Definition section :
         => Used to write statements inside function.
         => It is an essential section.
-    
+  
+  5) Other function block :
+    => This block is used to defind user defined functions.
+    => It is an optional block.
+
+=====================================================================
+Variables :
+-----------
+=> Variables are memory space holders.
+=> Variables are used to reserve the memory sapce so that we can store some data during run-time of program on that reserved space.
+=> Variables represents a location of memory.
+=> We can change the value of variable during the run-time of program.
+
+Rules for creating a variable / function / class name :
+-------------------------------------------------------
+1) Variable names are case sensitive.
+    Ex : name and Name are not same.
+
+2) Variable name must be start with an alphabet. It can be alpha numeric.
+    Ex : int age, num5, n55ag;         // Valid Names
+    Ex : int 5age,34 ;                 // Invalid names
+
+3) Special symbols are not allowed in a single variable name. Only underscore (_) is allowed.
+    Ex : int user@age, my#;         // Invalid names
+    Ex : int user_age ,_my;        // Valid names
+
+4) We can not use a keyword name as a variable name.
+    Ex : int if, void, for     //invalid names
+
+5) We have to try to use limited number of characters in a variable name. Generally 10 to 12 characters are sufficient in a variable name.
+
+6) Variables names are separated by using comma ( ,) symbol.
+    Ex : int a,b,c;
+
+7) White space is not allowed between a variable name.
+    Ex : int user age;    // Invalid name
+
+Data Types :
+------------
+=> Data types are used to define the type of data that a variable can store.
+=> Data type also define the memory size and range of a variable.
+
+Types of Data Types :
+---------------------
+1) Primary / Primitive / Basic / Library / Fundamental / Built-in Data Type :
+    => The Data type that are already available with compiler are known as built -in data type.
+       Data type         Size
+        int             2 Byte
+        float           4 Byte
+        double          8 Byte
+        char            1 Bit / 1 Byte (compiler dependent)
+        long int        8 Byte
+        long double     10 Byte
+
+2) Derived Datatypes :
+    => The Datatypes that are developed by using the primitive datatype are known as derived datatype.
+        Ex : Array & Pointer.
+
+3) User Defined Datatype :
+    => The datatype that are defined by user or programmer to full fill the custom need are known as UDDT (User Define Data Type).
+        Ex : struct , union, enum
+
+
+
     
 
 
