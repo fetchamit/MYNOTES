@@ -1,0 +1,38 @@
+C Programmin Language
+**************************
+ANSI - American National Standerd Institute.
+
+Why to learn c :
+-----------------
+1) C helps to understand the fundamentals of computer theories.
+2) C is very fast in terms of execution time.
+3) C is used for writing operating systems as well as doing application level programming.
+4) Base of other advance programming languages.
+5) Simple to learn.
+
+Introduction to C Language :
+-----------------------------
+1) C is general-purpose computer programming language.
+2) C is a structured(procedural) programming language.
+3) C was invented to write UNIX operating system.
+4) C is successor of 'Basic Combined Programming Language'(BCPL) called B Language.
+5) Linux OS, PHP  and MySQL are written in C.
+6) C is a middle level programming language.
+7) C language helps to understand the concepts of other languages.
+
+Creation of C :
+---------------
+* C was originally developed at Bell Labs in 1972 by Dennis Ritchie.
+* C has been standardized by the ANSI since 1989.
+* Latest version of C is C23 that is released in Feb, 2024.
+
+Features of C :
+---------------
+* Simple to learn.
+* Structured Language
+* Cross Plateform
+* Base of various modern languages.
+* Fast Execution
+* Middle-level language
+* Used in Embedded Application & IOT
+* Used to write Kernel of OS
