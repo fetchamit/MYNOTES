@@ -130,6 +130,23 @@ Types of Data Types :
     => The datatype that are defined by user or programmer to full fill the custom need are known as UDDT (User Define Data Type).
         Ex : struct , union, enum
 
+I/O Functions in C :
+---------------------
+=> I/O functions are used to get input from user and to display output to the user.
+=> Below are the main types ot input output functions in C -
+  1) Formatted I/O Function.
+  1) Character I/O function.
+  3) String I/O function.
+
+1) Formatted I/O Function
+--------------------------
+=> The function that needs to specify some format for performing input output operations are as formattd input output functions.
+=> scanf() and printf() are formatted input output function.
+=> scanf() stands for scan format and it is used ot read values from used in a specified format.
+=> prinft()  stands for input format. It is used to print some output to user in specified format.
+  Syntax of scanf():
+    scanf("List_of_Identifiers",List_of_address_of_variables);
+  Ex : scanf("%d%d",&num1,&num2);
 
 
     
