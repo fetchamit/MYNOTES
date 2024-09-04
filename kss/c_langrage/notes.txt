@@ -162,7 +162,31 @@ Identifiers :
 
     
 2) Character I/O Function :
-----------------------------
+---------------------------- 
+=> The function that are used to read or write character values from user are known as character I/O function.
+  a) getch() : Used to read a character from user. It does not displays entering character. Also no need to press enter button after input. This function can read any key from user.
+Syntax : char getch();
+
+  b) getche() : Used to read a character from user. It displays the entering character but no need to press enter button after input.
+    Syntax : char getche();
+
+  c) getchar() : Used to read a character from user. It displays the entering character and also we have to press enter button after input.
+  Syntax : char getchar();
+
+  d) putch()  : Used to print a character in output window.
+  Syntax : putch(char);
+
+3) String I/O Functions :
+-------------------------
+    a) gets() : It stands for get string and used to read a string value from user. this function can read a String with white space also.
+    Syntax : gets(String_var);
+
+    b) puts() : It is used to print a string value in output. It stands for put string. After printing of string it moves the cursor to next line.
+    Syntax : puts(String_var);
+
+    
+
+
 
 
 
