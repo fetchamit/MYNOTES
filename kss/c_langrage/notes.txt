@@ -228,6 +228,65 @@ Types of Operator :
     Logical or ||
     Logical not !
 
+Conditional Statements in C :
+-----------------------------
+=> Conditional statements are used to implement conditional compilation in our program.
+=> Conditional statements are used to check the given condition.
+=> In C, there are two types of conditional statements -
+  1) If Statement
+  2) Switch Statement
+
+Note : If Statement is of 4 types -
+  A) Simple If
+  B) If Else
+  C) Nested If
+  D) Ladder If Else
+
+Syntax of Simple If :
+---------------------
+if(condition){
+// Statement of true block
+}
+
+Syntax of If Else :
+-------------------
+if(condition){
+// Statement of true block
+}
+else {
+// Statement of false block
+}
+
+Syntax of Nested if :
+---------------------
+if(condition1){
+    if(condition2){
+        if(condition3){
+            // Statement of true of all block
+        }
+    }
+}
+
+Syntax of Ladder if else :
+--------------------------
+if(condtion1){
+// statemet of true condition 1
+}
+else if(condition2){
+// Statement of true condition 2 but false of condition1
+}
+else if(condition3){
+// Statement of true condition 3 but false of condition1 and condition2
+}
+.
+.
+.
+else{
+// Statement of false of all conditions
+}
+
+Note : When we have bunch of conditions and we wants to check them one after another in that case we have to use ladder if. If a condition becomes true then it will not check for rest if the conditions. If all the given conditions become false then it will execute statements of else block. Else is an optional block.
+
 
     
 
