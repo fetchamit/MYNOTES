@@ -184,6 +184,30 @@ Syntax : char getch();
     b) puts() : It is used to print a string value in output. It stands for put string. After printing of string it moves the cursor to next line.
     Syntax : puts(String_var);
 
+
+Keywords :
+---------
+=> Keywords are the reserved words that has some pre defined meaning with-in compiler.
+=> C Language has total 32 keywords.
+  Ex : int,float,double,void,char, long, static, auto, extern, register, break, continue, for, while, do, if, else, goto etc.
+
+Operators :
+-----------
+=> Operators are the symbols that are used to define operation between operands.
+  Ex: a+b
+Note : Here a and b are operand and + is an operator that defins addition between a and b.
+Types of Operator :
+------------------
+1) On the basis of number of operands
+  i) Unary Operator
+      => The operator that has only one operand.
+          Ex : ++,--,!
+  ii) Binary Operator
+      => The operator that works with multiple operands.
+        Ex : +,-,*,/
+
+2)  
+
     
 
 
