@@ -206,7 +206,28 @@ Types of Operator :
       => The operator that works with multiple operands.
         Ex : +,-,*,/
 
-2)  
+2) On the basis of task/work/operation of operator
+  A) Arithmatic Operator
+    +,-,*,/,%
+  B) Relational Operator
+    <,>,<=,>=,!=
+  C) Increment / Decrement
+    ++,--
+  D) Assignment Operator
+    =
+  E) Equalitiy Operator
+    ==
+  F) Binary Operator 
+    <<,>>,~,&
+  G) Comma operator
+    ,
+  H) Conditional Operator/ Ternary Operator
+    Syntax : Condition?True_block:false_block;
+  I) Logical Operator 
+    Logical and &&
+    Logical or ||
+    Logical not !
+
 
     
 
