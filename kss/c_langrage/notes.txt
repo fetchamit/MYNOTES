@@ -287,7 +287,29 @@ else{
 
 Note : When we have bunch of conditions and we wants to check them one after another in that case we have to use ladder if. If a condition becomes true then it will not check for rest if the conditions. If all the given conditions become false then it will execute statements of else block. Else is an optional block.
 
+Switch Statements :
+-------------------
+=> Switch is also a conditional statement.
+=> Execution of switch statement is almost same as execution of ladder if. But is more simple to understand.
+=> We can not check a floating point value by using switch statement.
+Syntax of switch statement :
+----------------------------
 
+switch(value/variable)
+{
+    case 1:
+    // Statements ...
+    break;
+    case 2:
+    // Statements ...
+    break;
+    .
+    .
+    .
+    default :
+    // Statements ...
+    break;
+}
     
 
 
