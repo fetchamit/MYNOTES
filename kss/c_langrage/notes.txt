@@ -311,9 +311,51 @@ switch(value/variable)
     break;
 }
 
+Looping Statements :
+--------------------
+=> Looping statements are used to repeat the execution of block of code.
+=> Looping statements are also known as "Iterative statements ".
+=> All looping statements consists of three below parts-
+  A) Initialization / Start Value
+  B) Condition / stop value
+  C) Updation / Increment or Decrement
+
+Types of Loop :
+---------------
+1) Entry Control Loop :
+=> The loop that checks for the given condition before entering inside body of the loop are known as entry control loop.
+    Ex : for and while
+2) Exit Control Loop :
+=> The Loop that check for the given condition during exit from body of the loop are known as exit control loop.
+    Ex: do while loop
+
+Syntax of for Loop :
+--------------------
+for(initialization;condition;updation){
+    // statements...
+}
+
+Syntax of while loop :
+----------------------
+initialization;
+while(conditions){
+    // statements ...
+updation;
+}
+
+Syntax of do while loop :
+-------------------------
+initialization;
+do{
+statements...
+updation;
+}
+while(condition);
+
+Note : It is mandatory to terminate do while loop by using semicolen.
+
 
     
-
 
 
 
