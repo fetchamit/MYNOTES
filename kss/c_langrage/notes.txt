@@ -353,3 +353,24 @@ updation;
 while(condition);
 
 Note : It is mandatory to terminate do while loop by using semicolen.
+
+Nested Loop :
+-------------
+=> When we use one loop inside another loop then it is called nested loop.
+=> In nested loop ; First loop is known as outer loop and second loop is known as inner loop.
+=> Nested loop is used to process data in matrix format.
+=> Outer loop works for row and inner loop works for columns.
+=> In nested loop ; for each and every interation of outer loop; inner loop iterates for his complete time(From start to end).
+
+
+
+
+
+
+
+
+
+
+
+
+
