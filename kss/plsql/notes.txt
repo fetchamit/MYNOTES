@@ -1,0 +1,362 @@
+PL/SQL:
+----
+pl/sql is a combination of sql along with the procedural features of programming language.
+pl/sql stands for procedural language extensions to the structured query language.
+oracle uses a pl/sql engine to process the pl/sql.
+pl/sql includes conditions and loops . it allows declaration of constant and variable.
+pl/sql only can execute in an oracle database.
+
+
+pl/sql can execute a number of queries in one block using single command.
+Diffrence pl/sql and sql
+
+
+Block Structure:
+1.Declaration:
+------------
+this section start with the keyword DECLARE. It is an optional section and defines all variable,subprograms,and aother elements to be used in the programm.
+2.Executable Commands:
+-----------------
+this section is enclosed between the keywords BEGIN and END and it is a mendatory section. It consists of executable PL/SQL statements of the program.
+3.Exception Handling:
+-------------------
+This section starts with the keyword EXCEPTION.This is a optional section conatians Exception (s) that handles error in the programm.
+
+
+Steps to create pl/sql script
+-----------------
+1.Open SQL command line and connect to database server.
+2.Write the Pl/SQL program in file and save that ; then go to sql command line and excute command set serveroutput on;
+3.Execute your PL/SQL program by using command start FileName.sql or you can direct open your file in SQL command line by using @path of file
+Ex:d:/mysql/demo.sql
+4.Use this function to print Output dbms_output.put_line()
+Note: Always use semicolon after end and in next line after end.
+
+Syntax:
+DECLARE
+     declaration statments;
+BEGIN
+    executable statements;
+EXCEPTIONS
+    exception handling statements;
+END;
+
+
+Conditional Statement
+1)Simple If:
+syntax:
+------
+IF condition THEN
+//Statement
+END IF;
+2) IF ELSE:
+------
+Syntax:
+IF Condition THEN
+//statements
+ELSE
+    //statements
+END IF;
+3)
+Nested If:
+--------
+If Condition THEN
+    IF Condition2 THEN
+    //Statement
+    ELSE
+ELSE
+END IF;
+
+4)ELSE IF ladder:
+------------
+IF Condition THEN
+//statement
+ELSE IF Cndition THEN
+//statement
+ELSE IF Condition THEN
+//Statement
+ELSE
+//Deafault
+END;
+
+
+Case in PL/SQL
+------------
+case is work like switch case of c programming
+its execution is like ladder if but it is simple to understand.
+syntax:
+----
+CASE Expression
+    when Condition Then
+        //statement
+    When Condition Then
+        //statemnt
+    ELSE
+        //default
+END CASE;
+END;
+
+
+
+=====================
+Syntax of FOR Loop:
+--------
+FOR varName IN Startvalue..Endvalue LOOP
+
+END FOR;
+Note: No Need to declare variable of for loop counter always increases for 1.
+Ex:
+FOR x IN 1..10 LOOP
+    dbms_output.put_line('x');
+END LOOP;
+
+Syntax of while Loop
+-----
+WHILE Condition LOOP
+//Statements...
+Upadation;
+END LOOP;
+
+Note: Variables must be declared before use. we can define updation in while loop as per our need.
+
+===============================================
+procedure in PL/SQL:
+------------
+=>procedure is a subprogram.
+=>procedure is a group of code that perform a specific task.
+=>Procedure is also known as stored procedure.
+=>It is different from function. In PL/SQL a function must have return some value but it is not mandatory to return  a value for procedure.
+=>Procedure can have three types of parameters-
+1) In Parameter:
+---=>This type of parameters are used to send some data to procedure. We can not modify the value of input parameters inside procedure. "IN" keyword is used to define input parameters.
+2)Out Parameter:
+---=>This type of parameters are used to send output data from procedure.output parameters can  be modify inside procedure. "OUT" keyword is used to define Output parameters.
+3)INOUT parameter:
+---=>This type of parameter are used for both purpose input and output. We can modify the value of INOUT parameter inside the procedure. "INOUT" keyword is used to define inout parameter.
+Note:By default a parameter is of input default.
+
+syntax to create a procedure:
+--------------------
+create or replace procedure procedureName(param1 in/out data_type,...)
+as
+
+
+
+=========
+Function in pl/sql:
+----------
+=>Function are almost same as procedure in pl/sql.
+=>A function must return some value while it is optional in procedure.
+=>we can also have IN and OUT parameter in function.
+=> To return value from function we have to use return keyword.
+
+syntax:
+-----
+Create or Replace function <function_name>(parameter1,parameter2...)
+return <data_type_of_return>
+as
+    ---declaration
+BEGIN
+    --logical Block
+end;
+/
+
+
+=================
+Cursor in pl/SQL:
+-------------
+=>to process SQL commands sql creates some memory.this memory space is known as context.
+=>cursor is a pointer that points a context.
+=> cursor is used to fetch data from context.
+
+types of cursor:
+1)Implicit cursor:
+=> the cursor that is created by sql itself are known as implicit cursor.
+=> when we execute a insert,update, delte or select command then sql creats cursor for them.
+=> in implicit cursor we can get some built-in attributes of cursor ex:%FOUND, %NOTFOUND, %ROWNUM
+=>Built-in cursor can be used with word "sql".
+
+2)Explicit cursor:
+----------
+=> the cursor that is created by a user is known as explicit cursor.
+=> explicit cursor provides more control to us for working in context(memory area of command).
+=> Explicit cursor generelly used to fetch bulk record from database.
+
+Steps to create an explicit cursor:
+1)Initialize cursor
+=>declare a cursor inside declare block.
+syntax:cursor <cursor_name> is Select_command;
+Ex: cursor myfreinds is select *from friends;
+2)Allocate memory to cursor by using below statement-open<cursor_name>;
+ex:open myfriends;
+3)fetch record from cursor using fetch statement
+ syntax: fetch <cursor_name>into list_of_variable;
+ ex: fetch myfriends into frid,fname,frmobno;
+4)release memory of cursor by using below statement
+  close <cursor_name>;
+  ex:close myfreinds;
+
+=-======================
+Trigger:
+---
+=>Trigger is a stored program in pl/sql.
+=> Trigger is automatically executable program.It executes automatically when specified event occurs.
+=>Trigger works behind the scene. It performs some action on an event.
+=> Triggers are fired after or before DDL,DML,dCL command.so we can create trigger to execute on execution of insert,update,delete.
+=> Triggers are very fast in terms of execution.
+
+Syntax of create trigger:
+-----------------
+CREATE OR REPLACE TRIGGER <Trigger_name> BEFORE/after
+INSERT OR UPDATE OR DELETE ON <TABLE_NAME>
+FOR EACH ROWNUM 
+DECLARE
+
+--VARIABLE DECLARATIOIN
+BEGIN
+--Statement
+END;
+/
+
+psuedo classes
+
+new and old keywords:
+1)For an insert trigger,old contains no value,and new contains new values.
+2)For an update trigger ,old conatins old values and new contains new values.
+3)For a delete trigger, old contains the old values and new conatins no value.
+4)To reference a pseudorecord, put a colon before its name:- :old or :new.
+================
+what we completed in PL/SQL
+-----------
+what is pl/sql
+structure of program
+variable declaration
+variable initialization
+user input
+conditional statement
+looping
+procedure
+function
+cursor 
+trigger
+
+
+
+Question 43: What is Database? What is Table in a Database?
+Answer:-A database is a organized collection of data stored and accessed electronocally through the database management.
+A table is a collection of related data held in a table format within a database.It consists of column and rows.
+
+Question 45: Explain DDL, DML and DQL Commands.
+Answer:-DDL stands for Data Definition Language. DDL is used to define and create database or table. DDL define the structure of relational model.DML stands for Data Manipulation Language.DML command are used to manipulat the data value that is store in table.It can insert update and delete the data.DQL stands for Data Query Language.DQL is mainly used to fetch the data from table.DQL consists of only select command that is used to Query within the table.
+
+Question 46: Difference between DELETE and TRUNCATE?
+Answer:-DELETE:-Delete is used to delete the value of column or rows.that is delete a whole table value as well.
+TRUNCATE:-Truncate is used to delete whole table.
+Main difference is that delete can remove one value and more but truncate delete whole table except the strucure of table.
+means we can use where clause with delete but truncate does not.
+truncate is under the DDL.Delete is under the DML.
+
+Question 47: What is Primary Key and Foreign Key? Explain.
+Answer:-Primary key is an consrtaint of attribute that is used to uniquely identify that column.Primary key does not allowed that column be null or duplicate.
+Foreign Key is an another key constraint of table that create an relation between two table.It connect two table along with same column.An foreign key is an primary key of another table.
+
+Question 48: How to use LIKE operator? Explain IN, EXITS operators.
+Answer:-The Like operator is used in where cluase to search a specified pattern in column.
+it contains two wildcard that is % and _.The % is represents zero,one or multiple character.The _ represents only one single character.
+syntax:select * from student where sname like '%a_' or '%__a';
+In operator is used to reduce the OR condition Whereas Exists operator is used to look for the existence of a row in given tabel that satisfies a set of criteria or not.
+Syntax:select * from student where sbranch in('cse','it');
+syntax:select * from tbal where exists(select sid from student where snam='shivam');
+
+Question 49: What is Join Explain? Explain types of Joins.
+Answer:-
+In sql, Joins are used to combine data or rows from two or more table based on common field between them.
+there are different type of joins-
+1.inner Join: The Inner Join keyword select all rows from both side as long as condition is satisfied.
+    syntax: select table1.columnname,table2.columnname,table2..... from table1 inner join table on table1.commoncolumn=table2.commoncolumn;
+
+2.left Join: The left join select all the rows from left table and select only common column from right table.
+Syntax:select tabl1.columnname.... from tabl1 left join tabl2 on tbal.commoncolumn=tabl2.commoncolumn;
+
+3.right Join: The right join select all the rows from right side table and select only common row from left table.
+Syntax: select table1.columnname.... from table1 right join tabl2 on table1.commoncolumn=table2.commoncolumn;
+
+4.Full joins: The Full join select all row fromm both table and combine data and rows basis on common feild column.
+Suntax: select * from table1 full join table2 on table1.commoncolumn=table2.commoncolumn;
+
+5.natural Join:
+
+Question 50: What is Sub Query? Explain with Example.
+Answer:- A subQuery is a query that is written inside another query.Subquery Execute itself first then parent query will execute.
+many database operation be done by using subquery.
+Ex:select * from(select Salary from Emp_info order by salary desc) where rownum<4 order by salary desc; 
+
+Question 51: Explain commit, rollback and savepoint.
+Answer:-The COMMIT command is the transactional command used for save changes invoked by a transaction to the daabase.
+Syntax:COMMIT;
+The ROLLBACK command is the transactional command used to undo transaction that have not already been saved to the database.This command can only used to undo since the last commit or rollback command was issued.
+Syntax:ROLLBACK;
+The SAVEPOINT is an point in a transaction when you can roll the transaction back to a certain point without rolling back the entire transaction.
+Syntax:SAVEPOINT savepooint_name;
+
+Question 52: What is PL/SQL. Explain some features of it.
+Answer:-PLSQL is combination of sql along with procedural features of programming. PLSQL is stands for procedural language extensions structured Query language.oracle use plsql engine to process plsql program. plsql includes looping and conditional statement.plsql allows to declare and initialization of variables.
+
+Question 53: Explain the basic structure followed in PL/SQL?
+Answers:-Basic structure of plsql as folllows:
+Declaration
+    variable declare here..
+    this block is optional.
+Executable block
+    this block enclosed with begin and end keyword. this is mandatory block.
+    //statements
+Exception Handling
+    this block is optional block...
+
+Question 54: What is the difference between function and procedure?
+Answer: Function and procedure Approx same but the main differnce between then is that the function by default return type means it returns some value anothor side the procedure is an optional for return or not.
+the second difference is that the syntax of declaration of procedure is different from function.
+
+
+Question 55: What are the 3 modes of parameter in PL/SQL?
+Answer:-There are three modes of parameter as follows:-
+1)In: that is by default for a procedure or function. It means the value is an input for procedure or function.it can be modified inside the function or procedure.
+2)Out: The out parameter declare that the parameter is output for procedure or function.It cant be modify iside the function or procedure.
+3)InOut:-This parameter performs both operation like input and output.
+Note: by default function or procedure parametr or input type.
+
+Question 56: What is a trigger in PL/SQL?
+Answer:-Trigger is a stored programm in plsql that is automatically Executes when specified event trigger.trigger are automatically executable program.trigger perform behind the program. When some event occurs. Trigger can perform after or before insert,update delete and another event.Trigger are very fast in terms of execution.
+Syntax:create or replace trigger validSome befor insert or update on TABLE_NAME
+for EACH row
+BEGIN
+end;
+/
+Question 57: What is cursor? Explain the uses of cursor. 
+Answer:-Cursor is a pointer that pointed to the context.the context is an memry space that hold some data.
+cursor is used to fetch all the data from context.in Plsql cursor is used to get a bulk data from table.
+
+
+Question 58: What are the types of cursors. Explain it.
+Answer:there are two type of Cursor--
+1)Implicit Cursor:this is prebuilt cursor.this is used by using sql keyword.these are follows:-%found,%notfound,%rownum,%rowcount.
+2)Explicit:this vcreates by user as per need 
+by using following steps:--
+cursor is define in four steps:-
+1)Declaration--in this block we have to declare our cursor
+Syntax: Cursor cursorName is select * from Table_name where Cluase;
+2)Memory Alloaction
+Syntax:open cursorName
+3)Fetch data from Cursor context
+Syntax:Fetch cursorName into variableName1...;
+4)Relaes Memory
+Syntax:Close cursorName;
+Question 59: What are the limitations of cursors?
+Answer:It is returned by only one row at at a time.It gives less performance Each time we fetch a row from the cursor where as a normal select statement query makes only one trip. 
+
+Question71: What is a database trigger? What are the features of trigger.
+Answer:- A database trigger is stored program.trigger execute automatically when an event occurs.trigger perform behind program.triggers are very fast in term of execution.trigger can executes befor or after any dml,ddl like inset update delete operation.trigger or mainly used for validatio in plsql program.
+
+Question 72: Describe any 2 applications (users) of a trigger.
+Answer:1)In Validation
+2)Easy auditing of data
