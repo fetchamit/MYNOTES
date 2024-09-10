@@ -362,6 +362,20 @@ Nested Loop :
 => Outer loop works for row and inner loop works for columns.
 => In nested loop ; for each and every interation of outer loop; inner loop iterates for his complete time(From start to end).
 
+Array in C :
+------------
+
+=> An Array is the colletion of similar types of data items.
+=> It is collection of same types of multipal items.
+=> Array does not saves any memory space. It just simplifies the task.
+=> Array works on the basis of index. First index of array is 0 and last index of an array is size-1.
+Syntax to declare an Array :
+---------------------------
+Data_type Array_Name[size];
+Ex : int arr[10];
+
+Note : Above arr variable is equivalent to 10 variables, that variables are -
+arr[0],arr[1],arr[2],.......arr[9]
 
 
 
