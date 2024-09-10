@@ -378,6 +378,17 @@ Note : Above arr variable is equivalent to 10 variables, that variables are -
 arr[0],arr[1],arr[2],.......arr[9]
 
 
+2-D Arrays :
+------------
+=>Two Dimentional array is used to store large amount of data.
+=> It is used to store data in matrix format.
+=> It uses rows and columns.
+=> Syntax to declare a 2-D Array :
+----------------------------------
+Data_type ArrayName[rows][column];
+Ex : int arr[2][3];
+
+
 
 
 
