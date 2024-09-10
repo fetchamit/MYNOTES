@@ -414,6 +414,9 @@ Some important functions of string.h header file :
     syntax : strrev(str_var);
 5) strcmp() : Used to compare two string values. If both strings re identcal(equal) then this function will rerurn 0, if first string is large then it return 1 and if second string is large then it returns -1.
     syntax : int varName strcmp(str1,str2);
+6) strcpy() : Used to copy a string into another string.
+    syntax : strcpy(destination_string,source_string);
+
 
 
 
