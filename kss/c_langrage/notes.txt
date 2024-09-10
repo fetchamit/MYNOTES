@@ -388,7 +388,32 @@ arr[0],arr[1],arr[2],.......arr[9]
 Data_type ArrayName[rows][column];
 Ex : int arr[2][3];
 
+String in C :
+-------------
+=> String is a collection of characters.
+=> It is known as sequence of characters.
+=> In C, string is an array of characters.
+=> There is no any data type as string. We have to use array of characters.
 
+Syntax to create a string :
+---------------------------
+char varName[Size];
+Ex : char str[20];
+
+=> string.h header file provides various built-in functions that are used to perform operations on string.
+
+Some important functions of string.h header file :
+--------------------------------------------------
+1) strlen(): Used to find length of a string(Number of characters).
+    syntax : int strlen(str_var);
+2) strupr() : Used to convert a string into uppercase.It performs operation on original value.
+    syntax : strupr(str_var);
+3) strlwr() : Used to convert a string into lowercase. It performs operation on original value.
+    syntax : strlwr(str_var);
+4) strrev() : Used to find reverse of a string. It converts the original string into reverse.
+    syntax : strrev(str_var);
+5) strcmp() : Used to compare two string values. If both strings re identcal(equal) then this function will rerurn 0, if first string is large then it return 1 and if second string is large then it returns -1.
+    syntax : int varName strcmp(str1,str2);
 
 
 
