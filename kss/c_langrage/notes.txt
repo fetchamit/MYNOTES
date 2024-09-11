@@ -417,6 +417,31 @@ Some important functions of string.h header file :
 6) strcpy() : Used to copy a string into another string.
     syntax : strcpy(destination_string,source_string);
 
+Pointers in C :
+---------------
+=> Pointer is a variable that can store address of another varable.
+=> Pointer is a refrence variable. It is used to store memory address of another variable.
+=> Pointers are denoted by * Symbol.
+=> Pointes are fast because we can access/ fetch the value by using address.
+
+Syntax to create a pointer variable :
+-------------------------------------
+DataType *VariableName;
+Ex : int *prt;
+
+Note : It is mandatory to have same datatype of pointer and normal variable.
+Ex : To store address of a char type variable we need a pointer of char type.
+
+=> Value of pointer variable is address of another variable so when we want to print value of pointer(address of another variable) then no need to use * symbol before pointer name.
+Ex : printf("%u",ptr);
+
+=> To print the value of pointing variable by using pointer we have to use * symbol before pointer name.
+Ex :
+int x=20;            // Let Address of x is 8052 memory unit
+int *p;
+p=&x;                // Assigning address of x to pointer p
+// Now p=8052 and *p=20
+
 
 
 
