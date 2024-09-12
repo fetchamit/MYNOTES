@@ -501,6 +501,30 @@ Syntax :
     FunctionName(arguments);
     Ex : sum(20,30);
 
+III). Function Definition : It is used to define the work of a function.
+Syntax : 
+      ReturnType FunctionName(Parameters...){
+        //Statements
+      }
+Ex:
+int sum(int a,int b){
+int s;
+s=a+b;
+return s;
+}
+
+Types of UDF :
+---------------
+* Function with no return type and no paratemers.
+    Ex : void sum();
+* Function with no return type and with parameters.
+    Ex : void sum(int a, int b);
+* Function with return type and no parameters.
+    Ex : int sum();
+* Function with return type and with parameters.
+    Ex : int sum(int a, int b);
+
+
 
 
 
