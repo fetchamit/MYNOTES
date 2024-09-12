@@ -442,7 +442,64 @@ int *p;
 p=&x;                // Assigning address of x to pointer p
 // Now p=8052 and *p=20
 
+Pointer to Pointer :
+--------------------
+=> When a pointer holds address of another pointer then it is known as pointer to pointer.
+=> It is different variable.
+=> Pointer to pointer is denoted by ** symbol.
+Syntax :
+--------
+Data_type **PointerName;
+EX : int **p;
 
+
+Functions in C :
+================
+Definition :
+------------
+A function is a block(set of instruction), that can perform a specific task/work.
+    There are two types of functions in c.
+1) Predefined Function
+2) User define Function
+
+Need of Functions :
+-------------------
+=> To Reduce the length of source code.
+=> To find the errors easily.
+=> to call the block of code one or many times.
+=> To help make the program more understandable.
+=> To modularize the task of the program.
+=> Without function different people was not able to work on same source code simuntaneously.
+
+1) Predefine Function :
+-----------------------
+The functions that are built in with compiler are called predefined function.
+Ex : strcmp(), printf(), getch() etc.
+
+2) User Define Function(UDF) :
+------------------------------
+The function that are created/defined by user/programmer are called user define function.
+
+Creating User Define Function :
+-------------------------------
+=> We can pass parameters to a function.
+=> A function can return value.
+
+Main Points to create a Function :
+----------------------------------
+I) Function Declaration
+II) Function Calling
+III) Function Definition
+
+I). Function Declaration : A function should be declared before calling.
+Syntax :
+    Return_Type FunctionName(Parameters....);
+Ex : int sum(int a, int b);
+
+II). Function Calling : It executes all the code of function.
+Syntax :
+    FunctionName(arguments);
+    Ex : sum(20,30);
 
 
 
