@@ -533,6 +533,44 @@ Some Important points about UDF :
 
 * If function has no return type then we can not send result out of function, in that case we have to print result inside udf. But if function has return type then no need to print result inside udf. Return result from udf and catch it in caller function during function calling then print it inside caller function.
 
+Static :
+-----------
+=> Static is a storage specifier.
+=> If a variable is declared as a static variable then it will not loss it's value during execution of program.
+=> Defalult value of a static variable is 0.
+
+Syntax :
+        static datatype varname;
+          Ex : static int x;
+
+UDDT :
+******
+=> The datatypes that are created by a programmer are known as UDDT.
+    Ex : struct,union,enum;
+
+Struct :
+--------
+=> structure is a user defined data type.
+=> Structure is a collection of various types of data items.
+=> structure can have different-different type of members (variables).
+=> We can create a structure variable to use structure in program.
+
+Syntax :
+--------
+    struct <structure name> struct_var_name;
+      Ex : struct Student s;
+
+Syntax to create structure :
+----------------------------
+struct <struct_name>
+{
+datatype1 varname;
+datatype2 varname;
+datatype3 varname;
+}
+
+NOTE : struct keyword is used to define a structure. Member access operator(.) is used to access the members of structure.
+Ex : s.name;
 
 
 
