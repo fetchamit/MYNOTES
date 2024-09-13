@@ -524,6 +524,14 @@ Types of UDF :
 * Function with return type and with parameters.
     Ex : int sum(int a, int b);
 
+Some Important points about UDF :
+---------------------------------
+* Parameter of a function are related with required input for that function.
+* Return type of a function  is related to type of produced relult by a function.
+* If function has no parameters then it can not accept input from outside the function. In that case we have to get input inside UDF. But is function has parameters then it will accept input from outside the function(caller funciton). In this case no need to get input inside UDF, Get input in caller function before function calling.
+* The function that calls another function is known as "caller function " and the function that is being called is known as "calling funciton".
+
+* If function has no return type then we can not send result out of function, in that case we have to print result inside udf. But if function has return type then no need to print result inside udf. Return result from udf and catch it in caller function during function calling then print it inside caller function.
 
 
 
