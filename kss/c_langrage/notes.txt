@@ -572,6 +572,21 @@ datatype3 varname;
 NOTE : struct keyword is used to define a structure. Member access operator(.) is used to access the members of structure.
 Ex : s.name;
 
+Array of Structure :
+--------------------
+=> To Store multiple data in structure we can create structure variable as an array. It is known as array of structure.
+=> In this case structure variable will work like an array.
+Syntax :
+    struct <StructureName> StructVar[size];
+        Ex : struct Product p[10];
+
+
+
+
+
+
+
+
 
 
 
