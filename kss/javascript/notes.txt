@@ -91,7 +91,8 @@ EX: prompt("Enter Your Name : ","Type here...");
 => It appears with an ok and a cancel button.
 => If user clicks on OK the it reurns true otherwise it will return false. So it's return type is boolean.
 
-
+Syntax : confirm("Message");
+Ex : confrim("Are you sure to perform this operation");
 
 
 
