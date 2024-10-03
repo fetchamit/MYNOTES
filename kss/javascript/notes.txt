@@ -59,6 +59,37 @@ What are different ways to write JS?
 
 Note : There is no way to write inline js. we can just make function callings by using inline method.
 
+Popup box/dialog box in JS:
+-----------------------------
+=> Popuup box are used to get some input or to display some output to the user.
+=> Popup box gets more attention from the user.
+=> JS has below three types of popup box -
+1) alert()
+2) prompt()
+3)confirm()
+
+1) alert():
+-----------
+=> Alert box is used to display some information to the user.
+=> It appears with an ok button. User must have to click on OK. So it gets more attention from the user.
+Syntax :
+    alert("Message Here");
+
+2) prompt() :
+-------------
+=> It is used to gets some input from the user.
+=> We can read any type of value by using this function.
+=> It returns the entered number. Hence we have to catch that value in a variable.
+=> It appears with an ok and a cancel buton.
+Syntax 1: prompt("Message Here");
+Syntax 2: prompt("Message Here","Hint Text");
+EX: prompt("Enter Your Name : ","Type here...");
+
+3) confirm() :
+----------------
+=> This function is used to get confirmation from the user.
+=> It appears with an ok and a cancel button.
+=> If user clicks on OK the it reurns true otherwise it will return false. So it's return type is boolean.
 
 
 
