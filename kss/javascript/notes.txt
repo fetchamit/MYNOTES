@@ -110,7 +110,17 @@ Note: Here "function" is a keyword that is used to define a function in JS.
 
 => Example of events in JS are : onclick, onchange, onload, onmouseover, onmouseout, onkeypress, onkeyup, etc.
 
-
+DOM Accessing in JS :
+**********************
+=> DOM Accessing means accessing the object of a DOM element(tag).
+=> It is a process of accessing the object of a tag from a HTML page.
+=> It is also known as DOM traversing.
+=> To access the object of a tag JS provides a built-in object of DOM. That object is document.
+=> document object has a built-in function "getElementById()" that function is used to access the object of specified tag based on their id.
+Syntax : 
+----------
+var name=document.getElementById("Id_of_tag");
+Ex: var t=document.getElementById("txt1");
 
 
 
