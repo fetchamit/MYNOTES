@@ -1,2 +1,11 @@
 Introduction to Javascript
-  
+********************************
+=> Javascript is a programming language of HTML.
+=> Javascript is a client side scripting language.
+=> Javascript is a high level,untyped language.
+=> Javascript is interpreted programming language.
+=> Javascript runs in client's browser.
+=> Javascript has been standardized in the ECMAScript language specification.
+    (ECMA : European Computer Manufacturer's Association)
+=> Javascript is 'object based' language.
+
