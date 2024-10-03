@@ -94,6 +94,21 @@ EX: prompt("Enter Your Name : ","Type here...");
 Syntax : confirm("Message");
 Ex : confrim("Are you sure to perform this operation");
 
+Event Handling in JS :
+***********************
+=> Event handling is a process of handling an event in a software.
+=> Event is an action performed by user in software screen.
+=> A programmer has to write a function to handle the event and then execute that function on occurance of event. This process is known as event handling and this kind of function is known as handler function.
+
+Syntax to create a function in JS :
+-----------------------------------
+function function_name(list_of_parameters){
+    // function code
+}
+
+Note: Here "function" is a keyword that is used to define a function in JS.
+
+=> Example of events in JS are : onclick, onchange, onload, onmouseover, onmouseout, onkeypress, onkeyup, etc.
 
 
 
