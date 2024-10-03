@@ -9,3 +9,63 @@ Introduction to Javascript
     (ECMA : European Computer Manufacturer's Association)
 => Javascript is 'object based' language.
 
+Creation of JavaScript
+*************************
+=>Created in May 1995
+=> Javascript is created by Netscape Corporation.
+=> Inventor of Javascript : Brendan Eich
+
+
+DOM(Document Object Model)
+***************************
+=> DOM Stands for Document Object Model.
+=> It is an architecture that defines or treats a document as a collection of objects.
+=> It is a concept of dealing with a document that is a collection of various objects.
+=> HTML page is a collection of various tags and that tags are treated as objects in Javascript.
+=> In Javascript there are some built-in objects of DOM. That objects are used to deal with DOM elements(tags).
+    Ex: document,window.
+
+Features of JavaScript
+*************************
+=> JS provides Client side validation.
+=> JS can detect the client's browser and OS.
+=> JS is simple.
+=> DOM Traversing.
+=> DOM Manipulation.
+=> Event Handling.
+=> Fast Execution.
+=> Cross Browser Support.
+
+S/W  Requirements 
+********************
+=> Web Browser.
+=> Text Editor like notepad,notepad++,etc
+
+What are different ways to write JS?
+------------------------------------
+1) Internal JS:
+    => It is written inside the webpage by using script tag.
+    => It is recomended to use script tag inside head tag of the webpage.
+    Syntax :
+        <script>
+            // code of JS
+        </script>
+
+2) External JS :
+    => It is written in an external JS file having extension  .js file.
+    => External js file are linked in a webpage by using <script> tag.
+    Syntax :
+        <script src="path of js file"></script>
+
+Note : There is no way to write inline js. we can just make function callings by using inline method.
+
+
+
+
+
+
+
+
+
+
+
