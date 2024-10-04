@@ -161,6 +161,32 @@ document.getElementById("txt").value="Ram Kumar";
 => We can use this property with span,p,div,ul,ol,h1,table etc tags.
 => Generally we can't use this property with form controls(input,textarea,select).
 
+Syntax to get:
+--------------
+varName=Object_of_tag.innerText;
+Ex: var x=document.getElementById("mydv").innerText;
+
+Syntax to Set:
+--------------
+Object_of_tag.innerText=content;
+Ex: document.getElementById("mydv").innerText="Welcome to the world of Javascript";
+
+3) innerHTML :
+--------------
+=> This property is used to get/set the content of normal HTML controls in HTML text format.
+Note: Here HTML text format means some text with HTML tags.
+=> We can use this property with span, p, div,ul,li,ol, table,etc tags.
+=> Generally we can not use this property with form controls.
+
+Syntax to get:
+--------------
+varName=Object_of_tag.innerHTML;
+Ex: var x=document.getElementById("mypara").innerHTML;
+
+Syntax to set:
+---------------
+Object_of_tag.innerHTML=content;
+Ex: document.getElementById("mypara").innerHTML="<b>Welcome to the world of Javascript</b>";
 
 
 
