@@ -155,6 +155,21 @@ x.value="Ram Kumar";
 Ex 2:
 document.getElementById("txt").value="Ram Kumar";
 
+2) innerText:
+-------------
+=> This property is used to set/get the content of normal HTML controls(tags) in plain text format.
+=> We can use this property with span,p,div,ul,ol,h1,table etc tags.
+=> Generally we can't use this property with form controls(input,textarea,select).
+
+
+
+
+
+
+
+
+
+
 
 
 
