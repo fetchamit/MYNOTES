@@ -122,6 +122,39 @@ Syntax :
 var name=document.getElementById("Id_of_tag");
 Ex: var t=document.getElementById("txt1");
 
+Accessing and modifying content of DOM Elements(DOM Manipulation) :
+********************************************************************
+=> JS provides the features to access(read) and modify the content of HTML tags during run-time. For that JS provides below properties-
+1) value
+2) innerText
+3) innerHTML
+
+1) value :
+----------
+=> This property is used to get/set the content of form controls.
+=> We can use this property with input tag, select tag and textarea tag.
+=> This property can't be used with normal HTML tags.
+
+Syntax to get(read):
+--------------------
+varName=object_of_tag.value;
+Ex 1: 
+var x=document.getElementById("txt");
+var y=x.value;
+
+Ex 2:
+var x=document.getElementById("text").value;
+
+Syntax to set(write):
+---------------------
+Object_of_tag.value=content;
+Ex 1:
+var x=document.getElementById("txt");
+x.value="Ram Kumar";
+
+Ex 2:
+document.getElementById("txt").value="Ram Kumar";
+
 
 
 
