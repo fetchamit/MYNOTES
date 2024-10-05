@@ -188,9 +188,17 @@ Syntax to set:
 Object_of_tag.innerHTML=content;
 Ex: document.getElementById("mypara").innerHTML="<b>Welcome to the world of Javascript</b>";
 
+Conditional Statements in Javascript :
+***************************************
+=> Just like c/c++;
 
 
-
+Parameterised Functions in JS :
+********************************
+=> We can pass n number of parameters in a function of js as per our need.
+=> There is no need to define data type of parameters just write the parameter name only.
+=> To work with controls(tags) of HTML page we have to pass object of that tags in out function. For that just pass the id of that tag in function during function calling.
+=> To pass the object of current tag in a parameter we can also use "this" keyword. This is a keyword that is used to represent the object of current tag in JS.
 
 
 
