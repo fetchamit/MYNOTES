@@ -236,6 +236,19 @@ Syntax to add a css class in a tag during runtime :
 Object_of_tag.classList.add("Name of css class");
 Ex : document.getElementById("dv").classList.add("text-center");
 
+Looping Statements in JS :
+**************************
+=> JS has three main loops-
+A) for loop
+B) while loop
+C) do while loop
+
+Note: Above 3 loops are just like c/c++.
+=> JS also has some additional versions of for loop-
+    1) for/in : Used to work with properties of object.
+    2) for/of : Used to work with values of object(iterable object).
+
+Note: Above two additional for loops will be discussed lated in object topic.
 
 
 
