@@ -201,6 +201,41 @@ Parameterised Functions in JS :
 => To pass the object of current tag in a parameter we can also use "this" keyword. This is a keyword that is used to represent the object of current tag in JS.
 
 
+Managing Style using JS:
+*************************
+=> We can manage css styles of HTML tags by using JS.
+=> JS has features that can read or modify value of a css for a specific tag property during run time.
+=> JS provides two below methods for managing styles -
+1) Managing inline css using javascript :
+------------------------------------------
+=> We can manage inline css properties using JS. For that each object of JS has a built-in property "style"
+
+Syntax to get value of a css property :
+    varName=Object_of_tag.style.Name_of_CSS_Property;
+    Ex: var x= document.getElementById("dv").style.color;
+
+Syntax to set value of a css property :
+    Object_of_tag.style.Name_of_css_property="Value_of_css_property";
+    Ex: document.getElementById("dv").style.color="pink";
+
+Note : Properties with an dash between property name are used without dash by using the first character of next word in uppercase.
+Ex: background-color
+document.getElementById("dv").style.backgroundColor="silver";
+
+2) Managing css classes using JS:
+-----------------------------------
+=> JS provides a property in each object that is "classList".
+=> classList property can be used to add or remove or toggle the css classes in a specific tag by using JS.
+=> classList property has three main functions -
+i) add()
+ii) remove()
+iii) toggle()
+
+Syntax to add a css class in a tag during runtime :
+-----------------------------------------------------
+Object_of_tag.classList.add("Name of css class");
+Ex : document.getElementById("dv").classList.add("text-center");
+
 
 
 
