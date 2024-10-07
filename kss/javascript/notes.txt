@@ -250,6 +250,48 @@ Note: Above 3 loops are just like c/c++.
 
 Note: Above two additional for loops will be discussed lated in object topic.
 
+Array in JS :
+**************
+=> In JS an Array is collection of multiple items.
+=> We can store same or different- different type of values in a single array in JS.
+=> Array works on the basis of index. First index of an array is 0 and last index is length-1 of size-1;
+=> Array has a property "length" that is used to know the size(Number of items) in an array.
+
+Syntax to declare an array:
+----------------------------
+ArrayName=new Array(size);
+Ex: var arr=new Array(10);
+
+Note: Here Array is a constructor function that is used to declare an empty array. size is optional.
+
+Syntax to declare and initialize an array:
+------------------------------------------
+ArrayName=[item1,item2,item3,.......,itemN];
+Ex: var arr=[45,89,"Ramesh",78.3,55];
+
+Some Important functions of Array in JavaScript:
+-------------------------------------------------
+1) at(): Used to find item of a specific index from an array. It is introduced in year 2022. We can also find item of specific index by using [] bracket. 
+Ex: arr[4]
+
+2) push(): Used to insert an item at end of the array.
+Ex: arr.push(item)
+
+3) pop(): Used to remove last item from an Array.
+Ex: arr.pop()
+
+4) shift(): Used to remove an item from beginning of the array and shift the position.
+Ex: arr.shift()
+
+5) unshift(): Used to add an item at the biginning of array and shift the position of items.
+Ex: arr.unshift(item);
+
+6) indexOf() : Used to find the first occurance index of an item in an array. If item found then it will return index of that item but if item not found in array then it will return -1;
+Ex: arr.indexOf(item);
+
+
+
+
 
 
 
