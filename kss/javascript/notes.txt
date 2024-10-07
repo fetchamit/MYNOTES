@@ -286,8 +286,21 @@ Ex: arr.shift()
 5) unshift(): Used to add an item at the biginning of array and shift the position of items.
 Ex: arr.unshift(item);
 
-6) indexOf() : Used to find the first occurance index of an item in an array. If item found then it will return index of that item but if item not found in array then it will return -1;
+6) indexOf() : Used to find the first occurance index of an item in an array. If item found then it will return index of that item but if item not found in array then it will return -1.
 Ex: arr.indexOf(item);
+
+7)lastIndexOf(): Used to find last occurance index of an item in an array. If item found then it will return index of that item but if item not found in array then it will return -1.
+Ex: arr.lastIndexOf(item);
+
+8) join(): Used to convert all items of an array in a string by specifying the joining value.
+Ex: arr.join(" * ");
+
+9) sort(): Used to sort an array in ascending order. This function is specifically for string array. To sort a numeric aray we have to pass a comparer function inside sort() function. So that it can decide the large value.
+Ex 1: arr.sort();
+Ex 2: arr.sort(function(p,q)){return p-q});
+
+10) reverse(): Used to reverse the sequence of items in an array.
+Ex: arr.reverse();
 
 
 
