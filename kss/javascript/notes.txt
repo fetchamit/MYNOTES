@@ -345,6 +345,28 @@ Ex: var x=s.indexOf('p');
 var s="Ramesh";
 var x=s.charCodeAt(1);         // x=97
 
+10). replace(): Used to replace first occurance word/char from a new word/char.
+Syntax:
+    str.replace(Old_value,new_value);
+
+11). replaceAll(): Used to replace  search word/char by a new word/char from whole string.
+
+12). split(): Used to break a string into multiple parts. This functions separates words of a string from a specified separator and return seperated parts in array form.
+Ex: var a=str.split("a");
+
+13). substring(): Used to get part of a string(substring).
+Syntax 1: str.substring(startIndex,endIndex);
+Syntax 2: str.substring(startIndex);
+
+Note: If we will not specify endIndex then it will extract string till end of the string.
+
+14). substr(): Used to get part of a string(substring).
+Syntax 1: str.substr(startIndex,length);
+
+15). concat(): Used to concat two string values.
+Syntax : str1.concat(str2);
+
+Note: In JS string value can be written inside "" or ''.
 
 
 
