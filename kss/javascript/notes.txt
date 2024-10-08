@@ -302,6 +302,18 @@ Ex 2: arr.sort(function(p,q)){return p-q});
 10) reverse(): Used to reverse the sequence of items in an array.
 Ex: arr.reverse();
 
+String in JavaScript :
+***********************
+=> String is a sequence of characters.
+=> String is a combination of various characters.
+=> In JS, + operatior and "concat()" function both are used to concate any two string values.
+
+Syntax  to declare a string variable:
+-------------------------------------
+varName="String_value";
+Ex: var str="Jai Shree Ram";
+
+
 
 
 
