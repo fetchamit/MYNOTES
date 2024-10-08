@@ -341,6 +341,11 @@ Ex: var x=s.indexOf('p');
 
 8). lastIndexOf(): Used to find last occurance index of a character/word. If not found then it returns -1.
 
+9). charCodeAt(): Used to find ASCII value of character of specific index.
+var s="Ramesh";
+var x=s.charCodeAt(1);         // x=97
+
+
 
 
 
