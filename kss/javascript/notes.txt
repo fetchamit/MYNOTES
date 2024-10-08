@@ -313,6 +313,35 @@ Syntax  to declare a string variable:
 varName="String_value";
 Ex: var str="Jai Shree Ram";
 
+Note: "length" property is used to find number of characters in a string.
+
+Some Important functions of String in JS:
+------------------------------------------
+1). trim(): Used to remove white space (blank space) from begining and ending of an string.
+Ex: var str="      I am Ramesh          ";
+var s=str.trim();
+// value in s will be :- "I am Ramesh"
+
+2). trimStart()
+
+3). trimEnd()
+
+4). charAt(): It is used to find character of a specific index from a String.
+Ex: var s="My name is Scott.";
+var x=s.charAt(4);                // x='a'
+
+5). toUpperCase(): Used to convert a string into uppercase.
+Ex: var x=s.toUpperCase();
+
+6). toLowerCase(): Used to convert a string into lower case.
+Ex: var x=x.toLowerCase();
+
+7). indexOf(): used to find first occurance index of a character/word in a given string. If not found then it returns -1.
+Ex: var x=s.indexOf('p');
+
+8). lastIndexOf(): Used to find last occurance index of a character/word. If not found then it returns -1.
+
+
 
 
 
