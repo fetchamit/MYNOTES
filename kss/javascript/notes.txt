@@ -387,6 +387,16 @@ var circle={radius:5,pi:3.14,getArea:function(){
 }
 };
 
+Note: .(dot) Operator is used to access the properties and method of an object.
+
+Ex: var x=circle.radius;
+
+Array of Objects :
+********************
+=> An Array of Object is a collection of various objects.
+=> Array of object is used to store bulk records.
+=> In JS, Array of object is denoted by [{}] brackets.
+=> Array of Object is used to store multiple records. That record can be accessed by using index of that specific object.
 
 
 
