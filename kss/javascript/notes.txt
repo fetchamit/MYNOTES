@@ -398,6 +398,17 @@ Array of Objects :
 => In JS, Array of object is denoted by [{}] brackets.
 => Array of Object is used to store multiple records. That record can be accessed by using index of that specific object.
 
+Syntax to create Array of Object:
+---------------------------------
+var ArrayOfObject=[object1,object2,object3,.....];
+## OR ##
+var ArrayOfObject=[{},{},{},....];
+
+Note: "length" property is used to find the size of an array of object in JS.
+
+Ex:
+-----
+var laptops=[{lapid:1,brand:"HP",price:45670},{lapid:2,brand:"ASUS",price:42670},{lapid:3,brand:"DELL",price:43670},{lapid:4,brand:"MSI",price:60670}];
 
 
 
