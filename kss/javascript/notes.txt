@@ -368,6 +368,25 @@ Syntax : str1.concat(str2);
 
 Note: In JS string value can be written inside "" or ''.
 
+Objects in Javascript :
+*************************
+=> An Object is a collection of various properties and various methods.
+=> In regular JS class and object are the same concept. But in modern JS, class and object are different.
+=> {} curly braces are used to denote an object in JS.
+=> We must have to assign all properties of an object with some default value. Properties of object can be used inside functions of object by using "this" keyword before the property name.
+
+Syntax to create an object in regular JS:
+-------------------------------------------
+var ObjName={Property1Name:value,Property2Name:value,...,function1Name:function_definition,function2Name:function_definition};
+
+Ex :
+----
+var circle={radius:5,pi:3.14,getArea:function(){
+    var area=this.pi*this.radius*this.radius;
+    alert("Area of Circle is "+area);
+}
+};
+
 
 
 
