@@ -411,6 +411,43 @@ Ex:
 var laptops=[{lapid:1,brand:"HP",price:45670},{lapid:2,brand:"ASUS",price:42670},{lapid:3,brand:"DELL",price:43670},{lapid:4,brand:"MSI",price:60670}];
 
 
+For in loop in JS :
+--------------------
+=> For in loop is used to iterate through the properties of an object.
+=> It iterates an object like as an array.
+=> For in loop provides us key of objects as index.
+=> It is used to iterate in all properties of an object one by one.
+
+Syntax :
+---------
+for(KeyVarName in ObjectName){
+//    document.write(ObjectName[KeyVarName]);
+}
+
+Note: We can also use this loop with an array.
+Ex:
+var friend={fname:"Ramesh Singh",age:26,mob:7278512368,address:"Chitrakoot"};
+for(x in friend){
+alert(friend[x]);
+} 
+
+for of loop :
+---------------
+=> For of loop is used to iterate of strings and array.
+=> Generally it is not used with object.
+=> This loop is used to iterate on items of an array or items of String.
+=> for in and for of are introduced in year 2015 by JS.
+
+Syntax :
+----------
+for(varName of CollectionName){
+//    document.write(VarName);
+}
+Ex:
+var arr=[12,45,4,8,455,78]
+for(item of arr){
+alert(item);
+}
 
 
 
