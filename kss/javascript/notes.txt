@@ -449,6 +449,63 @@ for(item of arr){
 alert(item);
 }
 
+Creating class by using class keyword :
+****************************************
+=> In modern JS; class is created with "class" keyword.
+=> In most of the modern programming language "class" keyword is used to create a class.
+=> Inside Javascript class we have to create a constructor() function to define properties for that class using this keyword.
+=> In JS; constructor is always created with name "constructor" in all classes.
+=> In modern JS; class and object both are different concepts.
+=> Class : class is a collection of various properties and various methods.
+Syntax :
+---------
+class <class_name>
+{
+    constructor()
+    {
+        this.property1Name=Default_value;
+        this.property2Name=Default_value;
+        ...
+    }
+   function1Name(Parameters){
+        // Statements
+    }
+    function2Name(Parameters){
+        // Statements
+    }
+}
+Ex : 
+class Rectangle
+{
+    constructor()
+    {
+        this.length=0;
+        this.width=0;
+    }
+    getArea(){
+        var res=this.length*this.width;
+        return res;
+    }
+    getPerimeter(){
+        var p=2(this.length+this.width);
+        return p;
+    }
+
+}
+
+Note : constructor() function and other function can be parametersized function also.
+
+Object :
+**********
+=> Object is a copy of a class in memory.
+=> Object creation means memory initialization. When we creates an object of a class that time a new copy of class will be loaded into memory.
+=> Object is used to access the features of a class.
+=> Object is a run-time entity that is used to represent the features of a class.
+Syntax :
+var ObjName=new ClassName();
+Ex : var r=new Rectangle();
+
+
 
 
 
