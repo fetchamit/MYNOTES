@@ -505,6 +505,7 @@ Syntax :
 var ObjName=new ClassName();
 Ex : var r=new Rectangle();
 
+Note : Constructor function automatically executes when we created a object of class.
 
 
 
