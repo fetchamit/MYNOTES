@@ -507,6 +507,47 @@ Ex : var r=new Rectangle();
 
 Note : Constructor function automatically executes when we created a object of class.
 
+Prototype Property in JavaScript :
+***********************************
+=> Prototype is a built-in property in all objects of JS.
+=> Prototype property is used to add some new features(Property & methods) in an existing object.
+=> We can use this prototype with all user defined objects but it can not be used with built-in objects.
+=> Some Programmers known it as inheritance in JS. But this is not actual inheritance.
+
+Syntax :
+---------
+ObjectName.prototype.Name_of_Property/Function=value/Function_Definition
+
+Ex:
+    Student.prototype.fees=456;
+                OR
+    Student.prototype.FullName=function(){
+        return this.fname+" "+this.lname;
+    }
+
+Note : This Method is also known as functional inheritance because we can add properties in constructor function objects also by using this method.
+
+EX: 
+----
+## Below is a constructor function but also works as a class. 
+function Student(){
+    this.fname="Ramesh";
+    this.lname="Kumar";
+    this.rno=57;
+## If we wants to add a function inside it then :
+## this.demo:function(){
+##     alert("Demo function");
+## }
+
+}
+Student.prototype.getFullName=function(){
+    return this.fname+" "+this.lname;
+}
+var s=new Student();
+alert(s.fname);
+alert("Full Name : "+s.getFullName());
+
+
 
 
 
