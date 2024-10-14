@@ -572,6 +572,20 @@ Function Overriding :
 => To override a function of base class we have to define same function name with same number parameters inside child class.
 => It is supported in JS.
 
+Working with Date and Time in JS :
+***********************************
+=> In JS; "Date" object is used to work with date and time.
+=> Date is an built-in object in JS.
+
+Syntax to get object of current Date and Time :
+------------------------------------------------
+var ObjName=new Date();
+Ex: var d=new Date();
+
+Syntax to create object of a specific date:
+--------------------------------------------
+var ObjName=new Date("Date String");
+Ex: var dt=new Date("15 August 1947");
 
 
 
