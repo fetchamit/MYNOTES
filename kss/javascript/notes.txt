@@ -547,6 +547,32 @@ var s=new Student();
 alert(s.fname);
 alert("Full Name : "+s.getFullName());
 
+Inheriting a class by using "extends" keyword :
+************************************************
+=> Modern JS supports concept  of inheritance.
+=> Inheritance is a concept that is used to access the features(Property and Methods) of a class inside another class. The class that provides features is known as "Parent class or super class or base class" and the class that uses the features is known as "derived class or sub class or child class".
+=> "extends" keyword is used to inherit a class in JS.
+
+Syntax :
+------------
+class <Name_Of_Child_Class> extends <Name_Of_Parent_Class>
+{
+    //...
+}
+
+Note : To call properties and methods of base class inside child class we have to use "this" keyword before the property name/function.
+
+Function Overloading :
+------------------------
+=> Function overloading is not supported in JS. So it not allowed to create more than one function having same function name and different-different parameters.
+
+Function Overriding :
+---------------------
+=> Function overriding is a process of re-define a function of base class inside child class.
+=> To override a function of base class we have to define same function name with same number parameters inside child class.
+=> It is supported in JS.
+
+
 
 
 
