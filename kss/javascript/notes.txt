@@ -620,8 +620,8 @@ Ex: window.scrollTo(x,y);
 8) location.href: Used to find URL of Web page.
 9) location.hostname: Used to find domain or host of url.
 10) location.protocol: Used to find name of protocol of webpage.Ex Http or Https.
-11) navigator.cookieEnabled(): Used to check that if the cookies are are enabled or not. Returns true or false.
-12) navigator.javaEnabled(): Used to check that if the JavaScript is enabled of not.
+11) navigator.cookieEnabled: Used to check that if the cookies are are enabled or not. Returns true or false.
+12) navigator.javaEnabled(): Used to check that if the Java is enabled of not.
 13) navigator.onLine(): Used to check that is browser is connected with intenet of not.
 14) navigator.appCodeName:Used to find application name of browser.
 15) navigator.plateform: Used to find operating system of client.
