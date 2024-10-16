@@ -597,8 +597,38 @@ Some Important functions of Date object in JS:
 6) getSeconds(): This function used to get seconds.
 7) getDay(): Used to get day number of week from 0 to 6, 0 will be the first day of week and that is sunday.
 
+BOM in JS :
+************
+=> BOM Stands for Browser Object Model.
+=> BOM is the systematic arrangement of browser and it's related properties.
+=> We have a built-in object of BOM in JS that is "window".
+=> All Built-in and user Objects, Variables  and functions can be accessed by using "window" object.
+Ex:
+window.alert();
+window.document.getElementById("");
 
-
+Some Important properties and methods of window object:
+--------------------------------------------------------
+1) open(): Used to open a new window.
+2) close(): used to close a specified window.
+3) scrollTo():Used to scroll a page to a specific location.
+Ex: window.scrollTo(x,y);
+4) history.forward(): Used to open next page. just like forward button of browser.
+5) history.back() : Used to open previous page from browser history. Just like back button of browser.
+6) screen.width: Used to find width of browser screen;
+7) screen.height: Used to find height of browser screen;
+8) location.href: Used to find URL of Web page.
+9) location.hostname: Used to find domain or host of url.
+10) location.protocol: Used to find name of protocol of webpage.Ex Http or Https.
+11) navigator.cookieEnabled(): Used to check that if the cookies are are enabled or not. Returns true or false.
+12) navigator.javaEnabled(): Used to check that if the JavaScript is enabled of not.
+13) navigator.onLine(): Used to check that is browser is connected with intenet of not.
+14) navigator.appCodeName:Used to find application name of browser.
+15) navigator.plateform: Used to find operating system of client.
+16) window.setTimeout(): Used to execute some code after a given time.
+Syntax :
+---------
+window.setTimeout("code to run",time_in_miliseconds);
 
 
 
