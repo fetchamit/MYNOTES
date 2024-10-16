@@ -587,6 +587,15 @@ Syntax to create object of a specific date:
 var ObjName=new Date("Date String");
 Ex: var dt=new Date("15 August 1947");
 
+Some Important functions of Date object in JS:
+-----------------------------------------------
+1) getDate(): Used to get date of month. Ex: 12,25,etc
+2) getMonth(): Used to get index of month. Ex: for March month it will return 2.
+3) getFullYear(): Used to get Year.
+4) getHours(): This function is used to get Hours.
+5) getMinutes(): This function is used to get minutes.
+6) getSeconds(): This function used to get seconds.
+7) getDay(): Used to get day number of week from 0 to 6, 0 will be the first day of week and that is sunday.
 
 
 
