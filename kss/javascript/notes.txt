@@ -630,6 +630,16 @@ Syntax :
 ---------
 window.setTimeout("code to run",time_in_miliseconds);
 
+Form Validation :
+*******************
+=> Form validation is a process that is used to verify the format of data of form controls.
+=> We can validate a form at two levels-
+    A) At client end : By using JS.
+    B) At Server end : By using a server side language.
+=> Validating a form at client side is always a good choice.
+=> When user clicks on submit button that time form tag returns true. If form tag returns true that time form data will be submitted to server.
+=> By using JS we will check the formate of data of form controls and if it all is good then reurns true to form tag otherwise return false to form tag. When submit button sends false to form tag that time form data will not be submitted to server.
+
 
 
 
