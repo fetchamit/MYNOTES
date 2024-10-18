@@ -640,7 +640,24 @@ Form Validation :
 => When user clicks on submit button that time form tag returns true. If form tag returns true that time form data will be submitted to server.
 => By using JS we will check the formate of data of form controls and if it all is good then reurns true to form tag otherwise return false to form tag. When submit button sends false to form tag that time form data will not be submitted to server.
 
+Validating a file in JS:
+*************************
+=> An input file control can select multiple files. It has multiselect attribute that is added in HTML-5.
+=> In JS; input type file control provides a property "files" that is used to read collection of all files. This files property works like an array. So if we want to access the object of first file then we have to use 0 index in files property.
+Ex: var firstFile=ObjectOfControl.files[0];
 
+=> JS provides below 3 properties in object of a files-
+    A) name: Used to read name of uploaded file.
+    B) type: Used to know nature type of uploaded file.
+    C) size: Used to know the size of uploaded file in bytes.
+Ex:
+var upicfile=tfile.files;
+alert(upicfile);
+var firstPic=tfile.files[0];
+alert(firstPic);
+alert(firstPic.name);
+alert(firstPic.type);
+alert(firstPic.size);
 
 
 
