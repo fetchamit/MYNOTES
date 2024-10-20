@@ -107,6 +107,55 @@ Ex: $("#dv p")
 => We have to use "*" symbol only.
 Ex: $("*");
 
+DOM Manipulation using jQuery:
+*******************************
+=> jQuery provides features to read and modify content of HTML tags.
+=> jQuery provides velow functions for DOM manipulation-
+1) val()
+2) text()
+3) html()
+4) attr()
+5) prop()
+
+1. val():
+---------
+=> This function is used to get/set the content of form controls.
+Syntax to get:
+---------------
+varName=Object_Of_tag.val();
+Ex: var x=$("txtname").val();
+
+Syntax to set:
+---------------
+Object_of_tag.val(content);
+Ex: $("#name").val("Ramesh Kumar");
+
+Note: val() function is quivalent to "value" property of javascript.
+
+2. text():
+-----------
+=> This function is used to get/set content of normal HTML controls in plane text formate.
+=> We can use this function with div,span,ul,ol,li,h1 etc tags.
+Syntax to get:
+    varName=Object_of_tag.text();
+Ex : var x=$("#mydv").text();
+
+Syntax to set:
+    Object_of_tag.text(content);
+Ex: $("#mydv").text("Hello World");
+
+3) html():
+-----------
+=> This function is used to get/set the content of normal HTML controls in HTML text formate.
+=> We can use this property with div,span,ul,li,ol,etc.
+Syntax to get:
+    varName=Object_of_tag.html();
+Ex: var x=$("#mydv").html();
+
+Syntax to set:
+    Object_of_tag.html(content);
+Ex : $("#mysp").html("<strong> Welcome to jQuery </strong>");
+
 
 
 
