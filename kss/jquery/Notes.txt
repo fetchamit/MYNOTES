@@ -63,6 +63,49 @@ $(document).ready(mydemo());
 
 Note: ready() event is equivalent to "onload" event of javascript.
 
+Selectors in jQuery:
+********************
+=> Selectors are used to select object in jQuery.
+=> If we wants to perform some actions on an object then first of all we have to select that object in jQuery.
+=> Selecting an object is also known as DOM traversing.
+=> Below are the main selectors in jQuery -
+1) Id Selector :
+-----------------
+=> Used to select object of a HTML tag based on Id.
+=> We have to use "#" Symbol before the id of tag to select it's object.
+syntax :$("#Id_of_tag");
+
+2) Class Selector:
+------------------
+=> Used to select object of a HTML tag based on css class name.
+=> We have to use "." Symbol before the class of tag to select it's object.
+syntax :$(".Name_of_css_class");
+
+3) Tag Selector:
+-----------------
+=> Used to select object of a HTML tag based of tag type.
+=> We don't have to use any symbol before the type of tag to select it's object.
+Syntax: $("Type_of_Tag");
+
+4) Multiple Selectors:
+----------------------
+=> It is used to select object of multiple tags at once.
+=> We have to use comma(,) symbol between the selector names.
+syntax: $("selector1,selector2,.....");
+Ex: $("#btn,.btn,button,#para,...");
+
+5) Nested Selector(Parent-child selector):
+---------------------------------------------
+=> This selector is used to select object of child tag of a parent tag.
+=> We have to separate the name of parent and child tag by using white space between them.
+Syntax : $("ParentSelector childSelector");
+Ex: $("#dv p")
+
+6) Universal Selector:
+-----------------------
+=> Used to select all tags of webpage.
+=> We have to use "*" symbol only.
+Ex: $("*");
 
 
 
