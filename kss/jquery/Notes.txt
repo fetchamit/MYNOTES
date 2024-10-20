@@ -1,2 +1,45 @@
 Introduction to JQuery
 ***********************
+=> JQuery is a JavaScript Library.
+=> JQuery is developed completely based on JavaScript.
+=> JQuery is an open source JavaScript library.
+=> JQuery is not replacement of JavaScript. It simplifies the JavaScript tasks.
+=> JQuery is a cross-plateform JavaScript library designed to simplify the client-side scripting of HTML.
+=> JQuery is used to overcome the load on server. Many tasks can be performed in client side by using JQuery.
+=> It's punch line is "Write less do more...".
+
+Creation of JQuery: 
+********************
+=> Jquery was invented by John Resig in 2006.
+
+Features of JQuery:
+********************
+=> Simple
+=> DOM Traversing
+=> DOM Manipulation
+=> Event Handling
+=> Style Modification
+=> Effects and Animations
+=> AJAX Support
+=> JQuery-UI
+=> CSS3 Compliant
+=> Light Weight Library
+=> Cross Browser Support
+=> Interpreted
+
+S/W Requirements for JQuery:
+---------------------------
+=> Web Browser
+=> Text Editor
+=> JQuery file
+
+
+
+
+
+
+
+
+
+
+
