@@ -34,6 +34,35 @@ S/W Requirements for JQuery:
 => JQuery file
 
 
+$(document).ready(function(){
+    alert("Welcome to jQuery");
+});
+Explanation of above code:
+**************************
+1) $():
+--------
+=> It is a jQuery factory function. It means it is main function in jQuery library.
+=> $ is short form of "jQuery" function. We can also write jQuery in place of $.
+=> This function is used to select an object. We can select built-in objects and also user define object or tags.
+Ex in js: var t=document.getElementById("txtname");
+Ex in jQuery: var t=$("#txtname");
+
+2) document:
+-------------
+=>It is a built-in object of DOM. $(document) means we are selecting/passing object of DOM to jQuery library so that jQuery can use that object accordingly.
+
+3) ready() :
+------------
+=> ready() is an event. It starts execution suddenly when a web page gets loaded completely.
+=> We have to pass event handler function inside ready() event to perform some task. Handler functions are generally un-named/annonymous function. But we can also use a named function in that place if we want.
+Ex:
+function mydemo(){
+alert("Welcome to jQuery");
+}
+$(document).ready(mydemo());
+
+Note: ready() event is equivalent to "onload" event of javascript.
+
 
 
 
