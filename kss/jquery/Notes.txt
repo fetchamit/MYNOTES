@@ -187,6 +187,53 @@ Syntax to set:
 ObjectOfTag.attr("NameOfAttribute","ValueForAttribute");
 Ex: $("#txt").attr.("type","password");
 
+Managing Styles using jQuery:
+******************************
+=> jQuery provides features to work with css properties.
+=> We can get and set value of CSS properties using jQuery.
+=> jQuery also supports properties of CSS-3.
+=> Below are the main functions that are used to work with css-
+1) css()
+2) addClass()
+3) removeClass()
+4) toggleClass()
+
+1) css():
+----------
+=> This function is used to get/set the css property in a HTML tag.
+Syntax to get:
+    varName=ObjectOfTag.css();
+Ex: x=$("#mydv").css("color");
+
+Syntax to set:
+    ObjectOfTag.css("propertyName","value");
+            OR
+    ObjectOfTag.css(ObjectOfPropertiesWithValues);
+Ex 1: $("#sperr").css("color","red");
+Ex 2: var obj={"color":"green","background-color":"yellow","width":"200px"};
+        $("#sperr").css(obj);
+
+2) addClass():
+--------------
+=> This function is used to add/apply a css class in a tag.
+Syntax: ObjectOfTag.addClass("NameOfCssClass");
+Ex: $("#para").addClass("myclass");
+
+3) removeClass():
+-----------------
+=> This function is used to remove a css class from a tag.
+Syntax:
+    ObjectOfTag.removeClass("NameOfClass");
+Ex: $("#mypara").removeClass("myclass");
+
+3) toggleClass():
+-----------------
+=> This function is used to add or remove a css class from a tag.
+=> It creates toggle effects.
+Syntax:
+    ObjectOfTag.toggleClass("NameOfClass");
+Ex: $("#mypara").toggleClass("myclass");
+
 
 
 
