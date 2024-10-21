@@ -157,6 +157,35 @@ Syntax to set:
 Ex : $("#mysp").html("<strong> Welcome to jQuery </strong>");
 
 
+4) prop():
+-----------
+=> This property is used to get/set the property of a HTML tag.
+=> Generally it is used to work with disabled, checked and readonly property.
+=> prop function works in real datatype. It means it returns the value in actual data type.
+Syntax to get:
+---------------
+varName=Object_of_tag.prop("name of property");
+Ex: var x=$("#btn").prop("disabled");
+
+Syntax to set:
+--------------
+Object_of_tag.prop("name of property","value of property");
+Ex: $("#chk").prop("checked",true);
+
+5) attr():
+----------
+=> Attr stands for attribute.
+=> It is used to get/set the attribute of a HTML tag.
+=> attr() function works in string type.
+Syntax to get:
+--------------
+varName=ObjectOfTag.attr("NameOfAttribute");
+Ex : var x=$("#mypic").attr("src");
+
+Syntax to set:
+--------------
+ObjectOfTag.attr("NameOfAttribute","ValueForAttribute");
+Ex: $("#txt").attr.("type","password");
 
 
 
