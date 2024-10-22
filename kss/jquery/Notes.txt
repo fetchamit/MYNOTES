@@ -234,6 +234,38 @@ Syntax:
     ObjectOfTag.toggleClass("NameOfClass");
 Ex: $("#mypara").toggleClass("myclass");
 
+Advance DOM manipulation using jQuery:
+***************************************
+=> jQuery has features to modify DOM content in advance level.
+=> Below are the main functions that are used to modify DOM in advance level-
+1) append()
+2) before()
+3) after()
+4) empty()
+5) remove()
+
+=> append(), before() and empty() functions are used to concat some content in selected object/tag as shown below-
+
+<-- before
+--------------
+|            |
+|            |
+|append()    |
+---------------
+<-- after
+
+Syntax of above three functions:
+-------------------------------
+ObjectOfTag.FunctionName(content);
+Ex: $("#dv").append("Welcome");
+
+=>empty() function is used to clear all content and child tags of a selected object.
+Syntax: ObjectOfTag.empty();
+Ex: $("#mypara").empty();
+
+=> remove() function is used to remove a selected object from the DOM(webpage).
+Syntax: ObjectOfTag.remove();
+Ex: $("#mypara")remove();
 
 
 
