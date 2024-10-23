@@ -285,7 +285,7 @@ ObjectOfTag.bind("eventName",EventHandlerFunction);
 => This function is used to remove an event from a selected tag.
 Syntax:
 --------
-ObjectOfTag.bind("functionName")
+ObjectOfTag.unbind("eventName");
 
 
 
