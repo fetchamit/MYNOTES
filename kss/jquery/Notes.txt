@@ -267,6 +267,25 @@ Ex: $("#mypara").empty();
 Syntax: ObjectOfTag.remove();
 Ex: $("#mypara")remove();
 
+Dynamic Even Binding using jQuery:
+-----------------------------------
+=> jQuery has the feature to add or remove event is a specific tag during run time of program.
+=> It means we can add or remove event is a tag at run time by using jQuery.
+=> jQuery has below functions to implement dynamic event binding-
+1) bind()/on()/do()/live()
+--------------------------
+=> bind() function is used to attach an event is a selected tag during run time of program .
+=> In different-different versions of jQuery we have different-different names of functions for dynamic event attach Ex: bind()/on()/do()/live().
+Syntax :
+--------
+ObjectOfTag.bind("eventName",EventHandlerFunction);
+
+2) Unbind()/die()/off():
+------------------------
+=> This function is used to remove an event from a selected tag.
+Syntax:
+--------
+ObjectOfTag.bind("functionName")
 
 
 
