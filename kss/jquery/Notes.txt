@@ -288,6 +288,42 @@ Syntax:
 ObjectOfTag.unbind("eventName");
 
 
+Working with collection in jQuery :
+-----------------------------------
+=> Many of the selectors returns collection of objects, hence it is a primary task to get each and every object from the collection.
+=> jQuery has the features to work with collection.
+    Below are the two main functions that are used to fetch all items from the collection.
+     1) eq() 
+     2) each()
+
+1) eq()
+--------
+=> eq() function is used to fetch the specific object from a collection.
+=> eq() is an index based function
+
+Syntax: 
+--------
+    varName = Collection_of_object.eq(index);
+    var x = $("#tbl tr").eq(2);
+
+2) each()
+---------
+=> This function is also used to fetch each item from the collection.
+=> This function is an item based function.
+    It is not index based.
+=> each() function works as an loop and it fetch all items from collection one by one (form start to end).
 
 
+Syntax:
+--------
+    Collection_of_object.each(function(index_var){
+        // statements
+    });
+
+    e.g. 
+        $("#tbl tr").each(function(){
+            var obj=$(this);        // to get current object
+        })
+
+Note: Here index_var is optional
 
