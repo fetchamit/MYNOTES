@@ -327,3 +327,35 @@ Syntax:
 
 Note: Here index_var is optional
 
+Effects and Animations in jQuery:
+*********************************
+=> jQuery has the features to create effects and animations in object.
+=> jQuery provides easy way to create effects and animations.
+=> Below functions are used to for effect and animation-
+1) show()
+2) hide()
+3) toggle()
+4) slideUp()
+5) slideDown()
+6) slideToggle()
+7) fadeIn()
+8) fadeOut()
+9) fadeToggle()
+10) animate()
+
+Note: All the above function takes time to create effect or animation. We can pass this timespan in two below formats-
+    A) In string Format:slow,fast,normal
+    B) In Numeric Format: times in miliseconds. Ex: 1000,1800 etc.
+
+Syntax of first 9 methods:
+--------------------------
+ObjectOfTag.functionName(timespan);
+Ex: 4("#dv").hide(5000);
+
+
+
+
+
+
+
+
