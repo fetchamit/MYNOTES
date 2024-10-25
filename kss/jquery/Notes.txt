@@ -352,6 +352,10 @@ Syntax of first 9 methods:
 ObjectOfTag.functionName(timespan);
 Ex: 4("#dv").hide(5000);
 
+Syntax of animate method:
+-------------------------
+ObjectOfTag.animate(ObjectOfEffects,timespan);
+Ex: $("#dv").animate({width:"500px"},4000);
 
 
 
