@@ -358,6 +358,69 @@ ObjectOfTag.animate(ObjectOfEffects,timespan);
 Ex: $("#dv").animate({width:"500px"},4000);
 
 
+Form Validation using jQuery :
+******************************
+=> In jQuery we do not have to put span tags after each input field. We will add validation error message by using jQuery after the input field.
+=> If form has validation errors then returns true from the button click and if there are no any validation errors then returns false from the button click event.
+=> We can delete previous error messages by usign remove() function of jQuery.
+
+==================================================================================================================
+Some important functions in jQuery:
+***********************************
+1) trigger():
+-------------
+=> This function is used to call an event forcefully.
+=> We can call any other functions /event by using trigger function.
+
+Syntax:
+    ObjectOfTag.trigger("Event/FunctionName");
+    Ex: $("#btn").trigger("click");
+
+2) parent():
+-------------
+=> This function is used to find the object of current parent tag of a selected tag.
+Syntax : varName=ObjectOfTag.parent();
+Ex: var x=$("#stocktd").parent();
+
+3) parents():
+--------------
+=> This function is used to find the objects of all parents of a selected tag.
+=> It gives us the collection of all parent tags that are in hierarchy. It returns collections so sometimes we have to get specific object by using find() function.
+Syntax: varName=ObjectOfTag.parents();
+                OR
+        varName=ObjectOfTag.parents("filter_selection");
+
+4) children():
+--------------
+=> This function is used to select the object of the current child/s tag/s.
+Syntax: VarName=ObjectOfTag.children();
+Ex: VarName=$("#tbl").children();
+
+5) find():
+----------
+=> This function is used to implement some filter in a collection.
+=> Generally it is used to fetch required object/s from collection of objects.
+Syntax: CollectionOfObject.fine("filter");
+Ex: $("#tbl tr").each(function(){
+    $(this).children().find(".outOfStock");
+});
+
+6) next():
+----------
+=> This function is used to find object of next tag in same hierarchy.
+Ex: var d=$("#mydv").next();
+
+7) prev():
+---------
+=>This function is used to find the object of previous tag in same hierarchy.
+Ex: var d=("#mydv").prev();
+
+
+
+
+
+
+
 
 
 
