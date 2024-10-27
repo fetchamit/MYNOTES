@@ -1,1 +1,56 @@
 ************************************* AJAX ********************************
+
+Introduction to AJAX:
+---------------------
+=> AJAX stands for Asynchronous JavaScript And XML.
+=> AJAX is not a programming language.
+=> AJAX allows web pages to updated asynchronously by exchanging data with a web server behind the scenes(background).
+=> AJAX makes possible to update parts of a web page, without reloading the whole page.
+=> AJAX is just a term to describe the process of exchanging data from  a web server asynchronously through javaScript, Without refreshing the page.
+
+Cretion of AJAX:
+-----------------
+=> AJAX is developed by Microsoft Corporation in March 1999.
+=> Google Corporation enhanced the features of AJAX and started to work in this concept from year 2005.
+=> So AJAX  in an invention by two big corporations Microsoft and Google.
+=> The term AJAX was publicly used on 18 February 2005 by Jesse James Garrett.
+
+Working process of AJAX:
+--------------------------
+=> To perform AJAX communication JavaScript uses a special object built into the browser- an XMLHttpRequest object- to make HTTP requests to the server and receive data in response.
+=> All modern browsers(Chrome, Firefox, IE7+, Safari,Opera) support the XMLHttpRequest object.
+
+Process:
+- - - - -
+=> An event is occured on a web page (eg. A button is clicked) An Http request is sent to server using XMLHttpRequest object, Server Process the HTTP request and creates a response. Then response back to the browser Process the returned data using javascript and updates the page content.
+
+Browser <-- Netwrok --> Server
+
+Features of AJAX:
+-----------------
+=> Cross Browser support.
+=> User Friendly.
+=> It makes web page faster.
+=> Independent of server technology. We can use this with .NET/JAVA/PHP etc.
+=> Increase the performance of web pages.
+=> No need to reload the whole page only some part of page is reloaded which is required to reload.
+
+Disadvantages:
+--------------
+=> Without JavaScript AJAX  can not do anything.
+=> JavaScript can be desabled by user in browser.
+
+S/W Requirements:
+* Web Browser
+* Web Server
+* Text Editor
+
+
+
+
+
+
+
+
+
+
