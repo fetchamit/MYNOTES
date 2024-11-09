@@ -45,6 +45,9 @@ Steps to create application in React JS
     create-react-app demoapp
 Note :  Above command will create react application having name demoapp. This app will create with many subfolder and required modules, packages inside the folder.
 
+5) To run React application we used below command
+      npm start
+Note: Before using "npm start" it is necessary to use correct directory that is(i.e) before this command, it must be usd your application folder.
 
 
 
