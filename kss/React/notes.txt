@@ -23,3 +23,31 @@ Advantages of React JS:
       React JS is relatively easy to learn, making it a good choice for beginners.
 # Community:
       React JS has a large and active community, which means that there are many resources available to help you learn and use the framework.
+
+Disadvantages of React JS:
+***************************
+# Complexity :
+    React JS can be complex, especially for beginners.
+# Learning Curve :
+    There is a learning curve associated with React JS, but it is not as steep as some other frameworks.
+# State Management :
+    React JS does not have a built-in state management solution, so you will need to use a third-party library.
+
+Steps to create application in React JS
+***************************************
+1) Go to official website of node js and download it then install in your pc.
+2) To check the version of node we can use below command-
+    node -v OR node --version
+3) To create app in React we need to install create-react-app package. This is used to create application in React. Below command is used to install it.
+    npm install -g create-react-app
+
+4) To create app in react we use below command
+    create-react-app demoapp
+Note :  Above command will create react application having name demoapp. This app will create with many subfolder and required modules, packages inside the folder.
+
+
+
+
+
+
+
