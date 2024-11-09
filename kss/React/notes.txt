@@ -1,0 +1,25 @@
+Introduction to React JS
+*************************
+=> React JS is an Open-source Javascript Library for building user interfaces.
+=> It is used to create interactive web applications and single-page applications.
+=> React JS is based on a component-based architecture, which makes it easy to create reusable and maintaainable code.
+=> React JS is also known for its performance, as it only updates the parts of the UI that need to be updated. Which can improve the performance of your application.
+
+History:
+*********
+=> React JS was created by Jordan Walke in 2013.
+=> It was originally developed by Facebook to be used in its internal projects.
+=> React JS was open-sourced in 2015 and has since become one of the most popular JavaScript frameworks.
+
+Advantages of React JS:
+************************
+# Performance :
+      React JS in known for its performance, as it only updates the parts of the UI that need to be updated.
+# Reusability :
+      React JS is based on a component-based architecture, which makes it easy to create reusable and maintainable code.
+# Scalability :
+      React JS is scalable, making it suitable for large and complex applications.
+# Learnability :
+      React JS is relatively easy to learn, making it a good choice for beginners.
+# Community:
+      React JS has a large and active community, which means that there are many resources available to help you learn and use the framework.
