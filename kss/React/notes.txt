@@ -49,6 +49,41 @@ Note :  Above command will create react application having name demoapp. This ap
       npm start
 Note: Before using "npm start" it is necessary to use correct directory that is(i.e) before this command, it must be usd your application folder.
 
+npm :
+****
+=> npm Stands for "Node Package Manager".
+=> In React every package and modules is known as node modules. So when we required any external modules or package we can simply install it inside our application with the help of npm.
+
+Node JS :
+*********
+=> Node JS is open source and provides runtime environment for React application.
+=> It is extensively used by developer to run javascript code in both environment client side and  server side without any need of any external tool for it.
+
+JSX :
+****
+=> It stands for javascript XML.
+=> It allows to run html code in react.
+=> In react we used JSX  inside our component.
+
+Component :
+***********
+=> Component is a independent piece of code that can be reused in any component where we required.
+=> Component in react is like a function that returns html elements.
+=> First Letter of component must be in capital letter
+=> In React we have two types of component.
+1. Class Component
+2. Functional Component
+
+1. Class Component :
+--------------------
+=> To use class component we have to used extend keyword to support some concept inheritance.
+=> We used render keyword to return html element in class component.
+
+2. Functional Component :
+-------------------------
+=> Functional component is same like class component, but it's syntax and code is simpler than class component.
+=> We do not need to used extend and render method to used functional component.
+Note : We can make any task in react by using any type of component.
 
 
 
