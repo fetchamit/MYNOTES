@@ -85,6 +85,36 @@ Component :
 => We do not need to used extend and render method to used functional component.
 Note : We can make any task in react by using any type of component.
 
+Props:
+*******
+=> It stands for Properties.
+=> Props are passed as argument into React component.
+
+State:
+******
+=> State in React is a built-in object that is to used to store properties values of component.
+=> We can initialize state inside the constructor of a class.
+=> To update the values of state property we used setState method.
+=> When the state of component get updated, component will rerendered.
+
+Map():
+******
+=> map function is used to iterate on parent array by calling a specific function on each element of an array.
+=> It returns the new array means original array will not get changed.
+Syntax:
+-------
+arr.map((current_value)=>(operation_with_value));
+Ex:
+const newarr=arr.map((cv)=>(<h1>{cv}</h1>))
+
+Steps to use bootstrap in React:
+---------------------------------
+=> Go to terminal and execute below command to install bootstrap package-
+      npm i bootstrap
+=> Add new library inside index.js
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+
 
 
 
