@@ -115,7 +115,37 @@ Steps to use bootstrap in React:
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
+Routing in React :
+*******************
+=> React Router is a standard library for creating dynamic routes and navigation in React JS Applications.
+=> It allows you to manage navigation in your app by defining routes that connect the URL paths to specific components.
+Below command is used to install routing in react application: -
+-----------------------------------------------------------------
+# Command: npm i react-router-dom
 
+=> we chould import below module in index.js file to supporting routing.
+import {BrowserRouter, Routes,Route} from "react-router-dom"
+=> BrowserRouter is a tag which contained all the routes of our application.
+=> To define routes every component we used 'Route' by defining path and name of component inside the Route tag.
+For Example: 
+    <BrowserRouter>
+    <Routes>
+        <Route index element={<Home />} />
+        <Route path="about" element={<AboutUS />} />
+        <Route path="contact" element={<ContactUs />} />
+    </Routes>
+  </BrowserRouter>
+
+=> Here attribute is used to define the name by which we can access the login component in URL of the browser.
+=> Element attribute contained the name of our component.
+
+Note: all Route will be contained inside a parent tag i.e inside the 'Routes' tag.
+Blow hierarchy is used to define routing in React Application 
+<BrowserRouter>
+<Routes>
+<Route>
+</Routes>
+</BrowserRouter>
 
 
 
