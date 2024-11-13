@@ -147,5 +147,12 @@ Blow hierarchy is used to define routing in React Application
 </Routes>
 </BrowserRouter>
 
+=> If we used anchor tag for linking our component it reload  the entire page. To avoid reloading of whole page we use Link tag in React application.
+=> Link tag have attribute 'to' which define the path of component or we can say url of the component through we can access it on the browser.
+Example:
+=========
+<Link className="nav-link" to="/registration">Register</Link>
+Note: To used Link we have to import it from react-router-dom package.
+import { Link } from 'react-router-dom'
 
 
