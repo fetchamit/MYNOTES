@@ -156,3 +156,153 @@ Note: To used Link we have to import it from react-router-dom package.
 import { Link } from 'react-router-dom'
 
 
+Hooks in React JS:
+*******************
+=> Hooks is Introduced in react js in version 18.3
+=> Hooks allow to access state and other react feacture in functional component only.
+=> To use hook we have to import it from react module.
+=> We can used to hooks only in functional component.
+=> As we have many types of hooks in react but most of the time we used "useState" and "useEffect" hook.
+1) useState Hooks:
+--------------------
+=> This hook is used to track the state of functional component.
+=> It accept one value and return two value i.e current value and updated value.
+=> useState hook should be used at the top of the component.
+
+Syntax: 
+--------
+const [initialvalue, updatedValue]=useState(0)
+
+Note: Here updatedValue can be treated as function. for Example:
+
+const[date,setDate]=useState(0)
+=> In above example data have initial value 0.
+
+2) useEffect Hook:
+-------------------
+=> This hook is used when we implements the concept timer or during fetching any record from API.
+=> It will be called everytime when the state of component changed or rerendered. 
+
+fetch():
+--------
+=> Fetch is a function that is used to fetchinge data from API.
+=> This function returns promise which is resolved by using then function.
+fetch(api).then()
+Ex:
+----
+fetch('url')            // api for the get request
+      .then(response=> response.json())
+      .then(data => console.log(data));
+
+
+What is an API : 
+*****************
+=> An API(Application Programming Interface) acts as a messanger between applications/
+=> It allows them to communicate and share data in a structured way.
+=> Think of it like a waiter in a restarurant , taking your order (request) and delivering the food (response) from the kitchen (server).
+=> Purpose : APIs allow different systems to communicate and share data or functionalities, promoting inge
+
+
+Components:
+1. Endpoints: Specific URLs where API requests are sent.
+2. Methods: Standard HTTP methods such as GET, POST, PUT, DELETE used to perform operations.
+3. Data Formates: Common formats like JSON and XML used to exchanging data.
+
+Types of API:
+1. Open APIs : Publicly available APIs that can be used by any developer.
+2. Partner APIs : Restricted APIs  shared with specific Partners.
+3. Internal APIs : Private APIs  used within an organization.
+4. Composite APIs : Combine multiple API calls into a single call.
+
+Benifits of usign API:
+1. Efficiency : Streamlines the development process by reusing exiting functionalities.
+2. Scalability : Enables the integration of scalabile services.
+3. Flexibility
+4. Innovation
+
+Challanges of using API:
+1. Security
+2. Reliability
+3. Compatibility
+4. Performance
+
+Real World API Examples:
+1. Social media integration
+2. E-commerce transaction
+3. Weather forecasting
+4. Map Service
+5. Travel Booking Engines
+
+
+API Testing Tools:
+1. Definition : Tools designed to test the funcitonality, performance, and security of APIs.
+2. Purpose : Ensure APIs meet the expected standards and perform reliably under various conditions.
+3. Importance : Good for indetifying bugs, security issues, and performance before deployment.
+
+Need for API Testing Tools : 
+1. Ensure functionality
+2. Security Assurance
+3. Performance Testing
+4. Reliability
+
+Available API Testing tools :
+1. Postman
+2. SoapUI
+3. Insomnia
+4. Katalon Studio
+5. Swagger Instector
+
+1. Postman:
+=> Postman is a popular api testing tool with a user-friendly interface.
+=> Key features :API request building, automated testing environment management and collaboration.
+=> Benifits : Simplifies the process of deploying, testing and monitoring APIs.
+=> Use Cases: Sutaible for developers, testers and api consumers.
+=> Communtiy and support: Large community extensive documentation and support resources.
+
+API Tesing with postman:
+=> Creating a new Request :
+      # Open Postman, click on "New", and select "Request".
+=> Confuguring the Request:
+      # Enter the api endpoint url and select the HTTP method(GET,POST....) 
+=> Adding Parameters and Headers :
+      # Add any required query parameters, headers and body data.
+=> Sending the Request :
+      # Click "Send" to execute the request and view the response.
+
+Http Methods:
+1. GET :
+=> Retrieve information from the server
+=> Used for fetching data
+2. POST :
+=> Send data to the server to create a new resource.
+=> Used for submitting data to be processed.
+3. PUT:
+=> Update an existing resource on the server.
+4. DELETE :
+=> Remove a resource from the server.
+
+
+Common Status Codes:
+=> 200 OK: the request has succeded.
+=> 201 Created: The request has been fulfilled, resulting in the creatin of a new resource.
+=> 400 Bad Request : The server could not understand the request due to invalid syntax.
+=> 401 Unauthorized : The client must authenticate itself to get the requested response.
+=> 404 Not found: The server can not find the requested resource.
+=> 500 Internal server Error: The server has encournterd a situation it does not know how to handle.
+
+HTTP Response Structure :
+An HTTP response consists of four parts:
+1. Status-Line: The first line contains the http version, a three-digit status code , and a reason phrase that describes the status code.
+2. Headers (Optional): Headers are key value paisr that provides additional information about the response. Common headers include content type , which specifies the format of the response body, and content length , which indicates the size of the response body.
+3. Blank Line: An empty line separates the headers from the body(if present).
+4. Body(Optional) : The body contains the data being sent from the server to the client. This typically contains the requested resource(for GET requests) or a message about the outcome of the request (for other methods).
+
+
+
+
+
+
+
+
+
+
