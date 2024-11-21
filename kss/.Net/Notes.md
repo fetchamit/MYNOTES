@@ -147,6 +147,15 @@ MSIL / IL : It stands for Microsoft Intermediate language/ Intermediate language
 ### Boolean type
 * bool
 
+## Console class and it's functions
+* Provides methods for input and output
+* Input
+  ** Read (..) - reads a single characters.
+  ** ReadLine(..) - reads a single line of characters.
+* Output
+  ** Write(..) - Prints the specified arguments on the console.
+  ** WriteLine(..) - Prints specified data to the console and moves to the next line.
+  
 
 
 
