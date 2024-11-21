@@ -26,10 +26,10 @@
 * CLR works as compiler in .NET Framework.
 * CLR is most important part(component) of .Net Framework.
 * CLR uses few below components to perform it's task:
-  2.1. CTS (Common Type System)
-  2.2. CLS ( Common Language Specification)
-  2.3. JIT Compiler (Just-in Time)
-  2.4. Garbage Collector/ Carbage Collection
+  i. CTS (Common Type System)
+  ii. CLS ( Common Language Specification)
+  iii. JIT Compiler (Just-in Time)
+  iv. Garbage Collector/ Carbage Collection
 
 #### CTS:
 --------
