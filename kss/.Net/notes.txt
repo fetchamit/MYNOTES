@@ -1,0 +1,7 @@
+Introduction to .NET
+**********************
+=> Microsoft .NET is a plateform that is used to develope the computer software and applications.
+=> Developed by Microsoft Corporation in 2002.
+=> Latest Version is ".NET Framework 4.8.1" , released in 9 august 2022.
+=> Used to develop console, windows, web, mobile, web services based applications.
+=> >NET supports multiple languages like as Visual C++, VB.NET, Visual C#, Visual J++, Python, Pascal, Perl and many more...
