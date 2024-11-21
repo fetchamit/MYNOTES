@@ -9,10 +9,10 @@
 ## Components of .NET Frameworks:
 -------------------------------
 * .NET Framework is developed based on two main components-
-  1) Framework Class Library(FCL).
-  2) Common Language Runtime(CLR).
+  1. Framework Class Library(FCL).
+  2. Common Language Runtime(CLR).
 
-### Framework Class Library:
+### 1. Framework Class Library:
 ----------------------------
 * Framework Class Library is a collection of various namespaces, classes, interfaces, and other user define types.
 * It provides help to a developer in rapid development. Because it provides built-in functionality so a developer can use that code to develope software.
@@ -20,16 +20,16 @@
 * FCL is also known as Base Class Library(BCL) or class library or Assembly.
 * .NET has "System" namespace. This System namespace works as parent namespace for all libraries.
 
-### Common Language Runtime(CLR):
+### 2. Common Language Runtime(CLR):
 --------------------------------
 * CLR works as a manager in .NET framework.It manages whole process of compilation and execution of code.
 * CLR works as compiler in .NET Framework.
 * CLR is most important part(component) of .Net Framework.
 * CLR uses few below components to perform it's task:
-  a) CTS (Common Type System)
-  b) CLS ( Common Language Specification)
-  c) JIT Compiler (Just-in Time)
-  d) Garbage Collector/ Carbage Collection
+  2.1. CTS (Common Type System)
+  2.2. CLS ( Common Language Specification)
+  2.3. JIT Compiler (Just-in Time)
+  2.4. Garbage Collector/ Carbage Collection
 
 #### CTS:
 --------
