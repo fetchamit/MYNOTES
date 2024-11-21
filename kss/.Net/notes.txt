@@ -61,6 +61,14 @@ d) Garbage Collector:
 => This component works for memory management. It automatically releases the unused or not required memory space time to time.
 => It is automatically works to free the memory space. So that a programm can complete fast execution.
 
+Basic Introduction to C# :
+---------------------------
+Histry :
+--------
+=> Developed by Microsoft in 2000.
+=> Based on Java and C++, but has many additional extensions.
+=> Java and c# are both being updated to keep up with each other.
+=> Cross-development with Visual Basics, Visual C++, and many other .Net languages.
 
 
 
