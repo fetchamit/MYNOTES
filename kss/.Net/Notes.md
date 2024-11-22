@@ -156,7 +156,23 @@ MSIL / IL : It stands for Microsoft Intermediate language/ Intermediate language
 * Write(..) - Prints the specified arguments on the console.
 * WriteLine(..) - Prints specified data to the console and moves to the next line.
   
+# Working with Directories and files in c#:
+-------------------------------------------
+* C# has a built-in namespace "System.IO" that is used to work with files and folders.
+* Files are known as Directory in C#.
+* Directory class works for folder and "File" class works for file.
+* Directory.CreateDirecotry() function is used to create a new folder using C#.
+* Directory.Exists() function is used to check that a folder exists or not.
+* Directory.Delete() function is used to remove a folder.
+* "FileInfo" class is used to get (read) all information about a file.
 
+======================================
+# Starting a System Process using C#
+--------------------------------------
+* "System.Diagnostics" is a namespace that provides us a class named as "Process". This process class is used to start a system process.
+* Process.Start() function starts a process.
+* We have to specify name of executable file of process to start a process.
+* Ex: Process.start("mspaint.exe");
 
 
 
