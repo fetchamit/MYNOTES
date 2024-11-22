@@ -174,7 +174,27 @@ MSIL / IL : It stands for Microsoft Intermediate language/ Intermediate language
 * We have to specify name of executable file of process to start a process.
 * Ex: Process.start("mspaint.exe");
 
+# Conditional Statements:
+-------------------------
+* Almost just like C/C++
+* Note : It is mandetory that switch statement's default must contain break statement.
 
+# Loops :
+----------
+i. For loop
+ii. While loop
+iii. do while loop
+iv. for each loop
+
+# Working with Date and Time in C#:
+------------------------------------
+* In C#, there is a "DateTime" class that is used to work with date and time.
+* To get the current date and time we have to use "DateTime.Now". It will return current datetime is DateTime format.
+* To Create the object of a specific date time we have to create object of DateTime class as shown below-
+  *  DateTime ObjName=new DateTime(year,month,dayno);
+  *  Ex: DateTime dt=new DateTime(1999,5,22);
+* We can convert a value of any type in string format by using ".ToString()" function.
+ 
 
 
 
