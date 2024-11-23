@@ -194,8 +194,25 @@ iv. for each loop
   *  DateTime ObjName=new DateTime(year,month,dayno);
   *  Ex: DateTime dt=new DateTime(1999,5,22);
 * We can convert a value of any type in string format by using ".ToString()" function.
- 
 
+ # foreach loop :
+ -------------------
+ * For each is a loop in C# that is used to work with collections like string, array, array of objects etc.
+ * For each loop works on the basis of items. It not works on index. It is an item based loop.
+ * This loop is used to fetch each item from the collection one by one.
+ * Syntax :
+   foreach(varName in CollectionName)
+   {
+   // Statement
+   }
+
+ * Note: Here VarName must be a local variable of foreach loop. It is a read only variabl. VarName must be of type of a single item in collection.
+ Ex:
+string friends="Amar Mohan Suresh Mahesh";
+foreach(char ch in friends)
+{
+Console.Write(ch);
+}
 
 
 
