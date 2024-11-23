@@ -214,5 +214,12 @@ foreach(char ch in friends)
 Console.Write(ch);
 }
 
+# Implementing some delay in program:
+--------------------------------------
+* To mention some delay between execution of code we have to use "Sleep()" function of "Thread" class.
+* Thread class is located under "System.Threading" namespace.
+* Sleep() is a static method. We have to specify duration of delay in miliseconds.
+* Ex: Thread.Sleep(4000);
+* 
 
 
