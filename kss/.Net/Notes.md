@@ -221,7 +221,7 @@ Console.Write(ch);
 * Sleep() is a static method. We have to specify duration of delay in miliseconds.
 * Ex: Thread.Sleep(4000);
 
-  Array in C#:
+# Array in C#:
 ---------------
 * An arrya is a collection of same type of various data items.
 * It is used to store bulk data.
@@ -235,14 +235,14 @@ Console.Write(ch);
 * Datatype []ArrayName={item1,item2,.....};
 * Ex: string [] name={"amit","vikas","satya",....};
 
-Array Class:
+## Array Class:
 ------------
 * C# provides a built-in class with name "Array". This class provides us some functions to perform operations on an array.
 * Sort(): This function is used to sort the items of an array in ascending order.
 * BinarySearch(): This function is used to search an item in an array by using binary search algorithm.
 * IndexOf(): This function is used to search item in an array by using linear search algorithm. It returns -1 if item not found otherwise it returns index of search item in array.
 
-2D Array
+## 2D Array
 ----------
 * Two diamentional array is used to store  data in matrix format.
 * 2-D arra is used to store large amount of data.
@@ -254,7 +254,7 @@ Array Class:
   Note: Above array can store max 6 items.
 * 2D array is also known as matrix. We have to use nested loop to process the 2D array.
 
-Strings in C#
+# Strings in C#
 --------------
 * In C# string is a datatype and string is a class also.
 * Ex: Datatype: string
