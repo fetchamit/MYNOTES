@@ -271,6 +271,22 @@ Strings in C#
 
 Note: In C# string is written inside double cotes.
 
+## Some important properties and methods of String in C#
+----------------------------------------------------------
+1. Length: Used to find number of characters in a string.
+2. ToUpper(): Used to convert a string into uppercase;
+3. ToLowser(): Used to convert a string into lowercase.
+4. Contains(): used to check a characters or word in given string. If found then it returns true ohterwise returns false.
+5. IndexOf(): Used to find first occurance index of a character or word in a given string. If found then it returns index of that item; otherwise it returns -1.
+6. LastIndexOf(): Used to find first occurance index of a character or word in a given string. If found then it returns index of that item; otherwise it returns -1.
+7. Trim(): Used to remove whitespace from beginning and ending of string.
+8. Substring(): Used to get part of a string(substring).
+   i. Syntax1: StringVar.Substring(int StartIndex).
+   Note: It will provide a substring starting from the specified index and ending to length of main string.
+   ii. Syntax2: stringVar.Substring(int startIndex, int Length).
+   Note: It will provide fixed number of characters starting from the specified start index.
+9. split(): Used to break a string into a array.
+10. 
   
   
 
