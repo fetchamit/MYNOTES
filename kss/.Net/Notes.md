@@ -220,6 +220,58 @@ Console.Write(ch);
 * Thread class is located under "System.Threading" namespace.
 * Sleep() is a static method. We have to specify duration of delay in miliseconds.
 * Ex: Thread.Sleep(4000);
-* 
+
+  Array in C#:
+---------------
+* An arrya is a collection of same type of various data items.
+* It is used to store bulk data.
+* Array works on the basis of index.
+* first index of an array is 0 and last index is size-1(length-1);
+* C# provides "Length" property in array to find the number of items(size) of an array.
+* Syntax to declare an array:
+ ** Datatype [] ArrayName= new Datatype[size];
+  ** Ex : int [] arr=new int[10];
+* Syntax to declare and initialize an array:
+* Datatype []ArrayName={item1,item2,.....};
+* Ex: string [] name={"amit","vikas","satya",....};
+
+Array Class:
+------------
+* C# provides a built-in class with name "Array". This class provides us some functions to perform operations on an array.
+* Sort(): This function is used to sort the items of an array in ascending order.
+* BinarySearch(): This function is used to search an item in an array by using binary search algorithm.
+* IndexOf(): This function is used to search item in an array by using linear search algorithm. It returns -1 if item not found otherwise it returns index of search item in array.
+
+2D Array
+----------
+* Two diamentional array is used to store  data in matrix format.
+* 2-D arra is used to store large amount of data.
+* It stores data in pair of row, column index.
+* Syntax to create a 2D array:
+* Datatype [,]ArrayName=new Datatype[number_of_rows,number_of_columns];
+* int [,]arr=new int[3,2];
+
+  Note: Above array can store max 6 items.
+* 2D array is also known as matrix. We have to use nested loop to process the 2D array.
+
+Strings in C#
+--------------
+* In C# string is a datatype and string is a class also.
+* Ex: Datatype: string
+* Ex: class : String
+* String is a sequence(collection) of characters.
+* Syntax to declare a string variable:
+  
+* String VarName;
+* Ex: string name;
+
+* Syntax to declare and initialize a string variable.
+* string VarName="Value";
+* Ex: string Name="Amit patel"
+
+Note: In C# string is written inside double cotes.
+
+  
+  
 
 
