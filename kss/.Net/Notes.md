@@ -287,7 +287,7 @@ Note: It will provide a substring starting from the specified index and ending t
 Note: It will provide fixed number of characters starting from the specified start index.
 10. split(): Used to break a string into a array.
 11. Insert(): Used to insert a string inside a string.
-*. StrName=FirstString.Insert(Index_from_to_insert_string,"String");
+* StrName=FirstString.Insert(Index_from_to_insert_string,"String");
   
   
 
