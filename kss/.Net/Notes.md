@@ -288,7 +288,19 @@ Note: It will provide fixed number of characters starting from the specified sta
 10. split(): Used to break a string into a array.
 11. Insert(): Used to insert a string inside a string.
 * StrName=FirstString.Insert(Index_from_to_insert_string,"String");
-  
+
+# Static functions
+-------------------
+* Static functions are special kind of functions in a class.
+* If a function is of static type then it can use (call) only static members( variables) and static methods.
+* It can not use any non-static members.
+* Bydefault all members of a static function are static type.
+* Default value of a static function is 0.
+* Static functions of a class are called by using the class Name just before the function name.
+* Ex: If student class have a static function having name "PrintData()". Then we can call it as given below :
+* Student.PrintData();
+* No Need to create a object of class for calling static method.
+* Static functions can be loaded in memory directly without creating object of it's class.
   
 
 
