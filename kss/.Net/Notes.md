@@ -301,6 +301,7 @@ Note: It will provide fixed number of characters starting from the specified sta
 * Student.PrintData();
 * No Need to create a object of class for calling static method.
 * Static functions can be loaded in memory directly without creating object of it's class.
+* "static" is a store specifier. It preserve it's value during program execution. A static variable not losses it's value. static variables are allocated memory in the data segment; not is stack or heap. 
   
 
 
