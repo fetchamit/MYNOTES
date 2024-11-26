@@ -314,4 +314,50 @@ Note: It will provide fixed number of characters starting from the specified sta
 * It is used to skip the current iteration of a loop.
 * After skiping the current iteration it continues in next iteration.
 
+# Object Oriented Programming
+------------------------------
+* Object Oriented programming is a concept of writing a computer program in modern way.
+* It is a methodology to write computer programs.
+* It is very famous and trustful method to write programs.
+* "Object Oriented Programming is a methodology that uses concept of object to write computer programs."
+* Object Oriented Programming tries to implement the real world human behavior in computer programs.
+* Object Oriented Programming is a collection of some concept and when we use that concepts in our program then our program will be an object Oriented program. That concepts are also known as OOP's Concepts or Features of OOP's.
+* The Languages that are providing support for concept of object oriented language; are known as Object Oriented Programming Languages(OOP's).
+* Example of OOP's Languages are : C++, Java, PHP, C# etc.
+* C# is pure object oriented programming language. It supports all concepts of OOP's. It strictly uses concepts of OOP's.
+
+## Features of OOP's / Concepts of OOP's / Pillers of OOP's
+-------------------------------------------------------------
+1. class
+2. Object
+3. Data Encapsulation
+4. Data Abstraction
+5. Inheritance
+6. Polymorphism
+7. Message Passing
+
+### 1. Class
+* Class is a container.
+* A class is a collection of various variables and various functions.
+* In OOP's; variables of a class are known as " Data members" and functions of a class are known as "data methods". Hence " Class is a collection of various data members and various data methods in a single unit."
+* Class provides security to data members and data methods.
+* Class implements portability in our program. We can use a class easily from one program to another program also.
+* Class provides reuseability to code. We can create object of a class many times.
+* "class" keyword is used to create a class.
+* Syntax:
+  class <class_Name>
+  {
+    // Data members
+    // Data methods
+  }
+
+
+
+
+
+
+
+
+
+
 
