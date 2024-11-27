@@ -351,9 +351,49 @@ Note: It will provide fixed number of characters starting from the specified sta
     // Data methods
   }
 
+### 2. Object 
+---------------
+* Object is a run time entity that is used to represent the features of a class. It means object exists in runtime in a program and by using object we can access the features of class.
+* Object is a copy of class in memory. Means it is a copy of class that is loaded into memory.
+* Object creation means memory initialization. It means when we creates object of a class that time memory will be allocated to all members of class.
+* we can create n-numbers of object of a class as per need. All objects of a class takes seprate-seprate memory spaces.
+ #### Syntax to create object of a class:
+* <ClassName> ObjectName=new <ClassName>();
+* Ex: Student s=new Student();
 
+Note: Class is a userdefined datatype also.
 
+### Constructor:
+-----------------
+* Constructor is a special member function of a class.
+* Constructor is used to initialize the members of a class. Means we can assign/allocate some value to the members of a class by using constructor.
+* We can perform any operation inside constructor but generally it is used to assign the member of class.
 
+#### Characterics of Constructor
+* Name of constructor must be same as name of class.
+* Ex: For class Employee constructor name must be "Employee".
+* No need to call a constructor function because it automatically executes when we create object of that class.
+* A Constructor can not return any value. So need to specify any return type for constructor. Even "void" is also not allowed.
+* It is recommended to make a constructor with public access.
+* Because it will execute automatically when we create object of a class outside the class.
+* A constructor can be type of static type. But it can not be a constant.
+* Constructor can have parameters or it can be without any parameters.
+* We can create multiple constructor in a class.
+
+##### types of constructor
+1. Parameterised/Default constructor
+* A constructor that have no parameters is known as default constructor. It assigns default values to members of class.
+  
+2. Parameterised Constructor
+* A Constructor having some parameter is known as parameterised constructor.
+  
+3. Copy Constructor
+* A Constructor that has address of some members in parameter is known as copy constructor. It works on the basis of address of parameters. In C#; pointer is not supported in safe mode. Hence copy constructor is not generally used in C#.
+
+### Destructor
+---------------
+* Destructor is used to destroy(free/release) memory space occupied of un-necessary variables and objects.
+* It improves the performance of program/software.
 
 
 
