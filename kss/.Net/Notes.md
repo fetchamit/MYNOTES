@@ -395,7 +395,45 @@ Note: Class is a userdefined datatype also.
 * Destructor is used to destroy(free/release) memory space occupied of un-necessary variables and objects.
 * It improves the performance of program/software.
 
+### 3. Data Encapsulation
+* Wrapping of data members and data methods in a single unit is known as "Data Encapsulation".
+* Data Encapsulation makes portable to a program/class.
+* "class" is used to implement data encapsulation.
 
+### 4. Data Abstraction
+* Data Abstraction is used to implement security in our program.
+* "Data abstraction means data hiding". To provide only necessary information to the end user without providing details of internal functionality is known as "Data Abstraction".
+* Data abstraction can be achieved by using two below concepts.
+1. Access Specifiers.
+2. Abstract Class.
+
+#### 1. Access Specifiers :
+---------------------------
+* Access specifiers are used to define the access level or lifespan or programming elements.
+* Access specifiers are used before variables, constants, classes,functions etc to define it's access level.
+* Access specifiers are also known as access modifiers or protection level.
+* In C#; We have 4 types of access specifiers.
+A. Private:
+* It is most Rectricted access specifiers.
+* Private members / functions will be accessible only with-in the block where they are declared.
+
+B. Protected:
+* Protected is more usefull in parent-child relationship.
+* Protected members of a class will be accessible inside the same class and also inside it's child class.
+* Protected members are accessible from the child class located in same assembly and also from the child class located inside another assembly.
+
+C. Public:
+* Public is most flexible access specifier.
+* Public members of a class will be accessible in whole program.
+
+D. Internal:
+* Internal access specifiers is of assembly level.
+* Internal members can be accessed from any where in same assembly.
+
+Note: Here assembly is a namespace or a collection of more than one namespaces.
+
+2. Abstract Class:
+* We will cover this topic later on after inheritance.
 
 
 
