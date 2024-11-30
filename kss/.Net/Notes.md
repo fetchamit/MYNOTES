@@ -436,6 +436,131 @@ Note: Here assembly is a namespace or a collection of more than one namespaces.
 * We will cover this topic later on after inheritance.
 
 
+# Assemly:
+==============
+
+* an assembly is a collaction of naespace . we can put one or many namespace inside the assembly.
+* assebly are also knowm as "class library" or DlL file.
+* DlL atand for " Dynamic link library".
+* dll is a read to use librtary  that can be dynamicly and quicly used u=in anothe rprogram.
+* "Class Library" contain some code without any entry point.
+
+### 5. Inheritence:
+===================
+* inheritence is the ability ton access the features of the class inside onther class.
+* thae class that provides features is known as base class/ parent class/SUperclass/ main class.
+* the class the uses features is known as derived class/ child class/sub class.
+* inheritence is one of the most importent one of the most importent concept.
+* it provide resusiblity of codes
+* it is save time and effort of a progrmmer because it provide resusbility.
+* in c#: colon symbole is used to inherit a class:
+#### Syntanx to inherit the class:
+
+
+        class <sub_class_name>: <super_class_name>
+        {
+            // data member...
+            // data method....
+        }
+
+#### types of inheritence:
+========================
+* 1) single inheritence
+
+            class-A
+                ⬇
+                ⬇
+            class B
+
+* 2) multi label inheritence
+
+                class A
+                    ⬇
+                    ⬇
+                Class B
+                    ⬇
+                    ⬇
+                Class C
+                    ⬇⬇
+                    ⬇
+                class D
+* 3) hierarichal inheritence
+
+                class A
+                    |
+            --------------------
+            |                   |
+            ⬇                 ⬇
+          Class B            Class C
+
+
+* 4) hybride inheritence
+
+                 class A
+                   ⬇
+                   ⬇
+                class B
+                   ⬇
+         ⬅⬅⬅⬅  ➡➡➡➡➡⤵
+        ⬇                   ⬇
+        ⬇                   ⬇
+    class C               Class D
+
+
+* note:- Multiple inheritence is not supprot in c#
+
+## 6. Polymorphism
+* Polymorphism means "One thing in many form".
+* Poly means many and morphism means "form". Hence polymorphism means one thing in many form.
+* We can use same function name for different-2 purpose by using Polymorphism. It makes easy to remember name of functions for a developer.
+* Types of Polymorphism
+A. Compile-time Polymorphism(Early Binding).
+B. Run-time Polymorphism(Late Binding).
+
+### A.Compile-time Polymorphism
+* When a function call decides actual function during compilation process of programm then it is known as compile time polymorphism.
+* Function Overloading is known as compile time polymorphism.
+
+### B. Run time Polymorphism
+* When a function call decides actual function during run time of programm then it is known as run time polymorphism.
+* Function Overriding is known as Run time polymorphism.
+
+### Function Overloading
+* To define more than one function having same function name and different-2 signature(Syntax/parameters) is known as function overloading.
+* All overloaded functions are defined in same class.
+* We can overload a function in two below basis-
+ A. On the basis of number of parameters.
+ Ex: int Add(int num1,int num2)
+     int Add(int num1,int num2,int num3)
+
+ B. On the basis of type of parameters.
+  Ex: void PrintMax(int num1,int num2);
+      void PrintMax(float num1,float num2);
+
+Note: We can not overload a function on the basis of it's return type.
+
+### Function Overriding
+* To define more than one function with same function name and same signature (syntax/ parameters) is known as function overriding.
+* Function overriding is used to redefine(to give a new definition to a function of base class) a function of base class inside child class.
+* By using function overriding a child class can change definition of function of base class as per need.
+* To perform function overriding we need two classes - Parent and Child class.
+* To make Overridable function we need to use a virtual or abstract function in base class.
+
+#### Virtual Function
+* Virtual functio is a specia function of a class. This function can be re-defined by it's child classes.
+* "virtual" keyword is used to create a virtual function.
+* Virtual function has a default definition in base class also.
+* It is not mandatory for child classes to override virtual function of base class.
+* It is optional for child class to override a virtual function of base class.
+* To override a virtual function in child class we have to use "override" keyword.
+
+
+
+
+
+
+
+
 
 
 
