@@ -454,6 +454,7 @@ Note: Here assembly is a namespace or a collection of more than one namespaces.
 * it provide resusiblity of codes
 * it is save time and effort of a progrmmer because it provide resusbility.
 * in c#: colon symbole is used to inherit a class:
+
 #### Syntanx to inherit the class:
 
 
@@ -554,10 +555,52 @@ Note: We can not overload a function on the basis of it's return type.
 * It is optional for child class to override a virtual function of base class.
 * To override a virtual function in child class we have to use "override" keyword.
 
+## Abstract Function:
+-------------------
+* An Abstract funciton is a function of base class that have not any definition, it has declaration only.
+* It is mandatory for child class to override abstract function of base class or child class can also be declared as an abstract class then it can deny(ignore) to override abstract function of base class.
+* An Abstract is a function without definition in base class.
+* Abstract function is created by using "abstract" keyword.
+* We have to use "override" keyword in child class during function overriding.
+* Syntax to create an abstract function -
+  
+      <access_specifier> abstract <return_type> FunctionName(list_of_parameters);
 
+Note: Abstract functions are terminated by using semicolen in base class. It does not have any body.
 
+* Abstract functions can be created within only abstract class.
 
+## Abstract Class:
+------------------
+* An Abstract class is a collection of various abstract and non-abstract function.
+* Abstract class is a special class. we can not instantiate an abstract class.
+* We can't create object of an abstract class.
+* Abstract class is only for inheritance.
+* Data abstraction is used to implement data security(hiding) in program. We can achieve abstraction by using abstract class.Because this class can be used  only by it's child classes.
+* "abstract" keyword is used to create an class abstract class.
+* Syntax:
+  
+      <Access_Specifier> abstract class <ClassName>
+      {
+          // Data methods/ Abstract functions
+          // Data members
+      }
 
+## Sealed Class
+--------------
+* Sealed class is a special class in C#.
+* A Sealed class is a class that can not be inherited by any other class.
+* A sealed class can't have any child class.
+* "sealed" keyword is used to define a sealed class.
+
+        Syntax:
+          <access specifier> sealed class <Class Name>
+          {
+              // Data Members
+              // Data methods
+          }
+  
+  
 
 
 
