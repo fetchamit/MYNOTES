@@ -600,7 +600,31 @@ Note: Abstract functions are terminated by using semicolen in base class. It doe
               // Data methods
           }
   
+### Abstract function VS Virtual function
+----------------------------------------
+1. Abstract function can be initialize by using "abstract" keyword and Virtual functions are initialize by using "virtual" keyword.
+2. Abstract function can be initialize only and no need to define it's body in base class, But in other hand a virtual function can be initialize and define both in base class.
+3. Abstract functions can be initialized only on abstract clsss and in case of Virtual function it is not mandetory to initialized only on abstract class.
+4. An Abstract function can be strictly defined in child class but in case of virtual function it is not mandetory.
+5. An Abstract function is terminated by using semicolen(;) and virtual function has no termination.
   
+## Interface
+-------------
+* An interface is a complete abstract class.
+* An interface is a special type that has only function declaration.
+* Interface is a collection of various abstract methods. All the methods of interface are by default public and abstract. Also no need to write public and abstract keyword.
+* In C# we can't declare a data member(variable) inside an interface.
+* We can not create object of interface. It is used by child classes.
+* Interface is used to implement some concept like multiple inheritance. We can inherit one class and multiple interfaces inside a child class.
+* It is mandatory child class to define (Implement) all methods of an interface.
+* "interface" keyword used to define an interface.
+
+      Syntax :
+      <Access_specifiers> interface <Interface_Name>{
+        // Declaration of Abstract methods
+        }
+
+### Abstract Class VS Interface
 
 
 
