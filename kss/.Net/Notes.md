@@ -627,6 +627,30 @@ Note: Abstract functions are terminated by using semicolen in base class. It doe
 ### Abstract Class VS Interface
 
 
+## Random Class in C#
+----------------------
+* Random class in C# is used to random number, captcha, random foldername etc.
+* Random class is belongs from "System" namespace.
+* It is a class basically used to generate random number.
+* Ex: We can use this class to generate OTP etc.
+* Syntax to create Random class
+
+      Random ObjectName=new Random();
+
+* Random class have Next() function that is used to get number within the given range.
+* Next function returns the int type of value.
+* Example:
+
+      Syntax :
+      ObjectOfRandomclass.Next(MinValue,MaxValue);
+      Example:
+      Random rd=new Random();
+      rd.Next(1,100);
+
+
+
+
+
 
 
 
