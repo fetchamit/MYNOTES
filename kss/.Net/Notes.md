@@ -675,7 +675,49 @@ Syntax to call a function using delegate:
     ObjName_Of_Delegate(List_Of_arguments);
     Ex:s(45,32);
     
+Note: Delegate is independent from Object. It can store address of functions of another class also.
 
+# Exception Handling in C#:
+----------------------------
+## What is an Exception ?
+* An exception is a run-time error.
+* An exception is a run-time fault in our program code that was unexpected by the programmer/user.
+
+## What is Exception handling ?
+* Exception handling is a process to handle the exceptions.
+* It is a process that is written or implemented by a programmer it it's code so that this code can work as an alternative code when an exceptions occurs in code.
+
+* Exception handling is  a collections of few below blocks in C#.
+  1. try block
+  2. catch block
+  3. finally block
+
+## 1. Try block
+* This block contains some code that can generate an exception.
+* The code that have chances to occure some exception can be written in try block.
+
+## 2. Catch block
+* This block contains exception handling code.
+* when an exceptin occurs inside code of try block then program control moves to catch block and executes code of catch block.
+* We must have to define at-least one catch for a try block.
+* We can define multiple catch block for a single try block to handle different-different types of exceptions.
+* We can pass object of corresponding exception handling class in catch block to handle specific type of exception.
+* Example :
+
+      catch(IOException ex){
+          //Exception handling code
+      }
+      catch(DivideByZero dz){
+          // Exception handling code
+      }
+
+Note: "Exception" class is a base class for all type of exceptions. So we can catch all type of exceptions when we pass object of "Exception" class in catch block. It is optional to pass object of an exception handling class in catch block.
+
+## 3. Finally block
+* It is an optional block of exception handling code.
+* It contains some common code that we want run or execute in all situations/conditions.
+* Either an  Exception occurs or not; finally block executes it's code.
+* Note: Exception handling is a process that continues alternate exception of our program so that suddenly execution will not stop.
 
 
 
