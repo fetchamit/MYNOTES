@@ -647,7 +647,34 @@ Note: Abstract functions are terminated by using semicolen in base class. It doe
       Random rd=new Random();
       rd.Next(1,100);
 
+## Delegate in C# :
+* Delegate is a user defined datatype in C#.
+* It is located inside "System" namespace.
+* Delegate is a reference type variable.
+* "Delegate is used to store address(reference) of a function."
+* Delegate is a function pointer.
+* Delegate can store address of a function that has same signature. So it is necessary to have same signature of delegate and corresponding function.
+* Delegates are generally used to create event handlers(A code to handle events like as click, change, etc).
+* Syntax to create a Delegate:
 
+      <Access_Specifiers> delegate <Return_Type> DelegateName(List_Of_Parameters);
+
+  Example :
+
+      public delegate void Show(string msg);
+
+Syntax to assign address of a function to a delegate:
+
+      DelegateName ObjectName=new DelegateName(Name_Of_Function);
+Example :
+
+    Show s=new Show(test);
+
+Syntax to call a function using delegate:
+
+    ObjName_Of_Delegate(List_Of_arguments);
+    Ex:s(45,32);
+    
 
 
 
