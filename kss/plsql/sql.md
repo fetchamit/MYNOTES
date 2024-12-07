@@ -55,6 +55,30 @@ Note: Creating table we have to mention the name of our database where table is 
 * To show structure of table we used below syntax:
 
       desc TableName;
+* Syntax to add new column in existing table:
+
+      alter table <Table_Name> add <Column_Name> <Datatype>(<Size>);
+
+Example:
+
+    alter table employee add designation varchar(200);
+
+* Syntax to change the size of column :
+
+      alter table <Table_Name> modify <NameOfColumn> NewDaTatype(Size);
+
+Example:
+
+    alter table employee modify designation varchar(100);
+    
+* Syntax to change name of columns :
+
+      alter table <TableName> change <OldColumnName> <NewColumnName> <NewDataType>(<size>);
+
+Example :
+
+      alter table employee change role Department varchar(100);
+
 
 
 # 2. DML
