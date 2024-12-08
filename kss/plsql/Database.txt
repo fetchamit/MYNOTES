@@ -1,0 +1,523 @@
+
+Link to host 
+ >mysql -h localhost -u root -p
+ #sql will be linked with xampp . Leave password
+
+Create database:
+    >create database firstdb;
+
+Show database:
+    >show database;
+
+For select particular database:
+    >use database_name;
+        # Result will be like MariaDB [database_name]>
+
+For delete/ remove database
+    >drop database database_name;
+
+<!-- SQL -->
+
+DDL: Data definition language
+    1) Create :
+    2) Alter :
+    3) Truncate :
+    4) Drop :
+
+DML : Data Manipulation Language
+    1) Insert
+    2) Delete
+    3) Update
+
+DQL : Data Query Language
+    1) Select
+
+
+DDL : Create:
+    => create is a Data definition command.
+    => create command is used for creating new structure in database.
+
+        Syntax:
+        create schema/entity_type schema/
+        entity_name definitions
+
+    Ex: create table firsttbl(Name varchar(30), Age int(6), class varchar(10));
+
+    #for show all tables in particular database:
+     show tables;
+
+    #for show schema/structure of tables;
+     desc/describe table_name;
+
+DML : Insert:
+    => Insert is DML command.
+    =>It is used for inserting data in our table according to their column names.
+
+    Syntax:
+    insert into tabele_name(columnname1,coumnname2,....) values(value1,value2,....)
+
+    or
+
+    insert into table_name values(value1,value2,.....)
+
+    
+    ex: insert into firsttbl(Name,Age,class) values('mohit',20,'second',);
+
+Select:
+    Clause 
+    1)From : 
+    => It specify the entity or table from where we have to fetch data in database.
+    2) Distinct:
+    => distinct is used to fetch unique record from the table. It is oftenly used with select command.
+
+    3)Order by:
+    => Order by is a clause that is used with select command for fetching data in a seqquence or order. It have two paramenters:
+    the first one is 'asc' and the second 'desc'.
+    => asc is used for fetch record in ascending order and 'desc' is used for fetch record in descending order
+    4) Group by:
+        => group by is used to group similar rows in a group. It groups the item in identical order.
+    5) having: 
+        => having is used with group by class for grouping rows at a particular condition. 
+            Generally we can say it is used to give a condition in group by clause.
+    6) where:
+        => where is used to give a condition for filtering the data
+        =>it is used with select,update,delete commands.
+        =>we are using where clause to fetch or access specific data or record. 
+
+    ____________
+Operators:
+    1) Equal to (=)
+    2) greater that equal to (>=)
+    3)less than equal to (<=)
+    4)not equal to (<>)
+    5)and:
+        => and is used to justify two or more condition or statement. it returns true when every conditon because true.
+    6) or:
+        => 'or' operator is used to justify two or more condition at a time. it returns true when one or more than on codition becomes true.
+    7)not
+        =>it return true when the condition becomes false.
+    8) In:
+        =>in operator is used to search or filter data with given set of data.
+
+        Syntax : select * from tablename where salary in (30000,20000,40000);
+    9) between: 
+        =>between operator is used to search or filter records between a given range.
+
+        suntax: select * from employee where salary between 25000 and 40000;
+
+---------------------
+Wild cards:
+    like operator:
+    =>like is use to filter our record based on specific patterns. it have two wild cards that is mentioned below
+        A) _
+        => the underscore is use to denote a single character in pattern.
+        B)%
+        => percent symbol is use to denote one or more than character in given pattern.
+
+    Syntax:
+        select emp_name from employee where emp_name like '_a%';
+---------------------
+Data types:
+    1) String:
+        A)char
+        B)varchar
+    
+    2) Numeric:
+        A)int
+        B)float
+        C)double
+
+    3)date:
+        A)date
+        B)datetime
+        C)timestamp
+        D)year
+
+---------------------
+Alter command :
+    => Alter is used to modify the schema of the table.
+    => We can change the column data type and size using alter.
+    => We can rename colulmns and table name also with alter command.
+    => we can add or remove columns in table with alter command.
+
+    Syntax: 
+        Alter table tablename operationname operation_expressions;
+            
+Drop: 
+    => Dropo is a DDL command that is used to remove database or entity/table or column.
+
+    Syntax : drop entitytype entityname;
+        ex: drop database database_name;
+        ex; drop table table_name;
+
+Truncate :
+    =>It is used for removing all data from table.
+    Syntax:
+        truncate table tablename;
+        ex 
+            truncate table emp_record;
+
+        #)For adding new column: 
+            Syntax:
+                alter table tablename add column columnname datatype(size);
+
+                ex: alter table employee add column city varchar(20);
+        #)For change column name:
+                alter table tablename change oldcolumnname newcolumnname datatype();
+
+                ex: alter table employee change city state varchar(5);
+        #)Removing column:
+            Syntax: 
+                alter table tablename drop columnname;
+
+                ex: alter table employee drop city;
+
+        #)for changing datatype and size of column:
+            alter table tablename modify coumnname newdatatype(new_size):
+
+            ex: alter table employee modify salary int(5);
+
+        #)Rename table name:
+            Syntax:
+                alter table tablename rename newname;
+
+                ex:
+                    alter table employee rename employee_command;
+
+update:
+    => update command is used to change the data within table.
+    => it is dml command
+
+    Syntax :
+        upadate tablename set columnname='new value' where condition;
+        upadate tablename set columnname='new value', columnname2='new value' where condition;  
+                                /* this is used to update more than 1 column*/
+
+        ex: 
+            update emp_record set emp_id='109';
+
+delete:
+    => delete command is dml command that is used to delete record from the table;
+    => it can remove one or more than one record from the table at a time.
+    Syntax:
+         delete from tablename where condition;
+
+-------------------
+Constraints:
+    not null
+    default
+    keys: keys are used to give a feature to the attributes/column in our table. It defines some regulations also.
+    Type of keys are;
+         
+        1)Primary key
+        => unique value + not null values
+            Syntax:
+                #new table 
+                    create table kss(name varchar(30), age int(6),roll_no int(5), primary key(roll_no));
+                #Existing table
+                    alter table kss add constraint primary key(columnname);
+        2)Foreign key
+                =>Foreign key is used to deffine a relation between two tables.
+                => genrally it is used to connect two tables.
+                =>In process of creatingg foreign key;it have two tables, one is parent table another isi child;
+                =>The table in which foreign be created that is called child table and another table is called  parent table that contains primary key.
+
+            Syntax:
+                #on table creation
+                    create table library(bookId int, bookName varchar(30),allotedStudentIdint, primary key(bookId),foreign key(allotedStudentID)references student(roll_no));
+        3)super key
+        4)cnadidate key
+        5)composite key
+        6)derived key
+        7)alternate key
+        8)unique key
+
+--------------
+Joins:
+    =>Join is a cluase that is used combine two or more than two tables records.
+    =>it is use to fetch reocrd from multiple table at a time.
+    =>it should be mount with similar columns in both tables in a single command.
+
+    Types of join:
+        1)Inner join
+        Syntax: 
+            select * from student inner join library on student.roll_no=library.allotedstudent;
+
+            select student.name,library.bookname,student.age from student inner join library on student.roll_no=library.allotedstudent;
+
+        Syntax -using alias: 
+            select s.name,s.age,l.bookid,l.bookname from student as s inner join library as l on s.roll_no=l.alltedstudent;
+        2)Left join
+        3)Right join
+
+Aggregate function:
+    =>Sum()
+        select sum(columnname) from tablename;
+    =>Count()
+        select count(columnname) from tablename;
+    =>Max()
+        select max(columnname) from tablename;
+    =>Min()
+        select min(columnname) from tablename;
+    =>Avg()
+        select avg(columnname) from tablename;
+
+
+    Syntax:
+        select count(columnname) from student;
+
+        ex: select count(roll_no),name from student;
+
+Data control language(DCL):
+    =>DCL commands is used to grant permissions to the user or remove permission from the user to create or modify schema and structure of database.
+    =>It have two commands in this context. The first one is 'Grant' and the second is 'revoke'.
+    1)Grant:
+    => Grant is used to grant permissions like select, update, delete etc to the another users.
+    Syntax:
+            grant permissionname on tablename to username;
+
+    2)revoke:
+        =>`revoke` is used for removing granted permission from the user.
+        Syntax:
+            revoke permissionname on tablename from username;
+
+
+#For showing current users in database:
+    Syntax:
+        select user();
+#For creating new user in database:
+    Syntax:
+        create user username identified by 'password';
+
+# After creating user to check grants
+    Syntax:
+        show grant for username;
+
+        ex: Grant select on *.* to username;
+                // here first * is for all databasee and * is for all tables and having access to select only that is equivalent to view right//
+
+# For all granting all access to user
+    Syntax: 
+        grant all privileges on *.* to 'username'@'hostname' identified by 'password';
+
+
+
+TCL (Transaction control language):
+    1) Commit
+        commit;
+    2) savepoint
+        savepoint savepointname;
+    3) rollback:
+        rollback;
+
+        rollback to savepointname;  //In this case all commant get undo till the savepointname command//
+
+        
+
+
+--------------------------------
+# Filter record from table name temple_details of only two location temples from multi location and show their sum with location
+
+Location    Earning
+chitrakoot  101
+chitrakoot  501
+varanasi    701
+delhi       201
+varanasi    200
+
+<!--Solution of the above data-->
+
+select sum(earning),location from temple_details group by location having location = 'chitrakoot' or 'varanasi'
+---------------------------------------
+
+# Procedure
+    => Procedure is also known as stored procedure in mysql.
+    =>Procedure is used to define some programatical logic and fire one or more that one command at a time.
+    =>We have to declare and define our sql query with in the procedure to execute.
+    =>we are using the procedure for increase performance to fetch data from database.
+    =>In procedure we have three types of parameters which are written below:
+
+        1) In: This param is used to take input inside our procedure. we can only use this param in our procedure means it is read only mode. we can't change are reassing to this param.
+
+        2) Out: this program is used to give output outside of procedure where the procedure called. We can assign and modify to this param.
+
+        3) InOut: this is combination of both, In and Out.
+
+            Syntax :
+
+                # To create a procedure
+                    create  procedure procedureName(in varname datatype, out varname datatype,inout varname datatype)
+                    begin
+                    as
+                    //executable sql
+                    end
+
+                    Delimiter &&
+
+                    procedure definition
+                    
+                    Delimiter ; <!--single space is mandatory after keyword delimiter-->
+
+                # To replace an existing procedure
+                    replace precedure procedureName(in varname datatype, out varname datatype,inout varname datatype)
+
+                e.g.
+                     delimiter &&
+                     create procedure temp_insert_delete()
+                            begin
+                            declare total_row int(5);
+                            select count(temple_name) into total_row from temple_details;
+                            if total_row >5 then
+                            insert into temple_details values(108108,'Vindhyachal','Mirzapur',9800000000000,'Shri Rituvesh Panda');
+                        end if;
+                        end &&
+
+                # In param
+                     For taking input in procedure.
+
+                e.g.
+
+                     create procedure entry(in srn int, in templo_name varchar(30))
+                     begin
+                     insert into student values (srn,templo_name);
+                     end
+
+                     for calling function----
+                        call entry(30,'Mahadev');
+
+                #Out param
+
+                    create procedure getMax(out Idmax int)
+                    begin
+                    select max(temple_id) into Idmax from temple_details;
+                    end 
+
+                    call getMax(@rollmax)
+                    select @rollmax
+
+------------------------------
+# Stored function
+    => Stored functions are like procedure in mysql.
+    => A function must return some values while it is optional in procedure.
+    => To return value from function we have to use return keyword.
+    Syntax:
+        create or replace Function FunctionName(para)
+        returns datatype(size)
+        begin
+        -----logical block
+        end;
+
+        e.g.
+            create function getsMax()
+            returns float
+            deterministic                  
+            begin
+            declare max_srno float;
+            select max(tempel_id) into max_srno from temple_details;
+            return max_srno;
+            end;
+
+        To call function we have use select syntax or create procedure:
+
+            Select syntax method:
+                select * from temple_details where tempel_id=getsMax();
+                select name,getsMax() from temple_details;
+
+
+            Procedure syntax method:
+                create procedure FuncCall(out maxes float)
+                begin
+                select getsMax() into maxes;
+                end;
+
+
+            e.g. Function to select salary and categories as need to improve, good & well done.
+
+                create function earnignStatus(amount float)
+                returns varchar(30)
+                determistic
+                begin
+                declare status verchar(30)
+                if amount<10000 then
+                set status='Need to improve';
+                elseif amount>10000 and amount <40000 then
+                set status='Good';
+                elseif amount>40000 then
+                set status='well done';
+                end if;
+                return status;
+                end;
+
+------------------
+# Triggers:
+    => Triggers are automatically executable programm. It executes automatically when specified event occurs.
+    => Triggers works behind the scene. It perform some action on an event.
+    => Triggers are fired after or before DDL/DML/DCL command. So we can create triggered to execute on execution of insert, update, delete.
+
+        Syntax: 
+            create trigger trigger_name before/after insert/update/delete/........ on tablename
+            for each row
+            begin
+            -----executable block --------
+            end;
+
+    Psuedo classes/keywords:
+        1) New:
+        2) Old:
+        => For insert old contains no values, and new contains new values.
+        => For an update trigger, old contains old values and new contains new values
+        => For delete trigger old contains the old value and new contains no value.
+
+        e.g.
+            delimiter //
+            create trigger upd_check before update on temple_details
+            for each row
+            begin
+            if new.tempel_id < 0 then
+            set new.tempel_id=0;
+            elseif new.tempel_id > 100 then
+            set new.tempel_id=100;
+            end if;
+            end;
+
+# SQL JOIN (ONLINE-CONTENT)
+
+    Join means to combine something.
+    A join clause is used to combine data from two or more tables, based on a related column between them
+
+
+    TYPES OF JOIN
+            INNER JOIN
+            LEFT JOIN
+            RIGHT JOIN 
+            FULL JOIN
+
+    INNER JOIN:
+
+            Syntax: 
+            select column_names from Table A inner join Table b on talbeA.col_name=tableb.col_name
+
+            (Both column name should be same for inner join. )
+
+            eg. 
+                select c.first_name,p.amount,p.mode from customer as inner join payment as p on c.customer_id=p.customer.id
+
+    LEFT JOIN:
+            Returns all records from the left table, and the matched records from the right table . If data didn't match with table B, right part of result table will be null.
+
+            Syntax:
+            select column_name from table A left join table B on tableA.col_name=tableA.com_name
+
+            (on tableA.col_name= tableB.col_name => don't change/swap priority of joining type because direction is imp in left join unlike inner join)
+
+    RIGHT JOIN:
+            Returns all records from the right table, and the match records from the left table.
+
+            Syntax:
+                select column_name from tableA right join tableB on tableA.col_name=tableB.col_name
+
+                eg. 
+                    select * from customer as c right join payment as p on c.customer_id=p.customer_id
+
+    FULL JOIN/FULL OUTER JOIN:
+
