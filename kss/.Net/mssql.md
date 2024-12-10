@@ -66,13 +66,13 @@ For Example:
 
 ### Some Function and property of SqlCommand Class
 a. Connection
-  ** This property is used to set Sql connecton in Sql command class.
+  * This property is used to set Sql connecton in Sql command class.
 b. ExecuteNonQuery()
-    ** This function is used to execute queries  related insert, update and delete.
-    ** This function return the result in int form that is it tell the number of rows affected in int form.
+* This function is used to execute queries  related insert, update and delete.
+* This function return the result in int form that is it tell the number of rows affected in int form.
 c. CommandText
-    ** This property is used to set queries in SqlCommand class.
-    ** It contains the queries related  to insert, update or delete.
+* This property is used to set queries in SqlCommand class.
+* It contains the queries related  to insert, update or delete.
 
 
 
