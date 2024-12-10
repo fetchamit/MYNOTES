@@ -41,15 +41,15 @@ Note: Entity Framework internally uses ADO.NET for handling database operations.
     SqlConnection con=new SqlConnection(connectionstring);
 
 ### Some functions and property Sqlconnection Class
-1. State=> This property is used to know the current status of database like is it connecting, closed etc.
-2. ConnectionString
+a. State=> This property is used to know the current status of database like is it connecting, closed etc.
+b. ConnectionString
  * This property is used to get connection string in SqlConnection class.
  * It generally contains all the information that is required for establishing database connectivity in .NET software or application.
 
-3. Open()
+c. Open()
   * This function is used to open the database connection.
 
-4. Closed()
+d. Closed()
   * This function is used to close or terminate the database connection.
  
 2. SqlCommand Class
