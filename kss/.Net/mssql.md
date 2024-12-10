@@ -41,20 +41,41 @@ Note: Entity Framework internally uses ADO.NET for handling database operations.
     SqlConnection con=new SqlConnection(connectionstring);
 
 ### Some functions and property Sqlconnection Class
-  1. State=> This property is used to know the current status of database like is it connecting, closed etc.
-  2. ConnectionString
-    * This property is used to get connection string in SqlConnection class.
-    * It generally contains all the information that is required for establishing database connectivity in .NET software or application.
+1. State=> This property is used to know the current status of database like is it connecting, closed etc.
+2. ConnectionString
+ * This property is used to get connection string in SqlConnection class.
+ * It generally contains all the information that is required for establishing database connectivity in .NET software or application.
 
-  3. Open()
-    * This function is used to open the database connection.
+3. Open()
+  * This function is used to open the database connection.
 
-  4. Closed()
-     * This function is used to close or terminate the database connection.
-
-
-    
+4. Closed()
+  * This function is used to close or terminate the database connection.
+ 
 2. SqlCommand Class
+* This class is located under "System.Data.SqlClient" namespace.
+* It is used to set and execute database queries.
+* It worked in connected mode.
+* Syntax of SqlCommand class
+
+      SqlCommand cmd=new SqlCommand("Command",Object_Of_connectionClass);
+
+For Example: 
+
+    SqlCommand cmd=new SqlCommand("delete from tablename",con);
+
+### Some Function and property of SqlCommand Class
+* Connection *
+  ** This property is used to set Sql connecton in Sql command class.
+* ExecuteNonQuery()
+    ** This function is used to execute queries  related insert, update and delete.
+    ** This function return the result in int form that is it tell the number of rows affected in int form.
+* CommandText
+    ** This property is used to set queries in SqlCommand class.
+    ** It contains the queries related  to insert, update or delete.
+
+
+
 3. SqlDataAdapter class
 4. DataTable
 5. DataSet
