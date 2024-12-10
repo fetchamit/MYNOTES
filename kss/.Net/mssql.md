@@ -65,12 +65,12 @@ For Example:
     SqlCommand cmd=new SqlCommand("delete from tablename",con);
 
 ### Some Function and property of SqlCommand Class
-**Connection**
+a. Connection
   ** This property is used to set Sql connecton in Sql command class.
-* ExecuteNonQuery()
+b. ExecuteNonQuery()
     ** This function is used to execute queries  related insert, update and delete.
     ** This function return the result in int form that is it tell the number of rows affected in int form.
-* CommandText
+c. CommandText
     ** This property is used to set queries in SqlCommand class.
     ** It contains the queries related  to insert, update or delete.
 
