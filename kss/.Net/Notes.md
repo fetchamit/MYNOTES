@@ -719,6 +719,51 @@ Note: "Exception" class is a base class for all type of exceptions. So we can ca
 * Either an  Exception occurs or not; finally block executes it's code.
 * Note: Exception handling is a process that continues alternate exception of our program so that suddenly execution will not stop.
 
+# Collections in C#
+* Collections are used to store multiple items.
+* Collections are used to process large amount of data.
+* Collections provides us features for data manipulation(Addition of data, deletion of data, Updation of data and displaying of data).
+* Before C# 2.0; It was just collections. But now in C# there are two types of collections-
+  1. Generic Collection
+    * Generic collection works on the specific type of data as defined by the programmer.
+    * List, IList, Dictionary, Stack, Queue
+  
+  2. Non-Generic Collection
+    * Non-Generic Collections works on different types of data.
+    * Generally it stores objects.
+    * ArrayList, SortedList, Stack, Queue are non-geniric collection. 
+
+# A) List
+-----------
+* List is  a class that works as collection.
+* We can create any specific type of list by using List class.
+* List has rich features for addition, updation, deletion, etc.
+* Syntax to create a list
+
+      List<Type> ObjectName=new List<Type>();
+
+Example :
+
+    List<string>lst=new List<string>();
+
+# B) IList
+-------------
+* IList is an interface.
+* It is a also a collection. It comes in both Category -Generic and Non-Generic.
+* IList is used to fetch(Iterate) the items.
+* IList provides only a readonly copy of items. It provides fast method to fetch the items.
+* It does not have the methods to perform manipulation in Data.
+* IList works as iterator to fetch data.
+* It can store Object of a related class.
+* Example:
+
+      IList<string> lst=new List<string>();
+
+
+
+
+
+
 
 
 
