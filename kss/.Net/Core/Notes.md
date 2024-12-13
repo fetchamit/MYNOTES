@@ -96,6 +96,7 @@
 ## Data Transfer from View to Controller in .NET Core MVC
 * It is primary task to send data from a View page to controller so that we can perform some action or processing on that data.
 * Below are the main paths that are used to send data from a view to controller-
+  
   1. Traditional Approach
      * In this method we can fetch data of form controls by using the "Request.Form[]" array.
      * Syntax:
