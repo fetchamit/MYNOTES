@@ -120,6 +120,57 @@
      * In this method type conversion is performed automatically.
 
 
+# Razor block
+* It is a block of code that is written in a View page.
+* Razor block is used to write code of C# with in HTML page.
+* We can use Razor block one or many times.
+* Syntax:
+
+      @{
+         // C# code here
+      }
+
+# Controllers in .NET Core MVC
+--------------------------------
+* Controller is most important part of an MVC based application.
+* In MVC; C stands for Controller.
+* Controllers are created in form of a class.
+* All controller classes must have to inherit a built-class that is "Controller".
+* This built-in class is located under "Microsoft.AspNetCore.MVC.Controller" namespace.
+* All controller classes must have to use "Controller" suffix in class name.
+* Example : HomeController, AdminContrller, etc.
+* A controller class is a collection of various types of methods.
+* Methods of a controller class are known as "Controller methods".
+* In .Net Core MVC; All Controllers are created inside "Controllers" folder.
+
+## Controllers methods are two types:
+1. Action Method
+2. Non action Method
+
+## 1. Action Method
+* Action methods are used to process a HTTP request.
+* Action methods are directly executable from a view page.
+* That methods processes the request and generetes response for View page.
+* Action methods must be public. It can not be private.
+* Action method can not be a static method.
+* We can have n number of action methods inside a controller.
+
+* Types of Action method
+  1. GET
+  2. POST
+  3. PUT
+  4. DELETE
+
+  Note: Generally there are two main types of action methods-
+  1. GET
+  2. POST
+
+  # 1. GET Action Method
+  * When a view page loaded directly from server then it processes a get action method.
+  * When a user submits a form by using "GET" method in form tag; in that case also a GET action method executes.
+  * Name of this action method must be same as name of View page.
+  * Get Action method is default type of an action method or we can use [HttpGet] attribute to define an action method as a Get action method.
+  * We can have parameters in action methods.
 
 
 
