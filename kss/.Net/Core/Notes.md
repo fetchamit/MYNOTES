@@ -106,6 +106,20 @@
      * Note: Here keyname must have to match from a name of input field in view page.
      * In this method we have to perform type conversion forcefully. Because it returns data in string form.
 
+  2. Passing name of form controls as action method parameter
+     * This is also a method to send data of a view page to controller.
+     * In this method we have to pass parameters in our action method to read the data aof view page.
+     * Name of parameter of action method must be same as of form controls(input fields) in view page.
+     * In this method we do not have to perform type conversion because it will be automatically performed.
+
+  3. Passing Object of Model class as action method parameter
+     * A model class is a special class that has functionality to perform database operations. It has some getters/ setters that are used to read and assign value to properties of class.
+     * This is also a method to read data of a view page inside a controller.
+     * In this method we have to create a model class with some poperties. In that case; name of properties of model class must be same as name of form controls.
+     * This method is more preferred than passin gname of form controls as action method parameter. Because there is no need to pass a logn list of parameters in action method by using this method.
+     * In this method type conversion is performed automatically.
+
+
 
 
 
