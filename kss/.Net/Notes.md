@@ -759,6 +759,43 @@ Example :
 
       IList<string> lst=new List<string>();
 
+# C) Dictionary
+-----------------
+* It is a generic collection .
+* Dictionary is used to store items in key-value pair . We can findout values from the dictionary based on their keys.
+* It provides fast way to search items from collection.
+* Syntax:
+
+      Dictionary<Key_type,Value_type> Object_name=new Dictionary<Key_type,Value_type>();
+      Ex:
+      Dictionary<int,string>stu=new Dictionary<int,string>();
+
+Note: Dictionary is a collection of various objects of `KeyValuePair` structure.
+
+* `TryGetValue()` is a function of Dictionary that is used to find / search a value in dictionary based on key.
+* Example :
+
+      string str = string.Empty;
+      bool r=emp.TryGetValue(1011,out str);
+      if(r==true)
+          Console.WriteLine("Item found in dictionary. value is : "+str);
+      else 
+        Console.WriteLine("Item not found in Dictionary");
+
+# D) Stack
+-----------
+* Stack is a also a collection.
+* Stack can be generic and non-generic type also.
+* It is used to store multiple items in LIFO(List in First Out) manner.
+* Stack has `push()` ,`pop()` and `peek()` methods to perform sequantially data addition ,deletion and display.
+* Syntax :
+
+      Syntax of Non Generic stack:
+      Stack ObjName=new Stack();
+            Or
+      Syntax of Generic stack :
+      Stack<type> ObjName=new Stack<type>();
+
 
 
 
