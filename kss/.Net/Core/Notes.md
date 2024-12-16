@@ -180,6 +180,66 @@
   * Note: All action methods have to perform some result to display in View page. There is a built-in class "ActionResult". The result is prepared in form of this class-`ActionResult` . But in `.NET Core` We have to return instance of `"IActionResult"` interface to implement more security in software. `IActionResult` interface works as parent of `"ActionResult"` class.
   * In needed; then we can return `"JsonResult,RedirectResult, ContentResult or FileResult etc.` from our action methods. These are also built-in classes and located inside parent-child hierarchy of `"ActionResult"` class.
 
+# 2. Non-Action Method
+* That methods are normal methods of C#.
+* Non action methods are not directly accesible from View pages.
+* We can use private, public, protected, etc access specifier before a non action methods as per our need.
+* Non action methods can be static methods.
+* That methods are normal UDF.
+* We can use `[NonAction]` attribute before a non action method.
+* we can have n numbers of non action methods in a controller.
+* Non action methods are used by action methods to perform some tasks.
+
+# Data Transfer from Controller(Action Method) to View
+--------------------------------------------------------
+* In .NET Core it is also an important task to transfer data from `controller to view`.
+* Many of the times we have to display some data/result/ response to user in View Page after processing in action method.
+* We have `4 below methods` to transfer some data from Controller to View.
+  
+      A. View Data
+      B. View Bag
+      C. Temp Data
+      D. Strongly Typed View
+
+## A. View Data
+----------------
+* View Data is a built-in object of `"ViewDataDicrionary"` class.
+* It can store various data in Key/ Value pair.
+* We can store any type of Data in ViewData but during reading data from a ViewData; We have to perform type conversion .
+* Scope of View Data is one action method to one View page.
+
+      Syntax:
+      ViewData["KeyName"]=Value;
+      Ex: ViewData["name"]="Ram Kumar";
+
+## B. View Bag
+---------------
+* ViewBag is also an object of `ViewDataDictionary` class.
+* It uses a dynamic expression to store and read data.
+* We can store any type of data in ViewBag.
+* There is no need to perform any type conversion in ViewBag.
+* Scope of a ViewBag is from one action method to one View page.
+
+      Syntax:
+      ViewBag.DynamicExpression=Content/Value;
+      Ex:
+      ViewBag.msg="Welcome to .NET Core";
+
+## C. TempData
+---------------
+* TempData is a built-in object of `TempDataDictionary`.
+* TempData works in Key/Value pair.
+* We can store any type of data in tempdata but during reading data from a TempData; we have to perform type conversion.
+* Scope of a TempData is from one action method to one View page and also for the one next view page.
+
+      Syntax:
+      TempData["key"]=Value;
+      Ex:
+      TempData["name"]="Ramesh kumar";
+
+
+  
+
 
 
 
