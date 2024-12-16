@@ -172,7 +172,13 @@
   * Get Action method is default type of an action method or we can use [HttpGet] attribute to define an action method as a Get action method.
   * We can have parameters in action methods.
 
-
+  # 2. POST Action Method
+  * Post Action methods executes when a user submits the form by using "POST" method in form tag.
+  * It is generally used to read and process the user entered data.
+  * We have to define `[HttpPost]` attribute in post action method.
+  * Name of get and post action methods must be same for a specific view. It means we have to `Overload` get and post action methods.
+  * Note: All action methods have to perform some result to display in View page. There is a built-in class "ActionResult". The result is prepared in form of this class-`ActionResult` . But in `.NET Core` We have to return instance of `"IActionResult"` interface to implement more security in software. `IActionResult` interface works as parent of `"ActionResult"` class.
+  * In needed; then we can return `"JsonResult,RedirectResult, ContentResult or FileResult etc.` from our action methods. These are also built-in classes and located inside parent-child hierarchy of `"ActionResult"` class.
 
 
 
