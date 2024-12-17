@@ -237,9 +237,74 @@
       Ex:
       TempData["name"]="Ramesh kumar";
 
+Note: 
+* It is only used to data in termporary format.
+*  We can used tempdata to read data from it only one time after reading data from tempdata  it's value gets null.
+* Similarly we can set the data from TempData only one time.
+*  To access data in whole project we use conept of session variable.
 
+## D. Strongly Typed View
+--------------------------
+* This is used to send data from controller to view.
+* This is generally used to send data from controller to view of model specific data.
+* To show data of model class in view page we used strongly type view.
+* We should add below namespace to show the data in view page
+
+      @using projectName.Models
+      @model className
   
+Example :
 
+    @using Demo1.Models
+    @model Customer
+
+
+# .NET Core MVC Request Life Cycle
+------------------------------------
+* .NET Core request life cycle is a combination of various stages that are used to process a HTTP request.
+* This life cycle begins from a HTTP Request and ends by generating and displaying the response to end user.
+* Various stages of .NET Core Life cycle
+1. Middleware
+2. Routing
+3. Controller Intialization
+4. Action Method Execution
+5. Result Execution
+6. View Routing
+
+## 1. Middleware 
+* Middleware component forms the basic building block of an application.
+* Middleware stage is a collection of few components that are combined to form  a request(requests).
+* That component handles incomming requests.
+* All HTTP request comes direct to this middleware; hence its role is very important.
+* It Handles all request carefully and creates a log of all requests. This process is also known as request pipeline.
+
+## 2. Routing
+* Routing is a process to map an incomming HTTP request to specific responsible Controller and action method.
+* It defines that where this request will be processed.
+
+## 3. Controller Initialization
+* Controllers are created as a class.
+* So to execute/use a code of a controller we have to create object of that controller.
+* The process of creating or initializing an object of a controller is called "Controller Initialization". In ASP.NET Core, This process is done automatically by the framework. When a request is made, the framework creates an instance of the controller class and invokes its constructor.
+
+## 4. Action Method Execution
+* In this code of specific action method will be executed as per the given conditions and code.
+* If needed; then it can communicate with Models(database layer).
+* It creates response to display in a View Page.
+
+## 5. Result Execution
+* During this stage generated response is executed and it will be prepared as HTTP response.
+* This is a process of generating/converting response to HTML format.
+
+## 6. View Rendering
+* In this stage HTTP response will be displayed inside View page.
+* Content of View page will be updated with new response.
+
+        HTTP Request --> Middleware --> Routing --> Controller Initialzation
+                                                                      |
+        <--------------------------------------------------------------
+        |                            
+        --> Action method Execution --> Result Execution -->View Result --> View Rendering --> Response
 
 
 
