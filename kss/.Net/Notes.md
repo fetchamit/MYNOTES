@@ -796,7 +796,24 @@ Note: Dictionary is a collection of various objects of `KeyValuePair` structure.
       Syntax of Generic stack :
       Stack<type> ObjName=new Stack<type>();
 
+# E) Queue
+------------
+* Queue is also a collection.
+* It is used to store multiple data.
+* Queue is Generic and Non-Generic type both.
+* We can display item of queue from beginning (start) by using the Peek() function.
+* Queue is based on FIFO(First in First Out).
+* Syntax of Non-Generic Queue:
 
+      Queue ObjName=new Queue();
+      Ex: Queue q=new Queue();
+
+* Syntax of generic Queue
+
+      Queue<Type> ObjectName=new Queue<Type>();
+      Ex: Queue<int> nums=new Queue<int>();
+
+Note: Queue has  a method `ToArray()` that is used to convert items of a Queue into an Array. `Enqueue()` method is used to add a new item in Queue. `Dequeue()` method is used to delete an item from a Queue.
 
 
 
