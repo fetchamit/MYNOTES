@@ -815,7 +815,52 @@ Note: Dictionary is a collection of various objects of `KeyValuePair` structure.
 
 Note: Queue has  a method `ToArray()` that is used to convert items of a Queue into an Array. `Enqueue()` method is used to add a new item in Queue. `Dequeue()` method is used to delete an item from a Queue.
 
+# F) LinkedList
+-----------------
+* LinkedList is a collection of generic type.
+* It is used to store multiple tiems.
+* In C# this Linked List is internally a doubly Linked List.
+* We can add and remove items from Linked List from both ends(start and end).
 
+## Methods
+1. AddFirst(): Used to add an item from beginning.
+2. AddLast(): Used to add an Item from the end.
+3. Remove(): Used to delete specific item from list.
+4. Find(): Used to search an item in the list. It returns the search value.
+5. Contains(): Used to check whether the given item is available in list or not.
+
+## Properties
+1. First.Value: Used to fetch(print) first value of the list.
+2. Last.Value: Used to fetch(print) last value of the List.
+3. Count: Used to find number of nodes(items) in the List.
+
+Note:  If list is empty then `First` and `Last` properties will returns `null`.
+
+      LinkedList<string> list = new LinkedList<string>();
+      list.AddFirst("Satna");
+      list.AddFirst("Agara");
+      list.AddFirst("Jalaun");
+      list.AddFirst("Prayagraj");
+      if (list.Count > 0)
+      {
+        //var res=list.Remove("hello");     // returns false if item not found
+        // var res = list.Find("hello");   // returns empty string if item not found
+        // var res = list.Contains("satna");   // returns false if not found
+        // Console.WriteLine(res);
+        // Adding before an item on linked list
+         LinkedListNode<string> mynode = list.Find("Agara");  // It finds the node 
+         list.AddBefore(mynode, "Hello");
+        
+        foreach(string item in list)
+      {
+        Console.WriteLine(item);
+      }
+
+    }
+    else
+      {
+        Console.WriteLine("List is Empty");
+    }
 
 
 
