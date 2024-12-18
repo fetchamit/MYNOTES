@@ -307,6 +307,41 @@ Example :
         --> Action method Execution --> Result Execution -->View Result --> View Rendering --> Response
 
 
+# Models
+----------
+* In MVC, M stands for Model.
+* In .NET Core Models folder is created automatically when we create any new project.
+* Model is generally use and handle database command.
+* We careate any class having getter setter property inside the Models folder.
+* Getter and Setter property of any class is used to read and write the properties of a class.
+* To Use Models data inside any view page or inside the controller we have to use below namespace that is -
+
+      @using ProjectName.Models;
+
+* Strongaly typed view is used to show data of model specific class.
+* Model can not directly communicate with view or we can say model can not sent data to view directly, hence we used controller as a mediater to transfer the data of model to view or view to model.
+
+# Master Page / Layout Page
+------------------------------
+* Master page is also known as Layout page.
+* We can make Layout page inside the shared folder. However in .NET Core we do not need to make the shared folder manually because it will created automatically when we created any .NET Core project.
+* Shared folder is located inside the views folder we used master page or layout page to write that part of the code that is common among all the pages .
+* For Example generally menu, header and footer part is common to all pages. So we write these section in layout page.
+* The view page that uses the layout or master page is known as child page.
+* We need to use RenderBody() in layout page to render the child pages or to use child pages.
+* The section we define RenderBody() method on that section child pages will be render or exist.
+* In one layout page we can only one RenderBody(). We can not use multiple RenderBody() inside the single layout page.
+
+## How to link pages by using Helper class
+--------------------------------------------
+
+      @Html.ActionLink("Text Name","Action Methods","Controller Name","Parameters",new{HTML Attributes});
+      Example:
+      @Html.ActionLink("Home","Index","Home",null,new{@class="nav-link active"})
+
+
+
+
 
 
 
