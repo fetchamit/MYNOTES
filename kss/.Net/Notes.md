@@ -863,6 +863,38 @@ Note:  If list is empty then `First` and `Last` properties will returns `null`.
     }
 
 
+# G) ArrayList
+---------------
+* ArrayList is a non-generic collection.
+* It is like Array but it has more functionality to manipulate data.
+
+      Syntax :
+      ArrayList ObjName=new ArrayList();
+      Ex :
+      ArrayList mylist=new ArrayList();
+
+Note: Unlike array we can store any type of data in an ArrayList.
+
+# H) SortedList
+----------------
+* SortedList can be generic and non-generic both type of collection.
+* It works on Key/value pair and store bulk records.
+* SortedList automatically sorts the items in ascending order.
+* It also has method to manipulate data easily.
+* Syntax :
+
+      SortedList ObjectName=new SortedList();
+      Ex :
+      SortedList sl=new SortedList();
+
+Adding item in sorted list:
+
+    ObjectName.Add("Key","Value");
+    Ex: sl.Add(45,"Ramesh");
+
+Note: It sorts the item based on Keys.
+
+
 
 
 
