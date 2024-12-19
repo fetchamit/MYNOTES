@@ -340,6 +340,60 @@ Example :
       @Html.ActionLink("Home","Index","Home",null,new{@class="nav-link active"})
 
 
+# HTML Helpers in .NET Core
+-----------------------------
+* An HTML Helper is an extension method of HTMLHelper class that is used to generate HTML tags in a View page.
+* HTMLHelper is a built-in class in .NET Core MVC that is used to generate HTML content by using C# language.
+* HTMLHelper is more useful when we want to display data in controls or want to read of controls.(Database connection)
+* For Example is you want to generate a textbox with `id="stuname"` and `name="stuname"` then you can type all the required HTML in view as shown below-
+
+      <input type="text" name="stuname" id="stuname" />
+
+However in HTMLHelper of .NET Core you can generate a textbox by just writing below code -
+
+    @Html.TextBox("stuname");
+
+* We have a built-in object of HTMLHelper class that is -`Html` So we can call extension methods of HTMLHelper class by using object `Html`.
+* Methods fo HTMLHelper class are overloaded methods. It means we can have multiple functions with same name having diffent differnet Parameters.
+
+## Some important methods of HTMLHelper class
+1. TextBox()
+2. Label()
+3. Password()
+4. TextArea()
+5. Hidden()
+6. BeginForm()
+7. DropDownList()
+8. RadioButton()
+9. CheckBox()
+10. ListBox()
+11. 
+
+# UrlHelper
+-----------
+* An UrlHelper is a utility class in .NET Core that provides methods to generate URLs for action methods and resources in an application.
+* We can generate URL of action methods and URL of resources like as css,js, images etc by using URLHelper class.
+* To use URLHelper we need to use instance of IURLHelper in our Application.
+* We have a built-in instance of IURLHelper interface that is `Url`.
+* Url is not a direct instance of IUrlHelper. It is an instance of a class (e.g., UrlHelper) that implements IUrlHelper.
+1. Action(): To generate the Url of an action method.
+2. Content(): Generate URL of static files in wwwroot.
+Example:
+
+        Url.Content("~/css/style.css");
+Example :
+
+    string str=Url.Action("Privacy","Home");
+
+Note: We can create link in view pages by UrlHelper as shown below-
+
+    <a asp-action="Privacy" asp-controller="Home">Privacy</a>
+    Or
+    <a href="@Url.Action("Privacy","Home")">Open Privacy</a>
+
+Note: we can also create a link by using HtmlHelper class as shown below-
+
+    @Html.ActionLink("Privacy Page","Privacy","Home");
 
 
 
