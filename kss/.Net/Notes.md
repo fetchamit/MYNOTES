@@ -895,7 +895,38 @@ Adding item in sorted list:
 Note: It sorts the item based on Keys.
 
 
+# I) IEnumberable
 
+* Ienumberable is an interface that is located under "System.Collections.Generic" namespace. So it can be considerd as generic collection but remember that it is not a class.
+* IEnumberable works as enumerator so it is very good to fetch data.
+* IEnumberable is good for accessing data form the object in memory(means objects that are loaded in memory(RAM) right now) Ex: List,Array, Array of Object etc.
+* IEnumberable is best when we have to access data in objects from LINQ.
+* While executing a select command in a database using IEnumberable then it executes that command at server side and loads response in memory and executes filter at client side.
+* As it is an interface so we can not create it's object; We have to assign object of a class that is available in IEnumberable hierarchy.
+* Syntax:
+
+      IEnumberable<Type> InstanceName=Object;
+
+Ex:
+
+    IEnumerable<int> x=new List<int>();
+
+Note: IEnumberable has a function `MoveNext()` that is used to fetch next item from enumerator and It also has a property `Current` that is used to get current item from enumerator.
+
+# J) IQuerable 
+* IQuerable is also an interface.
+* It is located under `System.Linq` namespace.
+* IQuerable is also used to iterate data.
+* IQuerable is good for accessing out memory data. Means it is good for accessing data from a remote database, Web api, Any external service etc.
+* IQuerable is used for transfering data from LINQ to SQL.
+* When we execute a select command in database using IQuerable then it executes select command at server side with all given filters then loades data into memory.
+* Syntax :
+
+      IQuerable<Type> InstanceName=ObjectName;
+
+Example:
+
+      IQuerable<string> str=new List<string>();
 
 
 
