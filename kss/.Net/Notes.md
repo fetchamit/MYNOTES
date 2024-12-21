@@ -911,7 +911,33 @@ Ex:
 
     IEnumerable<int> x=new List<int>();
 
-Note: IEnumberable has a function `MoveNext()` that is used to fetch next item from enumerator and It also has a property `Current` that is used to get current item from enumerator.
+EXAMPLE :
+
+      List<string> list = new List<string>();
+      list.Add("Amar");
+      list.Add("Ram");
+      list.Add("Shyam");
+      list.Add("Mohan");
+      list.Add("Sohan");
+      // By using IEnumberable
+
+      IEnumerable<string> myenum = list;
+      Console.WriteLine("Items are : ");
+      foreach(string item in myenum)
+      {
+          Console.WriteLine(item);
+      }
+
+       // By using IEnumerator
+      Console.WriteLine("Items are : ");
+      IEnumerator<string>myenm=list.GetEnumerator();
+      while (myenm.MoveNext())
+      {
+          Console.WriteLine(myenm.Current);
+      }
+
+
+Note: `IEnumerator` is another interface. `IEnumberable` internally uses `IEnumerator`. IEnumerator is used for only fetching data. IEnumerator has a function `MoveNext()` that is used to fetch next item from enumerator and It also has a property `Current` that is used to get current item from enumerator. To assign an `IEnumerator` we have to use `GetEnumerator()` method.
 
 # J) IQuerable 
 * IQuerable is also an interface.
