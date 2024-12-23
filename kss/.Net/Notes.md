@@ -955,5 +955,62 @@ Example:
       IQuerable<string> str=new List<string>();
 
 
+# LINQ with C#
+-------------
+* LINQ(Language Integrated Query) is a querying syntax integrated into C# and .NET.
+* It provides a unified way to query various data sources Ex: Collections, databases, XML etc.
+* Eliminates the need for SQL or other query languages by embedding queries directly in C# code.
+
+## History and creation of LINQ
+* Introduced in: .NET Framewrok 3.5 and Visual studio 2008.
+* Creator: Anders Hejlsberg, the architecture of C#.
+* Purpose : Simplify data access and manipulation across different data types.
+
+# Advantages of LINQ
+* `Unified Query Syntax` : Consistent for all data sources.
+* `Type Safety and IntelliSense` : Queries are  checked at compile time.
+* `Improved Readability` : Simplifies complex data manipulation etc
+* `Reduce Code Complexity`
+* `Integration`
+* `Debugging and Maintenance`
+
+# What is Lambda expression
+* A concise way to represent and anonyms function.
+* Used in `LINQ` for definging inline functions or conditions.
+
+      Syntax: (parameters)=> expression_or_statement_block
+
+* Here `=>` is called `goes to`.
+* Example: `x=>x%2==0`(Lambda to filter even numbers).
+
+## Syntax of LINQ Command
+* Query Syntax:
+
+      from<variable> in <data_source> where<condition>select<result>;
+
+* Method Syntax:
+
+      data_source.Where(x=> <conditions>).Select(x=> <result>);
+
+## Conclusion:
+* LINQ is a powerful feature of querying and manipulation data in C#
+* Enhance productivity, ensures compile-time safety, and simplifies data operations.
+* Lambda expressions make LINQ queries easy and readable.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
