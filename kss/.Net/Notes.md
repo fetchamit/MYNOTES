@@ -998,8 +998,34 @@ Example:
 * Lambda expressions make LINQ queries easy and readable.
 
 
+# Getters/ Setters in C#:
+---------------------------
+* Gettsrs/Setters is a new method to define properties in a class.
+* Getters/Setters provides more secure and flexible way to define properties in a class.
+* In Comparison of normal properties; Getter/Setters are fully encapsulated(secure).
+* We can also define some validation in getter/setters and this feature is not easily available with normal properties.
+* Getter is denoted by `get` keyword while setter is denoted as `set` keyword.
+* Now days getters/setters are used in almost all modern programming  languages.
+* Syntax to create a property using getter/setter -
 
+      <access_specifier> Datatype <property_Name>{get;set;}
+Example:
 
+      public int Age{get;set;}
+
+* Syntax 2
+
+      <Access_Specifier> DataType<Property_Name>
+      {
+        get
+          {
+            // Code Here
+          }
+        set
+          {
+            // Code Hete
+          }
+        }
 
 
 
