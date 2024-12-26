@@ -1028,7 +1028,60 @@ Example:
         }
 
 
+# Types of Parameters in a function of C#
+--------------------------------------------
+* We can define parameters in a function in different ways.
+* It provides flexibility to a developer to define and use parameters as per needs.
+* Below are the main types of parameters in C# function-
+  1. Value Type
+  2. Reference type
+  3. Input Parameters(in)
+  4. Output Parameters(out)
+  5. Optional Parameters
+  6. Param Parameters
 
+## 1. Value Type:
+
+* It is default type of parameter.
+* Any changes in parameter inside function `(calling function)` is not accepted by `caller function`.
+
+      Ex: void(int x, int y);
+
+## 2. Reference Type:
+
+* In this type of parameters we have to use `ref` keyword before data type of parameters.
+* This type of parameter works on the basis of reference`Address`.
+* Any changes in parameter inside function `calling function` is accepted by `caller function` also.
+
+      void Add(ref int x, ref int y);
+
+Note: ref parameters must have a default value `initialization` before function call.
+
+## 3. Input Parameters(in)
+* In this type of parameters `calling function` can't change the value of parameter because they are only input parameters.
+* `in` keyword is used to define an input parameter.
+
+      void Add(in int x, in int y);
+
+## 4. Output Parameters:
+* This type of parameters are used when we want to get more-than one output from a function.
+* It is used to return multiple values from a function.
+* Caller function must have to modify the value of out parameter.
+
+      void Add(out int x,out int y);
+
+## 5. Optional Parameters:
+* This type of parameters have a default value so user can `ignore`(Omit) passing that argument during function calling.
+* It enables optional parameters.
+
+      void Add(int x=5,int y=8);
+
+## 6. Params parameters:
+* params is a keyword that enables us to pass multiple parameters of differents types.
+* It is used to pass n numbers of parameters.
+* Ex:
+
+      void Add(params Datatype[]nums);
 
 
 
