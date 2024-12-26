@@ -40,7 +40,7 @@
 
 * Generate Model by using Scaffolding Command
 
-      scaffold-DbContext"Data Source=localhost;Initial Catalog=KSSDB;Integrated Security=True;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer-OutputDir Models
+      Scaffold-DbContext "Data Source=AMIT-PATEL\SQLEXPRESS02; Initial Catalog=EntityDemo; Integrated Security=True; TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
 
 
 * Generating Model by using Scaffolding Command to update it from Project
