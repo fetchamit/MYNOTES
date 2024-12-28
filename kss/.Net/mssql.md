@@ -52,7 +52,7 @@ c. Open()
 d. Closed()
   * This function is used to close or terminate the database connection.
  
-2. SqlCommand Class
+# 2. SqlCommand Class
 * This class is located under "System.Data.SqlClient" namespace.
 * It is used to set and execute database queries.
 * It worked in connected mode.
@@ -74,9 +74,30 @@ c. CommandText
 * This property is used to set queries in SqlCommand class.
 * It contains the queries related  to insert, update or delete.
 
+# 3.SqlDataReader Class
+* This class is located in "System.Data.SqlClient" namespace.
+* This class is used to fetch data from database in connected mode.
+* It has `ExecuteReader()` method to fetch data from database.
+* It has `Read()` function to read a data of a row.
+* Example
+
+      SqlConnection con = new SqlConnection("data source=AMIT-PATEL\\SQLEXPRESS02;initial catalog=MyDemo;integrated security=true;");
+      SqlCommand cmd=new SqlCommand("select * from StudentMaster",con);
+      if(con.State==ConnectionState.Closed)
+          con.Open();
+
+      SqlDataReader res= cmd.ExecuteReader();
+
+      while (res.Read())
+      {
+          Console.WriteLine("Id : " + res["Id"]+" | Name : " + res["Name"].ToString()+" | Age : " + res["Age"].ToString()+" | Email : " + res["EmailId"].ToString());
+          Console.WriteLine();
+      }
+
+      con.Close();
 
 
-3. SqlDataAdapter class
+# 4. SqlDataAdapter class
 * This class is located in "System.Data.SqlClient" namespace.
 * It is used to fetch record from the data source like table in disconnected mode.
 * SqlDataAdapter is used to work with datasource in disconnected mode.
@@ -107,7 +128,7 @@ Notes:
 * It is not required to open of close the database connectivity when we used SqlDataAdapter.
 * Opening and closing of connectivity will be done automatically.
  
-# 4. DataTable
+# 5. DataTable
 * DataTable is a class that works like a virtual storage.
 * It is located under "System.Data" namespace.
 * DataTable is used to store the data and act as a virtual device.
@@ -120,7 +141,7 @@ Note: It have rows and columns property.
 
 
 
-# 5. DataSet
+# 6. DataSet
 * DataSet is a class that can be used as a virtual device.
 * DataSet is collection of multiple tables.
 * It is used to store Data in disconnected mode of connection.
