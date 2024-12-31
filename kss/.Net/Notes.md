@@ -1,3 +1,9 @@
+A) ASP/Classic ASP
+B) ASP.NET/ASP.NET Web Form Applications
+C) ASP.NET MVC /.NET MVC
+D) .NET Core /Core
+E) ASP.NET Core MVC / .NET Core MVC / Core MVC / ASP.NET Core
+
 # Introduction to .NET
 **********************
 * Microsoft .NET is a plateform that is used to develope the computer software and applications.
