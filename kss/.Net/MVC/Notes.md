@@ -26,3 +26,54 @@
   * LINQ etc
 * Easy to learn and Task Support for Asynchronous Controllers.
 * Bundling and Minification.
+
+
+## Steps to create project of ASP.NET
+1. Open Visual Studio and serarch for asp.net mvc template.
+2. Now choose the template of "ASP.NET" web application (.NET Framework).
+3. Then click Next button and enter the name of project, choose  project url and click on create button.
+4. Then new interface will be open in which you need to choose empty application and check the MCV checkbox fromthe list of Add  project and core references 
+5. At last click on create button to create new project in .NET MVC.
+
+## Project Pattern and architecture after crating project
+* Some important folder is already created when we create any new project like Model, Views, and Controller.
+* In .NET we need to add controller of the project manually. There are no any controller is added previously.
+* By default controller name is "Home" Controller.
+* Note : MVC architecture is same as .NET CORE
+
+## IsPost
+*  IsPost is a property in .NET MVC that is used to know postback of a webpage.
+*  When page directly comes from server it returns false or when it again goto server from the client, then IsPost returns true.
+*  IsPost also returns when any user submit the form after clicking submit button.
+
+## Now Sending data from view to controller
+In .NET MVC, we majorly use three ways to send data from view to controller
+1. Passing name of form control as action method parameter.                         [same as .NET CORE]
+2. Passing object of FormCollection class as action method parameter.
+3. Passing object of Model class as action method parameter.                        [same as .NET CORE]
+
+### 2. Passing object of FormCollection class as action method parameter
+* THis is one of the way to send data from view to controller.
+* We passed object FormCollection inside the action method .
+* This is used like key value pair.
+* Type conversion is required to read data by using this method.
+
+## To send data from controller to view we used below ways: 
+1. ViewBag
+2. ViewData
+3. TempData
+4. Strongly Type View
+
+
+
+
+
+
+
+
+
+
+
+
+
+
