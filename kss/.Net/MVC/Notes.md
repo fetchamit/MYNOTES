@@ -64,6 +64,34 @@ In .NET MVC, we majorly use three ways to send data from view to controller
 3. TempData
 4. Strongly Type View
 
+## Partial View in ASP.NET MVC
+* This view works like a sub view or part of any main view.
+* It not worked independently. This view is depend on our main View.
+* We can use Partial view where some common parts/designing is required in main view pages.
+* Generally we used parcial to add the code of markeup language or desinging part.
+* One Partial view can be used in one or more than one view pages.
+
+### Steps to create Partial View
+* Generally we make partial views in shared folder. So right click on view folder and add a new folder having name `shared`.
+* Then right click on shared folder and add view. During adding view you need to check the option of `Used this view as partial view.
+* Then click Add/Create view.
+
+### How to use partial in main view
+* To use partial view in main we used two ways.
+
+      @Html.Partial("Name_Of_Partial_View");
+         OR
+      @{Html.RenderPartial("Name_Of_Partial_View");}
+
+## Adding Model in .NET MVC
+1. Right click on Model Folder-> Add-> New Item
+2. Then choose data from InstallItem(left side) -> ADO .NET Entity data model, then click on Add button.
+3. Then choose `EF Designer from DB` option and click on next button.
+4. Then click on `new connection ` button to add server setting and database related information.
+5. A POP window will open where you need to add your server name, check on trust server certificate option and choose your required database, then click on ok button.
+6. Now choose version of entity framework that you want to use and ckick on next button.
+7. Then check the database object and click on `Finish` button.
+
 
 
 
