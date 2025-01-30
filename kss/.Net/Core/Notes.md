@@ -395,7 +395,61 @@ Note: we can also create a link by using HtmlHelper class as shown below-
 
     @Html.ActionLink("Privacy Page","Privacy","Home");
 
+## File Uploading in .NET Core:-
+* To upload a file we have to use input type="file" control in view page. This control must be inside a form tag.
+* It is mandatory to use method ="post" in form tag if we want to upload a file . we also have to define encryption type in form tag as encrypt="multipart/form-data".
+* To read a submitted file inside action method we have to use "Request.Form.Files". Return type of this array is "IFormFile interface.
 
+### Syntax:
+
+    IFormFile instanceName = Request.Form.Files["keyname"];
+Note : Here keyname is the name of input type="file-control".
+
+    Ex- IFormFile myfile = Request.Form.Files["UserPic"];
+
+* After that we can use interface of IFormFile interface. It will provide us below main properties.
+1. FileName: This property is used to get the name of uploaded file.
+2. Length : this property provide us the size of uploaded file in bytes.
+3. ContentType : This property is used to get the type of uploaded file with its category.
+
+* Now we have to use below process to save/upload submitted file:
+  * Create a specific folder inside "wwwroot" folder to save uploaded file on that folder
+  * Read path of that created folder
+`String folderpath = "wwwroot/FolderName".`
+  * Create object of "FileStream" class to create the specific file in server.
+
+        FileStream ObjName = new FileStream(FolderPath +"/" + FileName, FileMode.Create)
+Example:
+        
+        FileStream fstream = new FileStream (FolderPath + "/" +FileName, FileMode.Create);
+
+  * Now copy uploaded file in created file (Object of FileStream);
+    
+        InstanceOfFormFile.CopyTo(Obj_of_FileStream)
+        myfile.CopyTo(fstream)
+  * Now close the stream and display response message to user.
+
+## Step to Download a file in .NET Core :
+
+* Create a link (a tag) in web page and pass a query string (parameter) to an action method where you want to write the code of Downloaing.
+
+* Pass a parameter of string type as name of query string ot read the name Downloadable file.
+
+* Get the full path of file-
+
+      string FullPath = Path.GetFullPath("wwwroot/name_offolder/")+FileName;
+Example:
+
+      string fpath  = Path.GetFullPath("wwwroot/UserPic/")+fname;
+
+* Create object of FileStream class and open this file in Open Mode.
+
+      FileStream obj= new FileStream(Full_Path_Of_File,FileMode.Open);
+
+* Now return the objecj of file class from action method as shown below-
+
+        return File(Obj_Of_File_Stream,"application/force-download",Name_of_File);
+        Ex: return File(fs,"application/force-download",FileName);
 
 
 
